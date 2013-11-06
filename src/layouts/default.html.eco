@@ -6,8 +6,10 @@
 <head>
     <!-- Standard Meta -->
     <meta charset   ="utf-8"                                />
+    
     <meta http-equiv="X-UA-Compatible" 
           content   ="IE=edge"                              />
+    
     <meta name      ="viewport" 
           content   ="width=device-width, initial-scale=1"  />
 
@@ -16,6 +18,7 @@
     
     <meta name      ="description"
           content   ="<%= @getPreparedDescription() %>"     />
+    
     <meta name      ="keywords"
           content   ="<%= @getPreparedKeywords() %>"        />
 
@@ -23,10 +26,13 @@
     <!-- DocPad Meta -->
     <%- @getBlock('meta').toHTML() %>
 
+    
     <!-- DocPad Styles + Our Own -->
     <%- @getBlock('styles').add(@site.css).toHTML() %>
 
+    
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
 </head>
 <body>
     <!--[if lt IE 7]>
@@ -46,11 +52,6 @@
     <footer id="site-footer">
         
     </footer>
-
-    
-    <!-- jQuery -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="'+ <%- @site.prefixes.lib %> +'/jquery.js"></script>')</script>
 
     <!-- DocPad Scripts + Our Own -->
     <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
