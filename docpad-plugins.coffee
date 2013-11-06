@@ -4,6 +4,10 @@ module.exports = plugins = {
     coffeescript:
         compileOptions:
             bare: true
+            
+    ghpages:
+        deployRemote: 'origin'
+        deployBranch: 'master'
     
     highlightjs:
         aliases:
