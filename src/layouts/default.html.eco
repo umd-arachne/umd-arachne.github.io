@@ -4,6 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
+    
     <!-- Standard Meta -->
     <meta charset   ="utf-8"                                />
     
@@ -13,6 +14,7 @@
     <meta name      ="viewport" 
           content   ="width=device-width, initial-scale=1"  />
 
+    
     <!-- Site Properities -->
     <title><%= @getPreparedTitle() %></title>
     
@@ -43,9 +45,28 @@
     </p>
     <![endif]-->
 
-    <header id="site-header">
-        
+    
+    <header id  ="site-header">
+        <h1><a href="/">Arachne Web Development</a></h1>
     </header>
+    
+    
+    <nav    id  ="site-nav" 
+            role="navigation">
+        <ul>
+            <li><a href="/about/"       >About</a></li>
+            
+            <li><a href="/instructions/">Instructions</a>
+                <ul>
+                    <li><a>Quick Start</a></li>
+                    <li><a>Step-by-Step</a></li>
+                    <li><a>Going Further</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="/resources/"   >Resources</a></li>
+        </ul>
+    </nav>
     
     
     <main id="main">
@@ -54,7 +75,7 @@
     
     
     <footer id="site-footer">
-        
+        <p>feet live here.</p>
     </footer>
 
     <!-- DocPad Scripts + Our Own -->
