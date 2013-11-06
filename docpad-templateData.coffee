@@ -62,6 +62,7 @@ module.exports = templateData = {
     # -----------------------------
     # Helper Functions
 
+    
     # Get the prepared site/document title
     # Often we would like to specify particular formatting to our page's title
     # we can apply that formatting here
@@ -73,6 +74,7 @@ module.exports = templateData = {
         else
             @site.title
 
+    
     # Get the prepared site/document description
     getPreparedDescription: ->
         # if we have a document description, then we should use that, otherwise use the site's description
