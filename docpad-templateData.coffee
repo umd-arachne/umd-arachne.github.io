@@ -50,6 +50,9 @@ module.exports = templateData = {
         
         # Styles
         css: [
+            "#{prefixes().lib}/normalize.css"
+            "#{prefixes().lib}/h5bp.css"
+            #"#{prefixes().lib}/ggs.css"
             "#{prefixes().css}/index.css"
         ]
 
