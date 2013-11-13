@@ -24,16 +24,9 @@ prefixes = ->
 module.exports = templateData = {
     # Specify some site properties
     site:
-        # The production url of our website
-        #url:        ''
+        url:        'https://umd-arachne.github.io'
 
         
-        # Here are some old site urls that you would like to redirect from
-        # oldUrls: [
-        #     #'www.website.com',
-        #     #'website.herokuapp.com'
-        # ]
-
         # The default title of our website
         title:  'Arachne Web Development'
         
@@ -51,7 +44,6 @@ module.exports = templateData = {
         
         # Styles
         css: [
-        #    "#{prefixes().lib}/normalize.css"
             "#{prefixes().bootstrap}/css/bootstrap.min.css"
             "#{prefixes().css}/index.css"
         ]

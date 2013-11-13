@@ -47,8 +47,9 @@ module.exports = events = {
         # ensure docpad's configuration is up-to-date, 
         # and fetch our urls
         latestConfig = docpad.getConfig()
-        oldUrls      = latestConfig.templateData.site.oldUrls or []
-        newUrl       = latestConfig.templateData.site.url
+        templateData = latestConfig.templateData.site
+        oldUrls      = templateData.oldUrls or []
+        newUrl       = templateData.url
 
         # Redirect any requests accessing one of our sites oldUrls to the new site url
         server.use (req,res,next) ->
