@@ -16,6 +16,7 @@ prefixes = ->
         css        : "#{sitePrefix}/css"
         js         : "#{sitePrefix}/js"
         lib        : "#{sitePrefix}/lib"
+        bootstrap  : "#{sitePrefix}/lib/bootstrap"
     }
 
 
@@ -34,9 +35,9 @@ module.exports = templateData = {
         # ]
 
         # The default title of our website
-        title:  ''
+        title:  'Arachne Web Development'
         
-        author: ''
+        author: 'The Arachne Project'
 
         # The website description (for SEO)
         description: ''
@@ -50,15 +51,15 @@ module.exports = templateData = {
         
         # Styles
         css: [
-            "#{prefixes().lib}/normalize.css"
-            "#{prefixes().lib}/h5bp.css"
-            #"#{prefixes().lib}/ggs.css"
+        #    "#{prefixes().lib}/normalize.css"
+            "#{prefixes().bootstrap}/css/bootstrap.min.css"
             "#{prefixes().css}/index.css"
         ]
 
         # Scripts
         scripts: [
-            "#{prefixes().lib}/jquery.min.js"
+            "#{prefixes().lib}/jquery/jquery.min.js"
+            "#{prefixes().bootstrap}/js/bootstrap.min.js"
             "#{prefixes().js}/index.js"
         ]
 
