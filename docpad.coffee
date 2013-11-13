@@ -11,6 +11,7 @@ templateData= require('./docpad-templateData')
 module.exports = docpadConfig = {
     global: true
     skipUnsupportedPlugins: false
+    poweredByDocPad: false
     
     # =================================
     # Template Data

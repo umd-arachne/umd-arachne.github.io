@@ -35,9 +35,9 @@ module.exports = templateData = {
         # ]
 
         # The default title of our website
-        title:  ''
+        title:  'Arachne Web Development'
         
-        author: ''
+        author: 'The Arachne Project'
 
         # The website description (for SEO)
         description: ''
@@ -58,7 +58,7 @@ module.exports = templateData = {
 
         # Scripts
         scripts: [
-            "#{prefixes().lib}/jquery.min.js"
+            "#{prefixes().lib}/jquery/jquery.min.js"
             "#{prefixes().bootstrap}/js/bootstrap.min.js"
             "#{prefixes().js}/index.js"
         ]

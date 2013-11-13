@@ -1,39 +1,61 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!-- 
+    Leave the following weirdness (“conditional comments” for IE) as-is.  
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> 
+<!--<![endif]-->
+
+
 <head>
-    
-    <!-- Standard Meta -->
+    <!-- 
+        First charset, then the title; 
+        these *must* load first! 
+    -->
     <meta charset   ="utf-8"                                />
+    <title><%= @getPreparedTitle() %></title>
     
+    <!-- 
+        This particular meta breaks validation, but is useful 
+        for browser compatibility 
+    -->
     <meta http-equiv="X-UA-Compatible" 
-          content   ="IE=edge"                              />
+          content   ="IE=edge"                              />              
     
+    <!-- 
+        Site Properties
+    -->
     <meta name      ="viewport" 
           content   ="width=device-width, initial-scale=1"  />
 
-
-    <!-- Site Properities -->
-    <title><%= @getPreparedTitle() %></title>
-    
+    <!-- 
+        General metadata 
+    -->
     <meta name      ="description"
           content   ="<%= @getPreparedDescription() %>"     />
-
     <meta name      ="keywords"
           content   ="<%= @getPreparedKeywords() %>"        />
 
-
-    <!-- DocPad Meta -->
+    <!-- 
+        Any additional metadata
+    -->
     <%- @getBlock('meta').toHTML() %>
 
 
-    <!-- DocPad Styles + Our Own -->
-    <%- @getBlock('styles').add(@site.css).toHTML() %>
+    <!-- 
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+    <link  rel="stylesheet" href="/css/index.css" />
+    <% if @document.title is 'About Arachne' : %><link  rel="stylesheet" href="/css/about.css" /><% end %>
     
     
-    <!-- DocPad Scripts + Our Own -->
+    <!-- Library scripts, then ours -->
     <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
     
@@ -41,6 +63,14 @@
     
 </head>
 <body>
+<div class="container">
+    
+    
+    
+    <!-- 
+        Tell people using old version of Internet Explorer 
+        that 2001 called and wants its browser back.
+    -->
     <!--[if lt IE 7]>
     <p class="browsehappy"
         >You are using an <strong>outdated</strong> browser. 
@@ -49,44 +79,81 @@
     </p>
     <![endif]-->
 
-    
-    <header id  ="site-header">
-        <h1><a rel="home" href="/">Arachne Web Development</a></h1>
-    </header>
-    
-    
-    <nav    id  ="site-nav" 
-            role="navigation">
-        <ul>
-            <li><a href="/about/"       >About</a></li>
+
+
+    <header id      ="site-header"
+            class   ="row row-offcanvas row-offcanvas-right"
+    >
+        <div class="col-sm-9">
+            <!--
+                button to toggle nav (small devices only)
+            -->
+            <p class="pull-right visible-xs">
+                <button type        ="button" 
+                        class       ="btn btn-primary btn-xs" 
+                        data-toggle ="offcanvas" 
+                        value       ="Toggle nav" >Toggle nav</button>
+            </p>
+        
+            <!--
+                Arachne Web Development Logo 
+            -->
+            <a  href="/"
+                rel ="Home"
+                ><h1><img   id    ="logo"
+                            src   ="/img/Logo.png"
+                            alt   ="Arachne Web Development" 
+                /></h1></a>
+        </div>
+        
+        
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+        
+            <ul class="list-group">
+                <li class="list-group-item"><a href="/about/">About</a></li>
             
-            <li><a href="/instructions/">Instructions</a>
-                <ul>
-                    <li><a href="/instructions/getting-started.html">Quick Start</a></li>
-                    <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
-                    <li><a href="/instructions/going-further.html">Going Further</a></li>
-                </ul>
-            </li>
+                <li class="list-group-item"
+                    ><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/getting-started.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
             
-            <li><a href="/resources/"   >Resources</a>
-                <ul>
-                    <li><a href="/resources/freebies.html">Freebies</a></li>
-                    <li><a href="/resources/gallery.html">Gallery</a></li>
-                    <li><a href="/resources/glossary.html">Glossary</a></li>
-                    <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
+                <li class="list-group-item"
+                    ><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+        
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
     
     
-    <main id="main">
+    
+    <main id    ="main"
+          class ="row"
+    >
         <%- @content %>
-    </main>
+    </main><!-- /#main -->
+    
     
     
     <footer id="site-footer">
-        <p>feet live here.</p>
-    </footer>
+        <p>FOOTER | Aenean in erat pharetra tellus egestas mollis ac at justo.</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
 </body>
 </html>
