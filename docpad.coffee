@@ -13,6 +13,11 @@ module.exports = docpadConfig = {
     skipUnsupportedPlugins: false
     poweredByDocPad: false
     
+    # Use better file watching algorithm
+    # http://docpad.org/docs/troubleshoot#watching-doesn-t-work-works-only-some-of-the-time-or-i-get-eisdir-errors
+    watchOptions: preferredMethods: ['watchFile','watch'] 
+    
+    
     # =================================
     # Template Data
     #
