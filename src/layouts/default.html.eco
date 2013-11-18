@@ -112,10 +112,9 @@
                 role    ="navigation">
         
             <ul class="nav nav-pills nav-stacked">
-                <li class="list-group-item"><a href="/about/">About</a></li>
+                <li><a href="/about/">About</a></li>
             
-                <li class="list-group-item"
-                    ><a href="/instructions/">Instructions</a>
+                <li<%- ' class="active"' if '/instructions' is @document.url[0..12] %>><a href="/instructions/">Instructions</a>
                     <ul<%- ' class="hidden"' unless '/instructions' is @document.url[0..12] %>>
                         <li><a href="/instructions/getting-started.html">Quick Start</a></li>
                         <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
@@ -123,8 +122,7 @@
                     </ul>
                 </li>
             
-                <li class="list-group-item"
-                    ><a href="/resources/"   >Resources</a>
+                <li<%- ' class="active"' if '/resources' is @document.url[0..9] %>><a href="/resources/"   >Resources</a>
                     <ul<%- ' class="hidden"' unless '/resources' is @document.url[0..9] %>>
                         <li><a href="/resources/freebies.html">Freebies</a></li>
                         <li><a href="/resources/gallery.html">Gallery</a></li>

@@ -1,0 +1,26 @@
+@css {
+@import 'layout.css';
+@import 'colors.css';
+@import 'typography.css';
+}
+
+body
+    background-image        url('../img/BodyPaint.png') !important
+    background-attachment   fixed
+    background-origin       border-box
+    background-size         cover
+    
+img.HomepagePictures
+    border-width    thin
+    border-style    solid
+
+#site-nav    
+    ul.nav.nav-pills.nav-stacked
+        & > li > a
+            border-radius 0
+            
+        & > li:first-child > a
+            border-radius 4px 4px 0 0
+        
+        & > li:last-child > a
+            border-radius 0 0 4px 4px
