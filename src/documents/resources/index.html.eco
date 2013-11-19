@@ -1,0 +1,139 @@
+---
+layout: default
+---
+
+<div class="row">
+    <div class="col-md-12">
+        <h1>Quarters Layout</h1>
+        <h2>Resources, Instructions, Going Further, Freebies, &amp; Helpful Links use variations of this layout.</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Aliquam porta urna sed ipsum
+            laoreet, et dapibus justo pharetra. Aenean sit
+            amet velit ac nunc euismod pretium non sit amet
+            nisi. Suspendisse rutrum pretium porta. In hac
+            habitasse platea dictumst. Duis laoreet, elit
+            vitae vehicula vestibulum, elit urna
+            sollicitudin quam, ut ornare sem nunc nec
+            eros.</p>
+    </div><!-- /.col -->
+</div><!-- /.row -->
+
+
+<!-- ============ About the "RESOURCES" page ========================
+
+    The "RESOURCES" page is our example layout for the grid system.
+    This divides the screen into vertical quarters, as you can
+    see in the lines of thumbnails.
+
+    Other pages will also use a quartered grid system, including:
+
+        - "INSTRUCTIONS"
+              - "GOING FURTHER"
+                (advanced coding tutorials, such as Java or CSS, as well as Publishing and Networking tips)
+
+        - "RESOURCES"
+            - "FREEBIES"
+              (freeware content made by us, offered to users, including icons, buttons, stock photos, patterns, etc.)
+
+            - "HELPFUL LINKS"
+              (hyperlinks to third-party websites like W3 Schools)
+
+    The exact positions of items will adapt to content needs.
+
+    Another adaptation will be to change the thumbnails from images to text (or typographic images),
+    depending on whether that thumbnail links to another webpage or an image.
+
+    For now, the FAV ICON acts as a placeholder.
+======================= -->
+
+<!--
+    First row of thumbnails
+-->
+<div class="row">
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+</div><!-- /.row -->
+
+
+<!--
+    Second row of thumbnails
+-->
+<div class="row">
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+
+    <div class="col-md-3">
+        <a href="#"
+            ><img
+                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                class="img-responsive"
+                alt="Responsive image"
+            /></a>
+        <p>Description Here</p>
+    </div><!-- /.col -->
+</div><!-- /.row -->

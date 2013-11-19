@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+# Instructions
+
+«**W.I.P.:** screenshots illustrating how to create a portfolio website»
+
+## The Need for Online Portfolios
+Having an online portfolio allows you to easily showcase your work, market yourself, and become known as an artist.  By creating your own portfolio, you can create a strong online presence and control the information about you that is available to others. It can also act as an extension of your resume and job applications to potential employers, showing evidence of the skills, qualifications, and talent that you possess. It is also beneficial to have all of your work and professional documents organized in a single place and accessible from virtually anywhere.
+
+## How Arachne Web Development Can Help
+We are here to support your professional development and talent. Being students at University of Maryland, we saw a need to spread creativity in the College Park community. By using Arachne Web Development, student-artists (or anyone, really) can easily build their own portfolio and share their creative talent with others. Arachne provides easy-to-use templates and useful, outside resources to make designing and implementing your online portfolio as simple and painless as possible. While the content on Arachne Web Development is free and open to all users, the web host we recommend, TerpConnect, serves only local students at the University of Maryland at College Park.
+
+If you are a student-artist interested in making an online portfolio to showcase your work, Arachne Web Development can get you started! Creating a new website from scratch can be daunting. Fortunately, coding tutorials, portfolio templates, free images, and helpful links are all available right here, ready to use. There are resources here both for those who have never used coding languages, and for those who are already experienced in HTML and CSS web development.
+
+Please refer to our guides below to being creating your online portfolio:
+
+
+<nav>
+    <ul>
+        <li><a href="getting-started.html">Getting Started</a></li>
+        <li><a href="step-by-step.html">Step-by-Step</a></li>
+        <li><a href="going-further.html">Going Further</a></li>
+    </ul>
+</nav>

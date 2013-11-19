@@ -1,0 +1,54 @@
+---
+layout: 'default'
+title: 'Arachne Web Development'
+---
+
+
+<div class="row">
+    <div class="col-md-9">
+        <!--
+            full-width is only 9 of 12 cols (the nav bar occupies the remainder)
+            the first half of content uses the full-width layout 
+        -->
+        
+        <!--
+            Homepage Content 
+        -->
+        <img    id  ="Weave" 
+                class="img-responsive" 
+                src ="<%- @site.prefixes.img %>/hp_Placeholder.jpg"
+                alt ="Weave Your Identity"
+        />
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porta urna sed ipsum laoreet, et dapibus justo pharetra. Aenean sit amet velit ac nunc euismod pretium non sit amet nisi. Suspendisse rutrum pretium porta. In hac habitasse platea dictumst. Duis laoreet, elit vitae vehicula vestibulum, elit urna sollicitudin quam, ut ornare sem nunc nec eros.</p>
+        
+        
+        <!-- 
+            Portfolio Examples 
+        -->
+        <a href="<%- @site.prefixes.root %>/carousel.html">
+            <h2>Carousel</h2>
+            <img    src     ="<%- @site.prefixes.img %>/Carousel_Placeholder.JPG" 
+                    class   ="img-responsive HomepagePictures" 
+                    alt     ="Carousel Example" 
+            />
+        </a>
+        
+        
+        <a href="<%- @site.prefixes.root %>/grid.html">
+            <h2>Grid</h2>
+            <img    src     ="<%- @site.prefixes.img %>/Grid_Placeholder.JPG" 
+                    class   ="img-responsive HomepagePictures" 
+                    alt     ="Grid Example" 
+            />
+        </a>
+        
+        <a href="/geometric.html">
+            <h2>Geometric</h2>
+            <img    src     ="<%- @site.prefixes.img %>/Geometric_Placeholder.JPG" 
+                    class   ="img-responsive HomepagePictures" 
+                    alt     ="Geometric Example" 
+            />
+        </a>
+    </div>
+</div><!-- /.row -->

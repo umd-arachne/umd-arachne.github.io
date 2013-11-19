@@ -57,7 +57,8 @@
 
     <!-- Library scripts, then ours -->
     <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
-
+    <% if @document.basename is 'freebies':
+    %><script defer="defer" src="<%- @site.prefixes.bootstrap %>/js/holder.js"></script><% end %>
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 

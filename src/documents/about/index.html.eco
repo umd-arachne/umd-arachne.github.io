@@ -1,0 +1,72 @@
+---
+layout: default
+title: About Arachne Web Development
+---
+
+<!-- ============ About the "ABOUT" page ========================
+    The "ABOUT" page is unique in that it uses a combination of our two layout options: 
+    both the default, full-width layout, as well as a grid system. 
+
+    As an exception, the "ABOUT" page's grid system uses thirds (instead of fourths), so 
+    that no Team Bio appears alone.
+
+    We feel it is important to keep our Team Bios for two reasons:
+
+        1.  Many professional websites have contact information for department heads, company founders, etc.
+            We are the "founders" of Arachne Web Development, and therefore, our Team Bios are appropriate.
+
+        2.  Many artist portfolio websites have a section for that artist's bio and profile. Since Arachne
+            is emulating that aesthetic and setting a model for the student-artists using our website, we
+            again feel that our Team Bios are appropriate.
+======================= -->
+
+
+<div class="row"> 
+    <h2>Who We Are</h2>
+    <p>Arachne Web Development is an online HTML5 resource for artistic students to create, customize, and publish personal portfolios on the Internet.</p>
+
+
+    <h2>Mission Statement</h2>
+    <p>Arachne Web Development promotes artists and designers within the University of Maryland’s student community. Its main goals are inspiring creativity, sharing web resources, and ultimately giving student artists the confidence to share their work with the world.</p>
+
+
+    <h2>Why Arachne Web Development Was Created</h2>
+    <p>Our team believes in “Weaving artists’ and designers’ identities and designs.” With this goal, Arachne Web Development provides you with the tools you need to show who you are as a professional and designer.</p>
+    <p>Explore this site for possibilities.</p>
+    <p>Join the Twitter conversation! <a href="https://twitter.com/search?q=%23ArachneWebDev&src=typd&f=realtime">#ArachneWebDev</a></p>
+
+</div> <!-- /.row -->
+
+
+<section>
+    <h2>Team Biographies</h2>
+    
+    <div class="row">
+        <div class="col-sm-4">
+            <h3>Shannon Goff</h3>
+            <p>Shannon Goff is an English and Communications Double Major with an internship in Marketing. She focuses on using social media, reaching out to people, and marketing a specific brand or business. She also heads a blog team and so performs a fair amount of editing, publishing, and writing. Shannon excels at spreading the word and navigating websites, but hopes to improve her skills at creating websites during the development of Arachne.</p>
+        </div>
+          
+        <div class="col-sm-4">
+            <h3>Avery Graham</h3>
+            <p>Avery Graham has taken a few web design classes that covered HTML, PHP, CSS, and Java. Using this knowledge Avery has worked on a number of fully functionally websites. Over the past year he has also done some freelance work for different clients. Although he is extremely capable of working with these different codes his strengths lean more toward design than anything. Extremely familiar with all of Adobe products and Final Cut Pro. With this knowledge Avery has made some pretty flashy videos, websites, logos, and all sorts of cool designs. </p>
+        </div>
+          
+        <div class="col-sm-4">
+            <h3>Lara Lee</h3>
+            <p>Organized, detail-oriented, and self-motivated, Lara Lee had little experience with HTML and CSS coding, but since taking a Web Authoring course at college, she has quickly learned the basics. She also has prior experience in desktop publishing and graphic design while working at the Rottman Creative Group as an assistant. In her spare time, Lara has further practiced design, copywriting, film and digital photography, and even a “branding campaign” for a local organization, The Classics Club.</p>
+        </div>
+    </div><!-- /.row --> 
+    
+    <div class="row">
+        <div class="col-sm-4 ">
+            <h3>Jenae Ramos</h3>
+            <p>Jenae is a Psychology major with a Rhetoric minor, who also has graphic design experience. With a love for design, Jenae uses Adobe programs such as Photoshop, Illustrator, Dreamweaver, and InDesign daily. As the communications student assistant at the University of Maryland Office of Sustainability, she frequently updates the website and is comfortable with HTML. In addition, she also has significant experience in promoting organizations through social media. She can assist with content creation, brand identity, and navigation as well as ensuring all details are in order.</p>
+        </div>
+          
+        <div class="col-sm-4">
+            <h3>Tony Rogers</h3>
+            <p>Tony loves the web, and an enthusiastic practitioner of web standards. He loves to dabble in programming languages as well. Improving technical documentation is an obsession for him. He’s worked to improve the documentation for many open source projects in pursuit of his ideals.</p>
+        </div>
+    </div><!-- /.row -->
+</section>

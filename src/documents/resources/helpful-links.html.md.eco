@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+# Helpful Links
+Arachne Web Development recommends these third-party resources to provide further instruction on coding a portfolio website, testing it for errors, and uploading it to the web.
+
+**insert table of contents with anchors to each link**
+
+## Free Web Development Resources
+* [Zurb Playground](http://zurb.com/playground/) offers code for special effects to animate your website.
+
+### Free Stock Images
+* [Stock.Xchng](http://www.sxc.hu) offers royalty-free, zero cost stock images in addition to commercial stock images.
+* [Dreamstime](http://dreamstime.com) similarly offers royalty-free, zero cost stock images in addition to commercial stock images.
+* Members of the [DeviantART](http://deviantart.com) community also post and share stock images that the public may use under its <a href="www.deviantart.com/resources/‎">Resources</a> category.
+
+### Commercial Stock Images
+* [iStock Photo](http://istockphoto.com) (by Getty Images) has a huge collection of royalty-free stock photos for public use, but downloading images from here requires a paid membership account.
+
+
+### W3Schools Tutorials
+The website at W3Schools introduces HTML coding in the form of easy to follow chapters and coding exercises. It also provides handy references for character codes, web safe fonts, and embedding media into a HTML website. If you are new to HTML, W3Schools also offers a “Try It Editor” where the user can play with code snippets to see what it does.
+
+### [Don’t Fear the Internet](http://www.dontfeartheinternet.com)
+by Jessica Hische and Russ Maschmeyer, perhaps the episode “Don’t Fear Starting From Scratch”
+Web design enthusiasts Jessica Hische and Russ Maschmeyer host a wonderful website, “Don’t Fear the Internet,” with several resources for the HTML beginner. Simple videos neatly explain what HTML is and how to write HTML code using everyday analogies the common person will understand. For a beginner’s guide to HTML, start with “Hamburger Text Markup Language.”
+
+### Hyperlink to W3C Validator
+A markup validation service ensures a website works properly and displays correctly on multiple web browsers. To locate and correct coding errors in the HTML and CSS files for new and revised websites, V3C Validator offers a free file check to list code mistakes. 
+
+### Hyperlink to Google Fonts and Font Squirrel
+Most people prefer to customize their websites with their own favorite fonts, but not all fonts are “web-safe.” Fonts that are not web-safe may not even display, and the web browser will instead substitute an ugly typeface. Google Fonts provides a new web-safe fonts for your website and offers to host them too! 
+
+### Hyperlink to Font Squirrel
+Font Squirrel also provides an alternative collection of free fonts as well as a WebFont Generator to make fonts web-safe.

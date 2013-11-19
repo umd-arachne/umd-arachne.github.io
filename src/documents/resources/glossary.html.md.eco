@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+# Glossary
+Unsure of what all this web development vocabulary means? Search our Glossary to gain a basic understanding of the core concepts. Terms are organized alphabetically. Related words are grouped together.
+
+## CSS: Cascading Style Sheets
+CSS files allow you to style your website and organize your content efficiently. These link with your HTML files.
+
+## HTML: Hyper Text Markup Language
+HyperText mark-up language, or HTML, is a coding language used to write web pages. In particular, the “mark-up” of HTML means that coders annotate the web content so that computers &#40;and people too&#41; can read the content.
+
+## Documentation
+Web developers provide commentary on their code using documentation. In HTML, these comments appear as text within `&gt;!-- sample comment --&lt;` tags, introduced by an exclamation point and hyphens. Documentation often labels which pieces of code serve what purpose as well as explain why the web developer chose the approach he/she did.
+
+## Semantic Markup
+Semantic markup provides additional information to a website besides the superficial appearance of text and images. This includes adding emphasis to text for screen readers to read, such as `strong` or `emphasis` (“emphasis”) to suggest changes in tone. It also includes small pop-ups to explain abbreviations, acronyms, or source citations when they are not spelled out directly in the textual content itself.
+
+## Structural Markup
+Structural markup focuses on basic formatting of the text, to include headline sizes, bold or italics, and paragraphs. It also includes how the web page elements, such as text and images, appear.
+
+## Tags
+Every line of code begins and finishes with a “tag,” or pairs of left and right-angle brackets. The opening tag features a “character” labeling what the type of content that code will address. The opening tag often features an “attribute” as well to make this label more specific. The closing tag simply adds a slash mark to tell the computer the line is complete. 
+
+## JS: JavaScript
+JavaScript (sometimes “JS”) is the main scripting language used in web development. JavaScript is very similar to the programming language Java, but it is object-based, whereas Java is class-based.  Still, JavaScript is most useful when used with other languages, such as HyperText Mark-up Language, to control Java objects. Web developers, game developers, and desktop application software developers all use JavaScript.
+
+## SEO: Search Engine Optimization:
+Search engines such as Google, Bing, or AskJeeves match the keywords a user is searching for with the tags a website lists to provide the user answers to his&#47;her questions. When a website uses its tags well, its pages will appear more frequently in the search results and therefore helps increase its traffic. Some organizations offer SEO services to help a website use the most popular keywords to increase appearances on search engines.
+
+## TerpConnect
+TerpConnect is a web space reserved for current students at the University of Maryland at College Park. Its online server for students to host their files. It also provides free web hosting for students to publish personal web sites.
+
+## Validation
+A markup validation service ensures a website works properly and displays correctly on multiple web browsers. To locate and correct coding errors in the HTML and CSS files for new and revised websites, V3C Validator offers a free file check to list code mistakes. 
+
+## Web Host
+A web host stores a person’s or organization’s files on its own server and provides the maintenance and networking on behalf of the client. Web hosting companies may also offer domain name registration, e-mail storage, search engine optimization, web traffic analyses, and other additional services to promote the client’s website.

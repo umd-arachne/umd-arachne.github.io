@@ -1,0 +1,136 @@
+---
+title: Uploading to TerpConnect
+---
+
+# Never Seen TerpConnect in Your Life?
+
+## No Idea How to Upload Your Homework?
+
+Have no fear! By trial and error, I’ve found how to do that for my ENGL488A homework.
+
+1.  Know your student log-in for UMD.
+    (A space on TerpConnect is reserved for every student.)
+    
+2.  Open Komodo Edit 8. Go to **Edit ► Preferences**. 
+    A pop-up opens asking for server info. 
+    Fill it in like so, using your own Terp username and password.
+ 
+3.  Open your [terpconnect.umd.edu](http://terpconnect.umd.edu). 
+    Click on **File Manger** in the navigation bar. 
+    You’ll see a giant button, **Access My Files**. Click it. 
+    Fill in the blanks of the pop-up with your regular student log-in.
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-2.png" />
+        <figcaption>Here’s where you *would’ve* found the instructions to do this, 
+                    if UMD would actually fix the broken links!
+        </figcaption>
+    </figure>
+
+4.  Now you see almost all your server folders. 
+    It automatically opens `home` for you, but you actually need to back up a bit. 
+    Click on your student login, and a new list of folders will come up. 
+    See `pub`? That stands for “public access”. 
+    That’s where to upload files. 
+    Close this. You’re down for now.
+    
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-3.png" />
+    </figure>
+    
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-4.png" />
+        <figcaption>See `pub`?</figcaption>
+    </figure>
+    
+ 
+5.  Make your `.html` files in Komodo Edit 8, and save those as to your computer as normal, 
+    until you’re ready to post version 1. 
+    Now, when you’re ready…
+
+6.  Gather your framework files. From Bootstrap, you’ll need:
+    
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-5.png" />
+        <figcaption>`css` folder (×4) </figcaption>
+    </figure>
+    
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-6.png" />
+        <figcaption>`js` folder (×5)</figcaption>
+    </figure>
+    
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-7.png" />
+        <figcaption>
+            `img` folder (×6);<br />
+            and all your Sprint pictures and any thumbnails
+        </figcaption>
+    </figure>
+
+7.  To begin uploading your files, you have three choices:
+    -   Uploading 5 files at a time in TerpConnect, *or*
+        (proceed to Step 8)
+    -   Using Firefox FTP *or*
+        (proceed to Step 9)
+    -   Saving Remotely from Komodo Edit 8
+        (proceed to Step 10)
+
+8.	In TerpConnect, you can only upload 5 files at a time. 
+    Find your `pub` folder again, and from the left menu, click **upload files**. 
+    Go through your local folder (on your Desktop, or My Documents, or wherever) and 
+    upload all of your `.html` files and images, as well as the files from the Bootstrap download. 
+    Create new folders and label them exactly, `css` `js` and `img`. 
+    Sort your files. 
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-8.png" />
+    </figure>
+
+9.  Once you’ve downloaded the FireFTP add-on from either the Mozilla website or Dr. Kill’s Springpad link, open Firefox. 
+    Click the big, orange Firefox button in your toolbar and select **Web Developer**. FireFTP opens here.
+    
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-9.png" />
+        <figcaption></figcaption>
+    </figure>
+    
+    Like Komodo Edit 8, you’ll need to set up a hosting server account. 
+    Re-key the same information: 
+        **Account Name:** TerpConnect
+        **Host (Name):** `terpconnect.umd.edu`
+        **Login:** your student name and password       
+        **(Connection) Security:** SFTP
+        **Port:** 22
+    Now go back to the FireFTP toolbar, and select **connect**. 
+    You may get a message about a registry key in the cache. That’s okay. Proceed. 
+    You’ll now be able to copy-paste ENTIRE FOLDERS directly onto the TerpConnect Server. Do so.
+    (Remember to back up from your home screen, and paste everything in `pub`.)
+    <figure>
+        <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-10.png" />
+    </figure>
+ 
+10.	In Komodo Edit 8, go to **File ► Save as Remote**. 
+    (All this means is that you're saving your file on a server, not on your own computer space anymore.) 
+    Now that your server, TerpConnect, has been set-up, select it from the drop-down menu. 
+    All your folders will come up, so just select and save. 
+    
+    Rinse and repeat for ALL your files. 
+    
+    You will have to select, cut, and paste all your web files from your home folder into `pub`, as 
+    `pub` doesn’t automatically appear in Komodo Edit.
+    
+    (If **Save as Remote** is greyed out, make sure your cursor is clicked on the code, not the preview. 
+     If you don't see a folder, hit the **Refresh** icon.)
+     <figure>
+         <img class="img-responsive" src="<%- @site.prefixes.img %>/screenshots/terpconnect-11.png" />
+         <figcaption></figcaption>
+     </figure>
+ 
+11. To test your page, open a new tab or window in your browser. 
+    Type in `terpconnect.umd.edu/~name/index.html` (with `name` replace by whatever your username is). 
+    
+    **You should be live now!**
+    
+    (If your page looks really plain, double-check that all of those other files from Bootstrap were uploaded too. 
+    I also found that the formatting didn't work unless I recreated the exact same setup of folders and files from the Bootstrap download. 
+    So in your `pub` folder, create folders, `img`, `css`, and `js` and place your files accordingly. 
+    Try again. It should work now.)
