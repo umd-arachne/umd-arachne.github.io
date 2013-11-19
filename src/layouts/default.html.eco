@@ -1,80 +1,80 @@
 <!DOCTYPE html>
-<!-- 
-    Leave the following weirdness (“conditional comments” for IE) as-is.  
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
     It's here for future maintenance, if we need to tweak browser compatibility.
 -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> 
+<html class="no-js">
 <!--<![endif]-->
 
 
 <head>
-    <!-- 
-        First charset, then the title; 
-        these *must* load first! 
+    <!--
+        First charset, then the title;
+        these *must* load first!
     -->
     <meta charset   ="utf-8"                                />
     <title><%= @getPreparedTitle() %></title>
-    
-    <!-- 
-        This particular meta breaks validation, but is useful 
-        for browser compatibility 
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
     -->
-    <meta http-equiv="X-UA-Compatible" 
-          content   ="IE=edge"                              />              
-    
-    <!-- 
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
         Site Properties
     -->
-    <meta name      ="viewport" 
+    <meta name      ="viewport"
           content   ="width=device-width, initial-scale=1"  />
 
-    <!-- 
-        General metadata 
+    <!--
+        General metadata
     -->
     <meta name      ="description"
           content   ="<%= @getPreparedDescription() %>"     />
     <meta name      ="keywords"
           content   ="<%= @getPreparedKeywords() %>"        />
 
-    <!-- 
+    <!--
         Any additional metadata
     -->
     <%- @getBlock('meta').toHTML() %>
 
 
-    <!-- 
+    <!--
         Library CSS, then ours
     -->
     <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
     <%- @getBlock('styles').add(@site.css).toHTML() %>
-    <% if @document.basename is 'about': 
-    %><link rel="stylesheet" href="/css/about.css" /><% end %>
-    
-    
+    <% if @document.basename is 'about':
+    %><link rel="stylesheet" href="<%- @site.prefixes.css %>/about.css" /><% end %>
+
+
     <!-- Library scripts, then ours -->
     <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
-    
+
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    
+
 </head>
 <body>
 <div class="container clearfix">
-    
-    
-    
-    <!-- 
-        Tell people using old version of Internet Explorer 
+
+
+
+    <!--
+        Tell people using old version of Internet Explorer
         that 2001 called and wants its browser back.
     -->
     <!--[if lt IE 7]>
     <p class="browsehappy"
-        >You are using an <strong>outdated</strong> browser. 
-        Please <a href="http://browsehappy.com">upgrade your browser</a> 
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
         to improve your experience.
     </p>
     <![endif]-->
@@ -89,63 +89,63 @@
                 button to toggle nav (small devices only)
             -->
             <p class="pull-right visible-xs">
-                <button type        ="button" 
-                        class       ="btn btn-primary btn-xs" 
-                        data-toggle ="offcanvas" 
+                <button type        ="button"
+                        class       ="btn btn-primary btn-xs"
+                        data-toggle ="offcanvas"
                         value       ="Toggle nav" >Toggle nav</button>
             </p>
-        
+
             <!--
-                Arachne Web Development Logo 
+                Arachne Web Development Logo
             -->
-            <a  href="/"
+            <a  href="<%- @site.prefixes.root %>/"
                 rel ="Home"
                 ><h1><img   id    ="logo"
-                            src   ="/img/Logo.png"
-                            alt   ="Arachne Web Development" 
+                            src   ="<%- @site.prefixes.img %>/Logo.png"
+                            alt   ="Arachne Web Development"
                 /></h1></a>
         </div>
-        
-        
+
+
         <nav    id      ="site-nav"
                 class   ="col-sm-3 clearfix sidebar-offcanvas"
                 role    ="navigation">
-        
+
             <ul class="nav nav-pills nav-stacked">
-                <li><a href="/about/">About</a></li>
-            
-                <li<%- ' class="active"' if '/instructions' is @document.url[0..12] %>><a href="/instructions/">Instructions</a>
+                <li<%- ' class="active"' if '/about' is @document.url[0..5] %>><a href="<%- @site.prefixes.root %>/about/">About</a></li>
+
+                <li<%- ' class="active"' if '/instructions' is @document.url[0..12] %>><a href="<%- @site.prefixes.root %>/instructions/">Instructions</a>
                     <ul<%- ' class="hidden"' unless '/instructions' is @document.url[0..12] %>>
-                        <li><a href="/instructions/getting-started.html">Quick Start</a></li>
-                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
-                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/instructions/getting-started.html">Quick Start</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/instructions/going-further.html">Going Further</a></li>
                     </ul>
                 </li>
-            
-                <li<%- ' class="active"' if '/resources' is @document.url[0..9] %>><a href="/resources/"   >Resources</a>
+
+                <li<%- ' class="active"' if '/resources' is @document.url[0..9] %>><a href="<%- @site.prefixes.root %>/resources/"   >Resources</a>
                     <ul<%- ' class="hidden"' unless '/resources' is @document.url[0..9] %>>
-                        <li><a href="/resources/freebies.html">Freebies</a></li>
-                        <li><a href="/resources/gallery.html">Gallery</a></li>
-                        <li><a href="/resources/glossary.html">Glossary</a></li>
-                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/resources/freebies.html">Freebies</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/resources/gallery.html">Gallery</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/resources/glossary.html">Glossary</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/resources/helpful-links.html">Helpful Links</a></li>
                     </ul>
                 </li>
             </ul>
-        
+
         </nav><!-- /#site-nav -->
 
     </header><!-- /#site-header -->
-    
-    
-    
+
+
+
     <main id    ="main"
           class ="row"
     >
         <%- @content %>
     </main><!-- /#main -->
-    
-    
-    
+
+
+
     <footer id="site-footer">
         <p>FOOTER | Aenean in erat pharetra tellus egestas mollis ac at justo.</p>
     </footer><!-- /#site-footer -->

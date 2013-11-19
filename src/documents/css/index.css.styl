@@ -17,7 +17,7 @@ img.HomepagePictures
 #site-nav
     ul.nav.nav-pills.nav-stacked
         /* round the outermost corners of the first and last nav items */
-        & > li 
+        & > li
             & > a
                 border-radius 0
             
@@ -26,3 +26,10 @@ img.HomepagePictures
             
             &:last-child > a
                 border-radius 0 0 4px 4px
+            
+            & > ul
+                display hidden
+            
+            &:hover > ul
+            & > a:hover > ul
+                display block
