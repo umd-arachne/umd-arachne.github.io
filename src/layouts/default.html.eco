@@ -86,21 +86,12 @@
     >
         <div class="col-sm-9">
             <!--
-                button to toggle nav (small devices only)
-            -->
-            <p class="pull-right visible-xs">
-                <button type        ="button"
-                        class       ="btn btn-primary btn-xs"
-                        data-toggle ="offcanvas"
-                        value       ="Toggle nav" >Toggle nav</button>
-            </p>
-
-            <!--
                 Arachne Web Development Logo
             -->
             <a  href="<%- @site.prefixes.root %>/"
                 rel ="Home"
                 ><h1><img   id    ="logo"
+                            class ="img-responsive"
                             src   ="<%- @site.prefixes.img %>/Logo.png"
                             alt   ="Arachne Web Development"
                 /></h1></a>
@@ -115,7 +106,7 @@
                 <li<%- ' class="active"' if '/about' is @document.url[0..5] %>><a href="<%- @site.prefixes.root %>/about/">About</a></li>
 
                 <li<%- ' class="active"' if '/instructions' is @document.url[0..12] %>><a href="<%- @site.prefixes.root %>/instructions/">Instructions</a>
-                    <ul<%- ' class="hidden"' unless '/instructions' is @document.url[0..12] %>>
+                    <ul>
                         <li><a href="<%- @site.prefixes.root %>/instructions/getting-started.html">Quick Start</a></li>
                         <li><a href="<%- @site.prefixes.root %>/instructions/step-by-step.html">Step-by-Step</a></li>
                         <li><a href="<%- @site.prefixes.root %>/instructions/going-further.html">Going Further</a></li>
@@ -123,7 +114,7 @@
                 </li>
 
                 <li<%- ' class="active"' if '/resources' is @document.url[0..9] %>><a href="<%- @site.prefixes.root %>/resources/"   >Resources</a>
-                    <ul<%- ' class="hidden"' unless '/resources' is @document.url[0..9] %>>
+                    <ul>
                         <li><a href="<%- @site.prefixes.root %>/resources/freebies.html">Freebies</a></li>
                         <li><a href="<%- @site.prefixes.root %>/resources/gallery.html">Gallery</a></li>
                         <li><a href="<%- @site.prefixes.root %>/resources/glossary.html">Glossary</a></li>
