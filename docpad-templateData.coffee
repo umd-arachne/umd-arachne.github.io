@@ -11,7 +11,7 @@ sitePrefix = ''
 
 prefixes = ->
     return {
-        site       : "#{sitePrefix}"
+        root       : "#{sitePrefix}"
         img        : "#{sitePrefix}/img"
         css        : "#{sitePrefix}/css"
         js         : "#{sitePrefix}/js"
