@@ -110,7 +110,7 @@
 
                 <li<%- ' class="active"' if '/instructions' is @document.url[0..12] %>><a href="<%- @site.prefixes.root %>/instructions/">Instructions</a>
                     <ul>
-                        <li><a href="<%- @site.prefixes.root %>/instructions/getting-started.html">Quick Start</a></li>
+                        <li><a href="<%- @site.prefixes.root %>/instructions/quick-start.html">Quick Start</a></li>
                         <li><a href="<%- @site.prefixes.root %>/instructions/step-by-step.html">Step-by-Step</a></li>
                         <li><a href="<%- @site.prefixes.root %>/instructions/going-further.html">Going Further</a></li>
                     </ul>
