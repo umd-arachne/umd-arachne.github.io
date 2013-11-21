@@ -1,24 +1,7 @@
 ---
 layout: default
+title: Resources
 ---
-
-<div class="row">
-    <div class="col-md-12">
-        <h1>Quarters Layout</h1>
-        <h2>Resources, Instructions, Going Further, Freebies, &amp; Helpful Links use variations of this layout.</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Aliquam porta urna sed ipsum
-            laoreet, et dapibus justo pharetra. Aenean sit
-            amet velit ac nunc euismod pretium non sit amet
-            nisi. Suspendisse rutrum pretium porta. In hac
-            habitasse platea dictumst. Duis laoreet, elit
-            vitae vehicula vestibulum, elit urna
-            sollicitudin quam, ut ornare sem nunc nec
-            eros.</p>
-    </div><!-- /.col -->
-</div><!-- /.row -->
-
 
 <!-- ============ About the "RESOURCES" page ========================
 
@@ -47,93 +30,49 @@ layout: default
     For now, the FAV ICON acts as a placeholder.
 ======================= -->
 
-<!--
-    First row of thumbnails
--->
-<div class="row">
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
 
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
+<header>
+    <h1>Resources</h1>
+    
+    <nav class="well well-sm">
+        <ul class="nav nav-pills nav-justified">
+            <li><a href="freebies.html">Freebies</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="glossary.html">Glossary</a></li>
+            <li><a href="helpful-links.html">Helpful Links</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
+<section class="row">
+    <div class="col-md-12">
+        <h2>Quarters Layout</h2>
+        <p>Resources, Instructions, Going Further, Freebies, &amp; Helpful Links use variations of this layout.</p>
     </div><!-- /.col -->
+    
+    
+    <% for row in ['First', 'Second']: %>
+    <!--
+        <%- row %> row of thumbnails
+    -->
+    <div class="row">
+        
+        <% for n in [0...4]: %>
+        <div class="col-md-3">
+            <a href="#"
+                ><img
+                    src     ="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
+                    class   ="img-responsive"
+                    alt     ="Responsive image"
+                /></a>
+            <p>Description Here</p>
+        </div><!-- /.col -->
+        <% end %>
+        
+    </div><!-- /.row -->
+    <% end %>
+    
+    
+</section><!-- /.row -->
 
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
-</div><!-- /.row -->
 
-
-<!--
-    Second row of thumbnails
--->
-<div class="row">
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
-
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
-
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
-
-    <div class="col-md-3">
-        <a href="#"
-            ><img
-                src="<%- @site.prefixes.img %>/icons/apple-touch-icon-precomposed.png"
-                class="img-responsive"
-                alt="Responsive image"
-            /></a>
-        <p>Description Here</p>
-    </div><!-- /.col -->
-</div><!-- /.row -->

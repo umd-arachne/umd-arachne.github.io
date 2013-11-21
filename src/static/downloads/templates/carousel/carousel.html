@@ -1,0 +1,160 @@
+<!-- Bootstrap 2.3.2 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <!-- Enter your name below. -->
+    <title>Your Name | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- CSS styles -->
+    <link href="css/index-bootstrap.css" rel="stylesheet">
+    <link href="css/index-responsive.css" rel="stylesheet">
+    <link href="css/carousel.css" rel="stylesheet">
+      
+      <!-- WEB FONT -->
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
+    <style>
+
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+    </style>
+  </head>
+
+  <body>
+
+
+
+    <!-- NAVBAR
+    ================================================== -->
+    <div class="navbar-wrapper">
+      <!-- Wrap the .navbar in .container to center it within the absolutely positioned parent. -->
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            
+<!-- ==ENTER YOUR NAME BELOW== -->
+            <a class="brand" href="#">Your name</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <!-- Read about Bootstrap dropdowns at http://twbs.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="photo.html" class="dropdown-toggle" data-toggle="dropdown">Photography<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="photo.html">Landscape</a></li>
+                    <li><a href="photo.html">Miscellaneous</a></li>
+                    <li><a href="photo.html">Portrait</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+
+    <!-- Carousel: Insert your banner images as indicated below.
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="item active">
+        <!-- INSERT YOUR FIRST BANNER AFTER "img/". -->
+          <a href="photo.html"><img src="img/banner1a.jpg" alt="Banner 1"></a>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Your First Banner</h1>
+              <p class="lead">Make a great impression. Insert your best image here.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- INSERT YOUR SECOND BANNER AFTER "img/". -->
+        <div class="item">
+          <a href="photo.html"><img src="img/banner2.jpg" alt="Banner 2"></a>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Your Second Banner</h1>
+              <p class="lead">Remember your images should have a greater width than height. The responsive design will fit accordingly.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- INSERT YOUR THIRD BANNER AFTER "img/". -->
+        <div class="item">
+          <a href="photo.html"><img src="img/banner3.jpg" alt="Banner 3"></a>
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Your Third Banner</h1>
+              <p class="lead">Limit your images to the best 4-5 images. They should link to your best pieces.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+      <!-- INSERT YOUR NAME WHERE IT SAYS "Enter Your Name" -->
+      <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Enter Your Name</p>
+      </footer>
+
+    </div><!-- /.container -->
+
+
+
+    <!-- JavaScript files are found in the js folder. Unless you know what you should do for JavaScript, DO NOT TOUCH.
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/js/bootstrap-transition.js"></script>
+    <script src="js/js/bootstrap-alert.js"></script>
+    <script src="js/js/bootstrap-modal.js"></script>
+    <script src="js/js/bootstrap-dropdown.js"></script>
+    <script src="js/js/bootstrap-scrollspy.js"></script>
+    <script src="js/js/bootstrap-tab.js"></script>
+    <script src="js/js/bootstrap-tooltip.js"></script>
+    <script src="js/js/bootstrap-popover.js"></script>
+    <script src="js/js/bootstrap-button.js"></script>
+    <script src="js/js/bootstrap-collapse.js"></script>
+    <script src="js/js/bootstrap-carousel.js"></script>
+    <script src="js/js/bootstrap-typeahead.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    </script>
+    <script src="js/holder/holder.js"></script>
+  </body>
+</html>

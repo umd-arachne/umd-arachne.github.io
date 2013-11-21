@@ -19,12 +19,203 @@ prefixes = ->
         bootstrap  : "#{sitePrefix}/lib/bootstrap"
     }
 
+freebies = {
+    "Buttons": [
+        {
+            "name": "Round Jewels"
+            "urlPrefix": "/buttons/round_jewels"
+            "alt": "round button"
+        }
+      ,
+        {
+            "name": "Square Jewels"
+            "urlPrefix": "/buttons/square_jewels"
+            "alt": "square button"
+        }
+    ]
+
+    "Icons": [
+        {
+            "name": "Computer Icons"
+            "urlPrefix": "/jenae-icons/Computer_Icons"
+            "alt": "computer icons"
+        }
+      ,
+        {
+            "name": "Design Icons"
+            "urlPrefix": "/jenae-icons/Design_Icons"
+            "alt": "design icons"
+        }
+      ,
+        {
+            "name": "Writing Icons"
+            "urlPrefix": "/jenae-icons/Writing_Icons"
+            "alt": "writing icons"
+        }
+    ]
+
+    "Patterns": [
+        {
+            "name": "Chain Weave"
+            "urlPrefix": "/patterns/chain_weave"
+            "alt": "chain weave"
+        }
+      ,
+        {
+            "name": "Circles"
+            "urlPrefix": "/patterns/circles"
+            "alt": "circles"
+        }
+      ,
+        {
+            "name": "Cooking"
+            "urlPrefix": "/patterns/cooking"
+            "alt": "cooking"
+        }
+      ,
+        {
+            "name": "Diagonal Stripes"
+            "urlPrefix": "/patterns/diagonal_stripes"
+            "alt": "diagonal stripes"
+        }
+      ,
+        {
+            "name": "Greek Double Key"
+            "urlPrefix": "/patterns/greek_double_key"
+            "alt": "Greek double key"
+        }
+      ,
+        {
+            "name": "Hatching"
+            "urlPrefix": "/patterns/hatching"
+            "alt": "hatching"
+        }
+      ,
+        {
+            "name": "Hexagons"
+            "urlPrefix": "/patterns/hexagons"
+            "alt": "hexagons"
+        }
+      ,
+        {
+            "name": "Japanese"
+            "urlPrefix": "/patterns/japanese"
+            "alt": "Japanese"
+        }
+      ,
+        {
+            "name": "Lorem Ipsum"
+            "urlPrefix": "/patterns/lorem_ipsum"
+            "alt": "Lorem ipsum"
+        }
+      ,
+        {
+            "name": "Maple"
+            "urlPrefix": "/patterns/maple"
+            "alt": "maple"
+        }
+      ,
+        {
+            "name": "Oak"
+            "urlPrefix": "/patterns/oak"
+            "alt": "oak"
+        }
+      ,
+        {
+            "name": "Ovals"
+            "urlPrefix": "/patterns/ovals"
+            "alt": "ovals"
+        }
+      ,
+        {
+            "name": "Pointillism"
+            "urlPrefix": "/patterns/pointillism"
+            "alt": "pointillism"
+        }
+      ,
+        {
+            "name": "Trees"
+            "urlPrefix": "/patterns/trees"
+            "alt": "trees"
+        }
+      ,
+        {
+            "name": "Vertical Stripes"
+            "urlPrefix": "/patterns/vertical_stripes"
+            "alt": "vertical stripes"
+        }
+      ,
+        {
+            "name": "Volume"
+            "urlPrefix": "/patterns/volume"
+            "alt": "volume"
+        }
+      ,
+        {
+            "name": "Watercolors"
+            "urlPrefix": "/patterns/watercolors"
+            "alt": "watercolors"
+        }
+
+    ]
+
+    "Stock Photos": [
+        {
+            "name": "Audio"
+            "urlPrefix": "/stock/audio"
+            "alt": "audio"
+        }
+      ,
+        {
+            "name": "Digital"
+            "urlPrefix": "/stock/digital"
+            "alt": "digital"
+        }
+      ,
+        {
+            "name": "Drafting"
+            "urlPrefix": "/stock/drafting"
+            "alt": "drafting"
+        }
+      ,
+        {
+            "name": "Drawing"
+            "urlPrefix": "/stock/drawing"
+            "alt": "drawing"
+        }
+      ,
+        {
+            "name": "Fashion"
+            "urlPrefix": "/stock/fashion"
+            "alt": "fashion"
+        }
+      ,
+        {
+            "name": "Painting"
+            "urlPrefix": "/stock/painting"
+            "alt": "painting"
+        }
+      ,
+        {
+            "name": "Photography"
+            "urlPrefix": "/stock/drawing"
+            "alt": "photography"
+        }
+      ,
+        {
+            "name": "Writing"
+            "urlPrefix": "/stock/written"
+            "alt": "written"
+        }
+    ]
+}
+
 
 
 module.exports = templateData = {
     # Specify some site properties
     site:
-        url:        'https://umd-arachne.github.io'
+        url:        'http://umd-arachne.github.io'
 
         
         # The default title of our website
@@ -54,6 +245,8 @@ module.exports = templateData = {
             "#{prefixes().bootstrap}/js/bootstrap.min.js"
             "#{prefixes().js}/index.js"
         ]
+        
+        freebies: freebies
 
     # -----------------------------
     # Helper Functions

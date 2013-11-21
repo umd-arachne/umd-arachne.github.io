@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Freebies"
+---
+
+<h1>Freebies</h1>
+
+<p>Download these free and ready-to-use icons for your portfolio site. When you download, you have permission to use the icons as you see fit.</p>
+<p>Here is a selection of original artwork made by Arachne team members and generously offered to the public for free use. You are free to edit them according to your taste, but please respect our Creative Commons License. Browse the thumbnails below to download zip folders of visually similar files. Each download comes with an entire set of images with different color variations.</p>
+
+<% urlPrefix = "#{@site.prefixes.img}/resources" %>
+
+<% for key in ['Buttons', 'Icons', 'Patterns', 'Stock Photos'] : %>
+    <section class="row">
+        <h2><%- key %></h2>
+        
+        <p><% if key is 'Buttons': %>
+        Each thumbnail image gives you a preview of that button's theme. When you click a thumbnail image you like, you can download the entire set of buttons. These sets include five or more buttons (including different colors and image formats).
+        <% else if key is 'Icons': %>
+        Each thumbnail image gives you a preview of the icons offered in the set. When you click a thumbnail image you like, you can download the entire set of icons. These sets include three or more icons of different file formats.
+        <% else if key is 'Patterns': %>
+        Each thumbnail image gives you a preview of that pattern. When you click a thumbnail image you like, you can download an entire set of images  with that pattern. These sets include three or more images of different colors, sizes, and file formats. Please note that the patterned images  are seamless so that they are best used in a repeating tile pattern. The thumbnails you see here are previews only, and will not repeat success fully. Use the image provided in your downloaded .Zip folder for the best effect.
+        <% else if key is 'Stock Photos': %>
+        Each thumbnail image gives you a preview of an artistic theme. When you click a thumbnail image you like, you can download the entire set of s tock photos. Stock photos are digital photos available for public use without any copyrights or royalty fees--they are free! These sets include  seven or more stock photos with a variety of items associated with that theme.
+        <% end %></p>
+        
+    <% for item in @site.freebies[ key ]: %>
+        <% hrefUrl = "#{urlPrefix}#{item.urlPrefix}.zip"       %>
+        <% imgSrc =  "#{urlPrefix}#{item.urlPrefix}_thumb.jpg"  %>
+
+            <div class="col-sm-4">
+                <h3><%- item.name %></h3>
+                <a href ="<%- hrefUrl %>"
+                   class="thumbnail"
+                   ><img    src     ="<%- imgSrc %>"
+                            class   ="img-responsive"
+                            alt     ="<%- item.alt %>"
+                     /></a>
+            </div>
+    <% end %>
+    
+    </section>
+<% end %>
+

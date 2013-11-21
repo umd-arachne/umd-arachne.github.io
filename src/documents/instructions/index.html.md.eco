@@ -4,23 +4,41 @@ layout: default
 
 # Instructions
 
-«**W.I.P.:** screenshots illustrating how to create a portfolio website»
-
-## The Need for Online Portfolios
-Having an online portfolio allows you to easily showcase your work, market yourself, and become known as an artist.  By creating your own portfolio, you can create a strong online presence and control the information about you that is available to others. It can also act as an extension of your resume and job applications to potential employers, showing evidence of the skills, qualifications, and talent that you possess. It is also beneficial to have all of your work and professional documents organized in a single place and accessible from virtually anywhere.
+## Show-off Your Skills
+Having an online portfolio allows you to easily showcase your work, market yourself, and become known as an artist.  By creating your own port folio, you can create a strong online presence and control the information about you that is available to others. It can also act as an extension of your resume and job applications to potential employers, showing evidence of the skills, qualifications, and talent that you possess. It  is also beneficial to have all of your work and professional documents organized in a single place and accessible from virtually anywhere.
 
 ## How Arachne Web Development Can Help
-We are here to support your professional development and talent. Being students at University of Maryland, we saw a need to spread creativity in the College Park community. By using Arachne Web Development, student-artists (or anyone, really) can easily build their own portfolio and share their creative talent with others. Arachne provides easy-to-use templates and useful, outside resources to make designing and implementing your online portfolio as simple and painless as possible. While the content on Arachne Web Development is free and open to all users, the web host we recommend, TerpConnect, serves only local students at the University of Maryland at College Park.
+We are here to support your professional development and talent. Being students at University of Maryland, we saw a need to spread creativity  in the College Park community. By using Arachne Web Development, student-artists (or anyone, really) can easily build their own portfolio and s hare their creative talent with others. Arachne provides easy-to-use templates and useful, outside resources to make designing and implementing  your online portfolio as simple and painless as possible.
 
+## The Arachne User’s Manual
 If you are a student-artist interested in making an online portfolio to showcase your work, Arachne Web Development can get you started! Creating a new website from scratch can be daunting. Fortunately, coding tutorials, portfolio templates, free images, and helpful links are all available right here, ready to use. There are resources here both for those who have never used coding languages, and for those who are already experienced in HTML and CSS web development.
-
 Please refer to our guides below to being creating your online portfolio:
 
 
-<nav>
-    <ul>
-        <li><a href="getting-started.html">Getting Started</a></li>
-        <li><a href="step-by-step.html">Step-by-Step</a></li>
-        <li><a href="going-further.html">Going Further</a></li>
-    </ul>
-</nav>
+## Directions
+So, you want to create an online portfolio? Great! Follow these simple steps:
+
+### 1. Create a directory
+This will be the central location of all the files for your website. It is important that your files stay organized so you can reference them easily in your code. If you are using a template provided by Arachne, the directory is also made and ready-to-use. If you prefer starting from scratch, please download our provided directory <strong>here</strong>.
+
+### 2. Download a portfolio template <small>(Optional)</small>
+Here at Arachne Web Development, you have the option of three layout and design schemes for your customization. Each template has a downloadable Zip folder of all the files to create that basic look. We have provided commentary within the HTML files to locate and explain the different parts of the code. You may populate these templates with your own content, including text, images, fonts, colors, and even additional web pages. Download the templates from any these pages: <a href="/">Home</a>, <a href="quick-start.html">Quick Start</a>, or <a href="step-by-step.html">Step by Step</a>.
+
+### 3. Edit the HTML code
+The HTML code handles the main content of your page, by adding text, images, hyperlinks, rows, and columns. You can edit the code in a program as simple as Notepad. However, we recommend using an actual source-code editor with additional features that make the code writing process easier. They often include color coding, tag completion hints, and preview options. Komodo Edit 8 is one source-code editor we recommend. We provide a detailed tutorial on using the free code editor, Komodo Edit 8, if you would like to follow along with our step-by-step instructions. See more information about that on <a href="step-by-step.html">Step by Step</a>.
+
+### 4. Customize the CSS code
+The CSS code addresses the visual treatment of your web site, including the background, colors, fonts, special image effects, pop-overs, and much more. You can edit the CSS code in the same code editor you used for your HTML. We recommend using the CSS file provided from Twitter Bootstrap that we annotated for you. Make your edits on a copy, so you always have a back-up. It is also a good idea to only keep the parts of the CSS you are specifically using for your website and deleting the others in order to make validating the code easier later. (Hence, keeping a copy of the original CSS file.)
+
+### 5. Validate your HTML and CSS file
+You will need to another website for this part. A markup validation service ensures a website works properly and displays correctly on multiple web browsers. To locate and correct coding errors in the HTML and CSS files for new and revised websites, W3C Validator offers a free file check to list code mistakes. See the link on <a href="/resources/helpful-links.html">Helpful Links</a>.
+
+### 6. Upload your website and go live
+You must upload your website to the Web so people not on your computer can also view your new online portfolio. The solution to that problem is using a web host. A web host stores a person’s or organization’s files on its own server and provides the maintenance and networking on behalf of the client. As a student at the University of Maryland, College Park campus, you have access to a web space called TerpConnect. If you are not a UMD student, we recommend the free  web host we are using, called GitHub. On the other hand, you may consider professional web hosting to get your new portfolio more exposure. GoDaddy, for example, is a low-cost professional web host. See  more about web hosting on <a href="step-by-step.html">Step by Step</a>.
+
+## For More Information
+Please refer to our guides for more details, including thorough step-by-step instructions and video tutorials:
+
+* [Quick Start](quick-start.html): A simple guide to creating a portfolio with the default settings. Most of the coding is already completed on your behalf.
+* [Step by Step](step-by-step.html): A thorough guide to creating a portfolio, with the option to customize each step. Users are encouraged to change the code to fit their tastes, and tutorials here will help along the way.
+* [Going Further](going-further.html): Tips for the advanced web developer experienced in code. Also, tips for announcing and marketing your completed online portfolio.

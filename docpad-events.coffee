@@ -36,7 +36,7 @@
 # serverAfter
 #
 
-module.exports = events = {
+events = {
     
     # Add custom server routes before the docpad's routes get added
     serverExtend: (opts) ->
@@ -60,30 +60,38 @@ module.exports = events = {
                 next()
     
     #generateAfter: ->
-        # for item in docpad.getCollection('design').toJSON()
-        #     console.log()
-        #     console.log()
-        #     for own key, value of item
-        #         unless key in ['source', 'header', 'meta', 'body', 'content', 'contentRendered', 'contentRenderedWithoutLayouts']
-        #             console.log("\t#{key}: #{value}") 
+    #   for item in docpad.getCollection('design').toJSON()
+    #       console.log()
+    #       console.log()
+    #       for own key, value of item
+    #           unless key in ['source', 'header', 'meta', 'body', 'content', 'contentRendered', 'contentRenderedWithoutLayouts']
+    #               console.log("\t#{key}: #{value}") 
         
-    # renderDocument: (opts) ->
-    #     {extension, templateData, file, content} = opts
-    #     console.log()
-    #     console.log( typeof content )
+    #renderDocument: (opts) ->
+    #    {extension, templateData, file, content} = opts
+    #    if 'freebies' in opts.templateData?
+    #        console.log()
+    #        console.log( templateData )
+    #        console.log()
         
-        
+
+    #   render
+    #   ------
     #   Called per document, for each extension conversion. 
     #   Used to render one extension to another. 
     #
-    # Options:
-    #   inExtension     the extension we are rendering from
-    #   outExtension    the extension we are rendering to
-    #   templateData    the template data that we will use for this document's rendering
-    #   file            the model instance for the document we are rendering
-    #   content         the current content that this document contains;
-    #                   you shall overwrite this option with any updates you do
-    # render: (opts) ->
-    #     {inExtension,outExtension,templateData,file,content} = opts
-    #     docpad = @docpad
+    #   Options:
+    #     inExtension     the extension we are rendering from
+    #     outExtension    the extension we are rendering to
+    #     templateData    the template data that we will use for this document's rendering
+    #     file            the model instance for the document we are rendering
+    #     content         the current content that this document contains;
+    #                     you shall overwrite this option with any updates you do
+    #render: (opts) ->
+    #    docpad = @docpad
+    #    if 'freebies' in opts.templateData?
+    #        console.log()
+    #        console.log(freebies)
 }
+
+module.exports = events

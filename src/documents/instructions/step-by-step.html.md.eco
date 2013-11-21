@@ -1,42 +1,31 @@
 ---
 layout: default
+title: Step-by-Step
 ---
 
 # Step-by-Step
 
-## Introduction: The Need for Online Portfolios
-**(Will be edited to better suit desired audience)**
-Having an online portfolio allows you to easily showcase your work, market yourself, get your name out there, and become known as an artist.  By creating your own portfolio, you can create a strong online presence and control the information about you that is available to others. It can also act as an extension of your resume and job applications to potential employers, showing evidence of the skills, qualifications, and talent that you possess. It is also beneficial to have all of your work and professional documents organized in a single place and accessible from virtually anywhere.   
+## Brief Directions
+As a quick recap of the User Manual on the [Instructions](./) page, there are five to six steps from beginning your portfolio to making it live on the web:
 
-## How Arachne Web Development Can Help
-**(Will definitely be edited/revised)**
-We are here to make this happen. Being students at University of Maryland, we saw a need to spread creativity in the College Park community. By using Arachne Web Development, student-artists (or anyone, really) can easily build their own portfolio and share their creative talent with others. Arachne provides easy to use templates and useful, outside resources to make designing and implementing your online portfolio as simple and painless as possible. While the content on Arachne Web Development is free and open to all users, the web host we recommend, TerpConnect, serves only local students at the University of Maryland at College Park. 
+1. Create a directory
+2. _Optional:_ Download a portfolio template
+3. Edit the HTML code
+4. Customize the CSS code
+5. Validate your HTML and CSS files
+6. Upload your website and go live!
 
-## Using Arachne Web Development (Tour)
-If you are a student-artist interested in making an online portfolio to showcase your work, Arachne Web Development can get you started! Creating a new website from scratch can be daunting. Fortunately, coding tutorials, portfolio templates, free images, and helpful links are all available right here, ready to use. There are resources here both for those who have never used coding languages, and for those who are already experienced in HTML and CSS web development.
- 
-Navigation is found to the right-hand side of the web page. To return Home, simply click on the logo. The sidebar directs to the main pages of the Arachne website. Here is a brief overview of the content offered on each page of Arachne Web Development:
+You can find more detailed instructions throughout this web page on creating your online portfolio in HTML. 
 
-* **Home (Logo):** Introduction to Arachne Web Development and a preview of the portfolio templates.
-* **About:** Who we are, what we do, and why we do it!
-* **Instructions:** The main page for guides on creating online portfolios using Arachne Web Development.
-  - **Quick Start:** A simple guide to creating a portfolio with the default settings. Most of the coding is already completed on your behalf.
-  - **Step by Step:** A thorough guide to creating a portfolio, with the option to customize each step. Users are encouraged to change the code to fit their tastes, and tutorials here will help along the way.
-  - **Going Further:** Tips for the advanced web developer experienced in code. Also, tips for announcing and marketing your completed online portfolio.
-* **Resources:** The main page for the freeware and vocabulary of Arachne Web Development.
-  - **Freebies:** Free icons, buttons, background patterns, and stock images to use in the making of your custom portfolio.
-  - **Gallery:** Showcase of the portfolio layout and design templates at Arachne Web Development. Download the files here to begin creating and customizing your own online portfolio!
-  - **Helpful Links:** Third-party resources Arachne Web Development recommends to provide further instruction on coding a portfolio website, testing it for errors, and uploading it to the web.
-  - **Glossary:** Definitions of common web development vocabulary.
-
-While the content on Arachne Web Development is free and open to all users, the web host we recommend, TerpConnect, serves only local students at the University of Maryland at College Park.
-
-Do not forget to announce your newly created online portfolio! Please refer to our publicizing tips on our [Going Further](goingfurther.html) page. If you liked using Arachne Web Development, please share us with your friends and family by Tweeting about us or giving us a +1 using the social media icons.
+_But first..._
 
 
-## Defining HTML
+## What _is_ HTML?
+
+### Defining HTML
 HyperText mark-up language, or HTML, is a coding language used to write web pages. In particular, the “mark-up” of HTML means that coders annotate the web content so that computers (and people) can read the content. 
 
+### The Basic Parts of HTML Code
 The parts of HTML code are simple. Every line of code begins and finishes with a “tag”, or pairs of left and right-angle brackets. The opening tag features a “character” labeling what the type of content that code will address. The opening tag often features an “attribute” as well to make this label more specific. The closing tag simply adds a slash mark to tell the computer the line is complete. 
 
 An HTML code example looks like this:
@@ -47,115 +36,237 @@ The character `p` (which stands for “paragraph”) appears within the opening 
 
 Another example of HTML code with an attribute is this:
 
-
-    <a href="https://umd-arachne.github.io/">Arachne Web Development</a>
+    <a href="http://umd-arachne.github.io">Arachne Web Development</a>
 
 The character `a` means a hyperlink. The attribute `href` abbreviates “hyperlink reference,” and tells the computer what kind of hyperlink it is searching for and where the computer can find it. Here, the hyperlink goes to another website. You can also add links to files on your computer as well with `href`.
 
 Tags, characters, and attributes are all the parts you need to write HTML code. If you would like to read more about HTML, please check out our [Glossary](glossary.html) entry.
 
-To write and edit HTML code, you simply need a plain-text editor like Notepad. However, this can dull and tedious. Instead, source-code editors provide users with additional features that ease the coding process, including color coding, tag completion hints, and preview options. Komodo Edit 8 is one free source-code editor we recommend. To learn more about using Komodo Edit 8, please refer to our tutorial on our [Step by Step](stepbystep.hmtl) page.
+### HTML Directories
+It is important that your files stay organized so you can reference them easily in your code. The standard way to do this in web development is by using a directory. A directory is the central location of all the files for your website. One main folder houses all your HTML web pages and sub-folders for all your images, fonts, and scripts.
+
+### Writing and Editing HTML Code
+To write and edit HTML code, you simply need a plain-text editor like Notepad. However, this can dull and tedious. Instead, source-code editors provide users with additional features that ease the coding process, including color coding, tag completion hints, and preview options. Komodo Edit 8 is one free source-code editor we recommend. To learn more about using Komodo Edit 8, please refer to our tutorial further down on this page.
 
 Adobe Dreamweaver is another popular _visual_ source-code editor. The visual nature of this program means that users can work with live previews of the websites and do not need to know the code at all. However, as tempting as this is, Dreamweaver also inputs its own background code which can sometimes disrupt the website from reading properly.
 
 
-## Resources to Get You Started on Building Your Portfolio
+## Organizing Your Portfolio Directory
+It is important that your files stay organized so you can reference them easily in your code; a directory is your solution! This will be the central location of all the files for your website.  
 
-### Template Gallery
-Here at Arachne Web Development, you have the option of three layout and design schemes for your customization. Each template has a downloadable Zip folder of all the files to create that basic look. We have provided commentary within the HTML files to locate and explain the different parts of the code. You may populate these templates with your own content, including text, images, fonts, colors, and even additional web pages.
+**Our templates provide ready-to-use directories already within your download.**
 
-#### Carousel Layout (hyperlink)
-The Carousel Layout will be heavy in visual content. It is the ideal layout for visual artists like drawers, painters, and photographers. 
+If you prefer to work from scratch, please download our provided directory by following the steps below. ** Arachne: Please double-check the zip link.**
 
-#### Grid Layout (hyperlink)
-The Grid Layout will be heavy in textual content. It is the ideal layout for artists that work primarily with text or sound, like writers and musicians. 
-
-#### Geometric Layout (hyperlink)
-The Geometric Layout will have equal emphasis on both visual and textual content. It is the ideal layout for mixed media artists, like designers and chefs.
-
-## Tutorials
-* "Navigating Arachne Web Development" as written instructions to using our website and video (no Wizard)
-* "Quick Start to Komodo Edit" as a video and downloadable Wizard
-* “The Student’s Guide to TerpConnect Web Hosting” written instructions, video, and downloadable Wizard
+1. [Download the House Folder Zip](./house_folder.zip).
+2. Rename the main folder to what ever you like. (But don’t rename any folders within it!)
+3. Place all of the respective items into their folders. Put your images in `image/`, and your HTML files into `main/`.
 
 
-# Part 1, Video #1
 
-## Quick Start to Komodo Edit
+## Customization
+### Using the Template Gallery
+Here at Arachne Web Development, you have the option of three layout and design schemes for your customization. Each template has a downloadable Zip folder of all the files to create that basic look. We have provided commentary within the HTML files to locate and explain the different parts of the code. You may populate these templates with your own content, including text, images, fonts, colors, and even additional web pages. You can start by editing `index.html` to customize your portfolio homepage.
+
+* #### [Carousel Layout](../downloads/templates/carousel) (hyperlink)
+The Carousel Layout will be heavy in visual content. It is the ideal layout for visual artists like drawers, painters, and photographers. However, anyone can use this template, really.
+
+* #### Grid Layout (hyperlink)
+The Grid Layout will be heavy in textual content. It is the ideal layout for artists that work primarily with text or sound, like writers and musicians. However, anyone can use this template, really.
+
+### Using Freebies
+Customize your online portfolio with free resources, courtesy of Arachne Web Development! Consider using buttons, icons, patterns, and stock images. Browse our wares at [Freebies](freebies.html). Edit them however you like, but please respect our Creative Commons License.
+
+
+
+## Editing Code
+If you are completely new or inexperienced with editing code, we recommend downloading and installing the free code editor, Komodo Edit 8, so you can follow along with our step-by-step tutorials.
+
+### Code Snippets
+To help get you started on coding your online portfolio, here are code snippets from some of the most common and popular HTML and CSS features. Go to the bottom of this page to browse samples.
+
+**«insert anchor to Code Snippets»**
+
+
+### Quick Start to Komodo Edit 8
+
+#### Part 1: Inserting Your Work into Your Portfolio
 All you need to edit HTML and CSS code is a plain-text editor, like Notepad. However, we recommend using a source-code editor with additional features that make the code writing process easier. They often include color coding, tag completion hints, and preview options. Komodo Edit 8 is one source-code editor we recommend.
 
-#### Inserting Your Work into Your Portfolio
-
-* [Download Komodo Edit here](http://www.activestate.com/komodo-edit/downloads). This completely free editor allows you to build your site on your own.
+##### Open Komodo Edit 8.
+* [Download Komodo Edit](http://www.activestate.com/komodo-edit/downloads). This completely free editor allows you to build your site on your own.
 * Once installed, open Komodo Edit and your portfolio folder containing your links.
-* In Komodo Edit, access the folder's file named `index.html`. This is your homepage, also known as the [index page](../resources/glossary.html). Your HTML files are your webpages containing text, images, etc. Each HTML file links with specific CSS files. Your CSS files format your webpages accordingly.
+
+##### Adding Text, Images, and Links to Your HTML File
+* In Komodo Edit, open the file `index.html`. This is your homepage, also known as the [index page](../resources/glossary.html). Your HTML files are your webpages containing text, images, etc. Each HTML file links with specific CSS files. Your CSS files format your webpages accordingly.
 * Drop your pictures and texts as indicated in the index file. Remember to copy the name of your files verbatim. Otherwise, the image will not show up online. Do not mess with any HTML tags such as [those listed here](http://www.w3schools.com/tags/).
-* Upon dropping your images and text into the file, you will want to preview the file. The preview will show you how your file will appear online without your actually publishing it. Click on the globe icon at the top of the Komodo Edit window. A dialog box will ask you how you want to preview the document. Select the browser and click OK.
-* Check your page. Are the pictures in the right order? Are there any typos? Have you inserted your name into the footer? If so, go back to Komodo Edit and fix your mistakes. You can visit the [Going Further page](../instructions/goingfurther.html) and the [Helpful Links](../resources/helpfullinks.html) page for troubleshooting help. The fastest way to check errors is to right click your page and click "Inspect Element." Your browser or your Firebug app (depending on which you choose) will indicate the error that requires fixing.
+* Upon dropping your images and text into the file, you will want to preview the file. The preview will show you how your file will appear online without your actually publishing it. Click on the globe icon at the top of the Komodo Edit window. A dialog box will ask you how you want to preview the document. Select the browser and click **OK**.
+
+##### Checking Your HTML Web Page
+* Check your page. Are the pictures in the right order? Are there any typos? Have you inserted your name into the footer? If so, go back to Komodo Edit and fix your mistakes. You can visit the [Going Further page](../instructions/going-further.html) and the [Helpful Links](../resources/helpful-links.html) page for troubleshooting help. The fastest way to check errors is to right click your page and click **Inspect Element**. Your browser or your Firebug app (depending on which you choose) will indicate the error that requires fixing.
 * After fixing your error, repeat the steps above for your subpages.
 * Check your site. If you would like to maintain this layout, you are ready to host on TerpConnect. If you would like to customize the appearance of the site, follow the steps listed under Customizing Your Portfolio.
 
 
-# Part 2, Video #1
+#### Part 2: Customizing Your Portfolio
 
-## Customizing Your Portfolio
+##### Gathering Any Additional Resources
+* Before you begin customizing the layout in your portfolio site, browse through our [CSS](../resources/helpful-links.html) resources in the [Helpful Links page](../resources/helpful-links.html). Planning is essential when you publish anything. How would you use your portfolio site to convey who you are as an artist/designer? Consider color, patterns, and the type of content. **Note:** If you have a lot of visual content, consider refraining from bright colors in your background. You do not want your background to compete with your artwork/designs.
 
+##### Creating Your CSS File
+* Now that you have chosen how you can customize your site, you will first need to start a new CSS file. In Komodo Edit, go to File ► New ► New File. Save the file as `CustomStyle.css` in the `css/` folder. **IMPORTANT:** You will use this CSS file AND the original CSS files for all of your site files.
+* When creating a new appearance, keep your `CustomStyle.css` in one Komodo Edit window and the Arachne files in another Komodo Edit window. Open the original CSS files and your HTML files. Keep these files in one Komodo Edit window by moving your `CustomStyle.css` to a new window. Right-click the tab of `CustomStyle.css` and click **Move to a New Window**. This will allow you to easily refer to the original files to customize your layout.
 
-* Before you begin customizing the layout in your portfolio site, browse through our <a href="../resources/helpfullinks.html">CSS</a> resources in the <a href="../resources/helpfullinks.html">Helpful Links page</a>. Planning is essential when you publish anything. How would you use your portfolio site to convey who you are as an artist/designer? Consider color, patterns, and the type of content. Note: If you have a lot of visual content, consider refraining from bright colors in your background. You do not want your background to compete with your artwork/designs.
-* Now that you have chosen how you can customize your site, you will first need to start a new CSS file. In Komodo Edit, go to File > New > New File. Save the file as "CustomStyle.css" in the css folder of your site. IMPORTANT: You will use this css file AND the original css files for all of your site files.
-* When creating a new appearance, keep your CustomStyle.css in one Komodo Edit window and the Arachne files in another Komodo Edit window. Open the original css files and your HTML files. Keep these files in one Komodo Edit window by moving your CustomStyle.css to a new window. Right-click the tab of `CustomStyle.css` and click "Move to a New Window." This will allow you to easily refer to the original files to customize your layout.
-* Go to each of your HTML files. Press <kbd>⌘F</kbd> (OS X) or <kbd>Ctrl+F</kbd> (if you are using a PC) to Find a specific word or phrase in Komodo Edit. Type <samp>link</samp> and press Enter. Between the `&gt;head&lt;` and `&gt;/head&lt;` tags, you will find the `&gt;link` tag (ending with `/&lt;`) that links to the CSS file you downloaded with the template. **Do not delete this link.** Instead, copy and paste the copy of the link underneath Arachne's CSS links. Your new CSS file `CustomStyle.css` will override Arachne's CSS files.
+##### Structuring Your HTML and CSS Content
+###### Linking Custom CSS Files
+* Go to each of your HTML files. Press <kbd>⌘F</kbd> (OS X) or <kbd>Ctrl+F</kbd> (if you are using a PC) to Find a specific word or phrase in Komodo Edit. Type <samp>link</samp> and press Enter. Between the `<head>` and `</head>` tags, you will find the `<link` tag (ending with `/>`) that links to the CSS file you downloaded with the template. **Do not delete this link.** Instead, copy and paste the copy of the link underneath Arachne’s CSS links. Your new CSS file `CustomStyle.css` will override Arachne’s CSS files.
 * You are ready to add changes to your portfolio appearance. As you begin to customize your site, remember that specificity is the first and foremost law of CSS. Whatever specific rule is put into place will beat whatever was more general. For example, any text governed by a heading rule will no longer follow the rule that dictates what the body of the HTML document does. Whatever rule is most recent beats whatever was mentioned earlier. For example, your custom CSS file overrides the Arachne CSS files because it was listed last.
+
+###### Changing HTML Tags and CSS Elements
 * Pay attention to the comments in the HTML and Arachne CSS files. They will help you identify how you can change the appearance. If for example you would like to change link colors, you could go to the Arachne CSS file and press <kbd>⌘F</kbd> or <kbd>Ctrl+F</kbd> to find <samp>link</samp>. You will see `a:link { color: #_ _ _ _ _ _;}`. Change the color by cutting that code and pasting it into your new CSS file. Add the hex color by typing its six-digit code you identified online.
-* When adding a new paragraph, place the `&gt;p&lt;` and `&gt;/p&lt;` tags at the beginning and the end of the paragraph respectively. Some tags like `&gt;link /&lt;` don’t have a closing tag; these are known as <dfn>empty elements</dfn>. Refer to the [HTML tags](http://www.w3schools.com/tags/ref_ascii.asp) found in the bottom left of the page for more info.
-* When adding a new [CSS](../resources/helpfullinks.html) rule, remember the format `«HTML element» { property: specific}`. For example, if I wanted to change the link color as I hover over the link, I type `a:hover {color: #33ccff}`. Above the new change, type `/* Hovered link color */`. This is a comment in CSS that will help you understand your code as you go along. Comments will not show up on the page as long as they are flanked by `/*` and `*/`.
-* Remember if you run into problems, you can refer to the [Helpful Links page](../resources/helpfullinks.html) to help you with troubleshooting.
+* When adding a new paragraph, place the `<p>` and `</p>` tags at the beginning and the end of the paragraph respectively. Some tags like `<link />` don’t have a closing tag; these are known as <dfn>empty elements</dfn>. Refer to the [HTML tags](http://www.w3schools.com/tags/ref_ascii.asp) found in the bottom left of the page for more info.
+* When adding a new [CSS](../resources/helpful-links.html) rule, remember the format `«HTML element» { property: specific}`. For example, if I wanted to change the link color as I hover over the link, I type `a:hover {color: #33ccff}`. Above the new change, type `/* Hovered link color */`. This is a comment in CSS that will help you understand your code as you go along. Comments will not show up on the page as long as they are flanked by `/*` and `*/`.
 * Repeat the customizing steps above as necessary.
-* Proofread and edit your site content very thoroughly. Once completed, you may now proceed to webhosting on TerpConnect.
+
+###### Troubleshooting
+* Remember if you run into problems, you can refer to the [Helpful Links page](../resources/helpful-links.html) to help you with troubleshooting.
 
 
-# Video #2
-### The Student’s Guide to TerpConnect
-As a student at the University of Maryland, College Park campus, you have access to a web space called TerpConnect. TerpConnect allows students to store up to one gigabyte on campus servers for free. You can use this free server to upload your own website too! All you need is your regular student log-in information (the same as your MyUMD account).  Gather your website files, and follow the steps below to upload your new online portfolio.
+##### Proofreading
+* Proofread and edit your site content very thoroughly. Once completed, you may now proceed to web hosting on TerpConnect.
 
+
+
+## Validating Your Code
+Arachne Web Development recommends a third-party validation website at [Helpful Links](helpful-links.html). Look for W3C Validator. On the same Helpful Links page, you can also find further guides on coding a portfolio website, testing it for errors, and uploading it to the web.
+
+
+
+## The Student’s Guide to Web Hosting
+You must upload your website to the Web so people not on your computer can also view your new online portfolio. The solution to that problem is using a web host. A web host stores a person’s or organization’s files on its own server and provides the maintenance and networking on behalf of the client.
+ 
+**As a student at the University of Maryland, College Park campus,** you have access to a web space called TerpConnect. TerpConnect allows students to store up to one gigabyte on campus servers for free. You can use this free server to upload your own website too! All you need is your regular student log-in information (the same as your MyUMD account). Gather your website files, and follow the steps below to upload your new online portfolio.
+
+**If you are not a UMD student,** we recommend the free  web host we are using, called GitHub. On the other hand, you may consider professional web hosting to get your new portfolio more exposure. GoDaddy, for example, is a low-cost professional web host. You may follow along with the TerpConnect tutorial below to get a basic idea of what to do next.
+
+#### Using TerpConnect
+##### Preparing Your Files for Upload
 * Gather all your final portfolio HTML, CSS, and any JS files. Please refer to the Arachne Web Development [tutorial on folder organization here](#) if you are uncertain how to best organize your files before uploading.
-    * _Optional:_ _This step is strongly recommended:_ download file transfer software at Firefox Add-ons.
-    Although you can upload files through TerpConnect, we recommend using the Mozilla Firefox add-on, Fire FTP. This enables you to upload entire folders at a time, rather than individual files. Once the add-on has been downloaded from Firefox Add-ons, you can access the program from the main menu in the Firefox web browser, in the big orange button of the toolbar. A new line item will appear, “Web Developer.” Look to the bottom of that menu for a seahorse icon and open Fire FTP.
-        * Create a new account. A pop-up form, “Account Manager,” will appear and you will need to input the server information. Go through the tabs and input the following:
-        
+
+##### Installing Fire FTP for File Transfer
+* _Optional: This step is strongly recommended for UMD Students:_ Download file transfer software at Firefox Add-ons.
+* Although you can upload files through TerpConnect, we recommend using the Mozilla Firefox add-on, Fire FTP. This enables you to upload entire folders at a time, rather than individual files. Once the add-on has been downloaded from Firefox Add-ons, you can access the program from the main menu in the Firefox web browser, in the big orange button of the toolbar. A new line item will appear **Web Developer**.”Look to the bottom of that menu for a seahorse icon and open Fire FTP.
+* If you aren’t a UMD student, you may not need to download any file transfer programs. Your chosen web host is likely to provide you with one of their own.
+
+##### Connecting to Your Web Host
+* If you are a UMD student, go ahead and create a new account in Fire FTP or other file transfer program. A pop-up form, **Account Manager**, will appear and you will need to input the server information. Go through the tabs and input an account or server name; host name or Web address of your server; log-in username and password; connection security type; and Web port number. 
+
+* If you are a student at the University of Maryland, you can use TerpConnect. Your information looks like this:        
             _Account Name:_ TerpConnect
             _Host (Name):_ terpconnect.umd.edu
             _Login:_ your student name and password
             _(Connection) Security:_ SFTP
             _Port_: 22
 
-    * Now click “Connect.” You may receive a message about a registry key in the cache-—proceed. You are now able to copy-paste entire folders directly onto the TerpConnect server. 
-    
-* Open your Internet browser, and go to TerpConnect at [http://terpconnect.umd.edu]. Click on “File Manger” in the navigation bar. Click on the giant button, “Access My Files.” Now, fill in the blanks of the pop-up screen with your regular student log-in.<li>  
+* If you are not using TerpConnect, double-check this with your server. Often, web hosts handle this part for you and you do not need to input this information before using their service. GitHub and GoDaddy are like this.
+
+* Now, connect to the file transfer program in Fire FTP or your web host’s File Manager. UMD students, click **Connect** in Fire FTP. You may receive a message about a registry key in the cache—proceed. You are now able to copy-paste entire folders directly onto the TerpConnect server. 
+
+##### Uploading Your Files to the Web Host
+* Open your Internet browser, and go to the file transfer program in Fire FTP or your web host's File Manager. **The following steps pertain to UMD Students using TerpConnect only.**
+* UMD students may go to TerpConnect at <http://terpconnect.umd.edu>. Click on **File Manager** in the navigation bar. Click on the giant button, “Access My Files.” Now, fill in the blanks of the pop-up screen with your regular student login.<li>  
 * The TerpConnect File Manager shows you almost all your server folders. It automatically opens “Home,” but you actually need to back up a bit. Click on your student log-in name, and a new list of folders will come up. See `pub`? That stands for “public access.” Here is the destination folder for your files.
 * Return to Fire FTP. Browse the menu of your local hard drive on the left, select your online portfolio folder, and use the green arrows in the center to move the files right, onto the TerpConnect server. This should be an instant and easy transfer, much quicker than using TerpConnect by itself.
 * Return back to TerpConnect’s File Manager. Briefly look over all your file names and extensions and checking for consistency in capitalization. Many servers are not caps-sensitive, but TerpConnect is. TerpConnect also occasionally capitalizes files names or extensions, changing something like `photo.jpg` to `Photo.JPG`. If you see any changes, correct them now. 
-* *Your website is now live on the world wide web!* Open a new window in a web browser and type in: `terpconnect.umd.edu/~yourUMDname/index.html`. 
 
-**Troubleshooting:** If your website looks unusually plain, check the file names again in the TerpConnect File Manager. You should also check that the folders on TerpConnect are organized and named exactly as you had them on your computer's hard drive. Once these things are corrected, your website should run properly now.
+##### Going Live
+* Finish uploading all of your files to TerpConnect or other third-party File Manager.
+* Your website is now live on the world wide web! Open a new window in a web browser and type in your portfolio address.
+  - If using TerpConnect, type: `http://terpconnect.umd.edu/~yourUMDname/index.html`.
+  - If using GitHub, type: `https://your_repository_name.github.io`.
+
+##### Troubleshooting
+If your website looks unusually plain, check the file names again in your File Manager. You should also check that the folders on are organized and named exactly as you had them on your computer's hard drive. Once these things are corrected, your website should run properly now.
 
 
-# Helpful Links
-Arachne Web Development recommends these third-party at [Helpful Links](helpfullinks.html). They provide further instruction on coding a portfolio website, testing it for errors, and uploading it to the web.
-
-## Freebies
-Customize your online portfolio with free resources, courtesy of Arachne Web Development! Consider using buttons, icons, patterns, and stock images. Browse our wares at [Freebies](freebies.html). You are free to edit them to your taste, but please respect our Creative Commons License.
 
 ## Popular Code Snippets
 To help get you started on coding your online portfolio, here are code snippets from some of the most common and popular HTML and CSS features.
 
-## TODO
-**(Insert Code excerpts for common/popular website features, such as `background-image`, `span`, `@font-face`, `div`/`section`, `class`/`id`, etc.)**
+### Adding a Patterned Background
+To add a patterned background to your website, you first need make sure that the image you want is stored within your website’s image folder. Next, open your main CSS file. You will need to go the `body` part of your CSS. If you are using the annotated CSS from the Arachne templates, you can <kbd>Ctrl+F</kbd> for **Body Text/Copywriting** to get there quickly. You will see something like:
 
-### `@font-face`
+`body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  color: #161515;
+  /*background-color: #ffffff;*/
+  background-image: url("../img/retina_wood.png");
+  background-repeat: repeat;
+}`
+
+The lines `background-color` and `background-image` refer to your background. If you want a solid color for your background, use `background-color`. The hexadecimal code you see is one way to specify white. You can also use an <abbr title="Red Green Blue">RGB</abbr> value. If you want a very generic color, such as white, you can also just type `white`. 
+
+The next line is show you can add an image to your background by citing its location in your directory. Here, a seamless wood image is used. If the image is small, like the patterns you find in [Freebies](../resources/freebies.html). You may also want to tell the CSS code to repeat the image.
+
+
+### Customizing the Appearance of Your Images
+HTML puts your image on the web, but CSS manages how it presents itself! Here is a brief commentary on the CSS attributes:
+
+     img {
+         margin: 0px;
+         width: 100%;
+         height: auto;
+         max-width: 100%;
+         vertical-align: middle;
+         border: 0px solid #d4cdbb;
+         -ms-interpolation-mode: bicubic;
+         
+         opacity: 0.4; 
+         /* Changes transparency of your images. On a scale of 0.0 to 1.0; lower numbers are less visible. */
+         
+         filter:alpha(opacity=40); 
+         /* Transparency edits for IE8 and earlier. On a scale of 0 to 100; lower numbers are less visible. */
+     }
+
+     
+The CSS select `img` means “this part of the CSS is for styling all images in your HTML”. This section is therefore your default settings. How is here the code breaks down:
+
+* `margin` refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. 
+* `width` and `height` you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. `max-width` prevents blurry images by limiting the resizing of the image. 
+* `vertical-align` places your image in the vertical center of a section. 
+* `border` is where, of course, you can add borders. The first part (`0px`) specifics `border-width`. The higher the pixel count, the thicker it is. The next part specifies the style of your border. `solid` is typical, but you can also add `dotted` or `dashed` borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. 
+* Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.
+
+You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your `img` tags, like `class="red_border"`, if your new settings will apply to multiple images on the same web page. In CSS, you would add `img .red_border {`. If you want to customize the appearance of exactly one image, you should use an `id`. In HTML, add an `id` inside your `img` tags (like `id="profile_image`). Then, in your CSS, add `#profile_image { ... }`.
+
+
+### Embedding Videos
+Your online portfolio is not restricted to just text and images. You can add videos! You can do this by linking to a video you have already uploaded to YouTube. Copy the code below and fill in the blanks with the title and web link to your video:
+
+    <!-- this tag allows the HTML code to be seen in code -->
+    <iframe width="420" height="345" 
+        src="http://www.youtube.com/embed/XGSy3_Czz8k">
+    </iframe>
+
+The `iframe` creates window to the YouTube video on your website. You want to use the same dimensions here to maintain the proper aspect ratio of the video, or else the video could be cropped or distorted.
+
+You can also embed a YouTube video into your code. Rather than creating a window into a third-party web page, embedding stores the video means the video is stored within your very web page. Here is what that looks like:
+
+     <embed
+          width="420" height="345"
+          src="http://www.youtube.com/v/XGSy3_Czz8k"
+          type="application/x-shockwave-flash">
+     </embed>
+     
+Notice that here, you must specify a media player in order for it play on your website. YouTube uses Flash's Shockwave player, so cite that.
+
+
+### Adding New Fonts with `@font-face`
 The `@font-face` code is a relatively new invention which allows web developers to display any font they wish on their websites. Previously, they could only choose from a short list of standard “web-safe” fonts, which greatly limited design options. The new `@font-face` code allows web browsers to display even unsafe fonts by embedding that font file within that website's code. When a user accesses that website, their computer downloads the font file as it downloads the rest of the website. Thus, the user can now see the font correctly.
 
-However, we warn users that fonts are often considered “intellectual property”. Many fonts are subject to copyright or require payment for use. Even if you have the font installed on your computer, embedding it within your website's code may violate copyright. Please check that your font allows free use and requires no payment.  Users also have the option of using freeware fonts open to the public at no cost. Please refer to our [Helpful Links](helpfullinks.html) page for free font websites.
+However, we warn users that fonts are often considered “intellectual property”. Many fonts are subject to copyright or require payment for use. Even if you have the font installed on your computer, embedding it within your website's code may violate copyright. Please check that your font allows free use and requires no payment.  Users also have the option of using freeware fonts open to the public at no cost. Please refer to our [Helpful Links](../resources/helpful-links.html) page for free font websites.
 
 The first step of adding `@font-face` is locating your main CSS file. If you are using one of our downloadable templates, this will be your `bootstrap.css` file. Click anywhere, and type:
 
@@ -164,25 +275,26 @@ The first step of adding `@font-face` is locating your main CSS file. If you are
          src: url("../img/YourFontName.ttf"); <------------------ be sure to upload this to your web server too!
      }
 
-This “stores” your font in the code. The first time, call your font whatever is easiest to remember. But in the `src` line, you must go to your Control Panel ► Fonts and type it exactly as you see it there if your font comes locally on your computer.  Alternatively, you can use an hyperlink reference to free fonts website like those mentioned in our [Helpful Links](helpfullinks.html).
+This “stores” your font in the code. The first time, call your font whatever is easiest to remember. But in the `src` line, you must go to your **Control Panel ► Fonts** and type it exactly as you see it there if your font comes locally on your computer.  Alternatively, you can use an hyperlink reference to free fonts website like those mentioned in our [Helpful Links](../resources/helpful-links.html).
 
 To apply your font, use it like this in your CSS code for the `h1`, `h2`, `h3`, or `body`:
 
-      h1,
-      h2{
-          margin: 10px 0;
-          font-family: "YourFontName", serif;
-          font-weight: bold;
-          line-height: 1; <--------may need tweaking depending on font
-          color: #2E2633; <------ I changed color here
-          text-rendering: optimizelegibility;
-      }
+     h1,
+     h2 {
+         margin: 10px 0;
+         font-family: "YourFontName", serif;
+         font-weight: bold;
+         line-height: 1; /* may need tweaking depending on font */
+         color: #2E2633; /* I changed color here */
+         text-rendering: optimizelegibility;
+     }
      
-      body {           <-------------------------- changes ALL body copy
-          font-family: "Verdana", Arial, sans-serif;
-          font-size: 14px;
-          line-height: 20px;
-      }
+     /* changes ALL body copy */
+     body {           
+         font-family: "Verdana", Arial, sans-serif;
+         font-size: 14px;
+         line-height: 20px;
+     }
 
 
 To change the fonts of specific places in your body copy, you will first need to add attributes. The simplest way to do is adding a `class`, like in this example:
@@ -195,11 +307,13 @@ You can name the class whatever you like, just no spaces. Remember that classes 
 Other examples:
 
       .infrastructure_header {
-          font-family: "FontLogic"; Arial, sans-serif;
+          font-family: "FontLogic", Arial, sans-serif;
           font-size: 16px;
-          line-height: 10px; <------------- Notice that the line-height is 10 and the font-size is 16. 
-                                            If there are multiple lines (which can load differently on every computer), 
-                                            they will overlap.
+          line-height: 10px; 
+          /* Notice that the line-height is 10 and the font-size is 16. 
+           * If the text spans multiple lines--which can load differently 
+           * on every computer--they will overlap!
+           */
       }
           
       .infrastructure_body {
@@ -208,11 +322,3 @@ Other examples:
           line-height: 25px;
           text-align: justify;
       }
-
-
-
-### TODO: Tips to Market Your Portfolio
-
-**Description**
-
-**(link to Publishing anchor, within "Going Further" in Arachne website)**

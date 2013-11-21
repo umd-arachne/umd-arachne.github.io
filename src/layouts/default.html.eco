@@ -67,7 +67,6 @@
 <div class="container clearfix">
 
 
-
     <!--
         Tell people using old version of Internet Explorer
         that 2001 called and wants its browser back.
@@ -83,19 +82,22 @@
 
 
     <header id      ="site-header"
-            class   ="row row-offcanvas row-offcanvas-right"
+            class   ="row"
     >
         <div class="col-sm-9">
             <!--
                 Arachne Web Development Logo
             -->
-            <a  href="<%- @site.prefixes.root %>/"
-                rel ="Home"
-                ><h1><img   id    ="logo"
-                            class ="img-responsive"
-                            src   ="<%- @site.prefixes.img %>/Logo.png"
-                            alt   ="Arachne Web Development"
-                /></h1></a>
+            <h1 class="center-block text-center">
+                <a
+                    href="<%- @site.prefixes.root %>/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="<%- @site.prefixes.img %>/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
         </div>
 
 
@@ -133,13 +135,28 @@
     <main id    ="main"
           class ="row"
     >
+        <div class="col-sm-9">
         <%- @content %>
+        </div>
     </main><!-- /#main -->
 
 
 
-    <footer id="site-footer">
-        <p>FOOTER | Aenean in erat pharetra tellus egestas mollis ac at justo.</p>
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated Nov. 17, 2013.</p>
     </footer><!-- /#site-footer -->
 
 

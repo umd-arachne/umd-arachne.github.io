@@ -20,21 +20,36 @@ title: About Arachne Web Development
             again feel that our Team Bios are appropriate.
 ======================= -->
 
-
-<div class="row"> 
-    <h2>Who We Are</h2>
-    <p>Arachne Web Development is an online HTML5 resource for artistic students to create, customize, and publish personal portfolios on the Internet.</p>
+<h1>About</h1>
 
 
-    <h2>Mission Statement</h2>
-    <p>Arachne Web Development promotes artists and designers within the University of Maryland’s student community. Its main goals are inspiring creativity, sharing web resources, and ultimately giving student artists the confidence to share their work with the world.</p>
-
-
-    <h2>Why Arachne Web Development Was Created</h2>
-    <p>Our team believes in “Weaving artists’ and designers’ identities and designs.” With this goal, Arachne Web Development provides you with the tools you need to show who you are as a professional and designer.</p>
-    <p>Explore this site for possibilities.</p>
-    <p>Join the Twitter conversation! <a href="https://twitter.com/search?q=%23ArachneWebDev&src=typd&f=realtime">#ArachneWebDev</a></p>
-
+<div class="row">
+    <div class="col-sm-9">
+        <div class="col-sm-4">
+            <h2>Mission Statement</h2>
+            <p>Arachne Web Development promotes artists and designers within the University of Maryland’s student community. Its main goals are inspiring creativity, sharing web resources, and ultimately giving student artists the confidence to share their work with the world.</p>
+        </div>
+    
+        <div class="col-sm-4">
+            <h2>Who We Are</h2>
+            <p>Arachne Web Development is an online HTML5 resource for artistic students to create, customize, and publish personal portfolios on the Internet.</p>        
+        </div>
+    
+        <div class="col-sm-4">
+            <h2>Our Project’s Creation</h2>
+            <p>Our team believes in “Weaving artists’ and designers’ identities and designs.” With this goal, Arachne Web Development provides you with the tools you need to show who you are as a professional and designer.</p>
+            <p>Explore this site for possibilities.</p>
+            <p>Join the Twitter conversation! <a href="https://twitter.com/search?q=%23ArachneWebDev&src=typd&f=realtime">#ArachneWebDev</a></p>
+        </div>
+        
+        <div class="col-sm-12">
+            <h2>The Origins of Our Name</h2>
+            <div class="row">
+                <p class="col-sm-5">The inspiration for the web development project comes from Roman mythology, but it holds modern day appeal to an artistic audience. “Arachne” was a mortal peasant woman who was the best weaver in the world. Her boastfulness caused the goddess of weaving, Minerva, to challenge her to a weaving contest. Arachne technically “won”—her tapestry was the best.</p>
+                <p class="col-sm-5 col-sm-offset-1">In a jealous rage, Minerva struck her. Then, Minerva only transformed Arachne into a spider as a lifelong punishment for her pride. Arachne’s story provided a message to artists. She produced great art, though at great sacrifice. Young artists can relate to the story, given the modern day challenges to produce beautiful artwork and make a living off of that artistic passion.</p>
+            </div>
+        </div>
+    </div>
 </div> <!-- /.row -->
 
 
@@ -59,7 +74,7 @@ title: About Arachne Web Development
     </div><!-- /.row --> 
     
     <div class="row">
-        <div class="col-sm-4 ">
+        <div class="col-sm-4">
             <h3>Jenae Ramos</h3>
             <p>Jenae is a Psychology major with a Rhetoric minor, who also has graphic design experience. With a love for design, Jenae uses Adobe programs such as Photoshop, Illustrator, Dreamweaver, and InDesign daily. As the communications student assistant at the University of Maryland Office of Sustainability, she frequently updates the website and is comfortable with HTML. In addition, she also has significant experience in promoting organizations through social media. She can assist with content creation, brand identity, and navigation as well as ensuring all details are in order.</p>
         </div>
