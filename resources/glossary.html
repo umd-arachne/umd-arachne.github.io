@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+        <h1 id="glossary">Glossary</h1>
+<p><strong>Know the basic web design terms.</strong> </p>
+<p>Unsure of what all this web development vocabulary means? Search our Glossary to gain a basic understanding of the core concepts. Terms are organized alphabetically. Related words are grouped together.</p>
+<h2 id="css-cascading-style-sheets">CSS: Cascading Style Sheets</h2>
+<p>CSS files allow you to style your website and organize your content efficiently. These link with your HTML files.</p>
+<h2 id="html-hyper-text-markup-language-">HTML: Hyper Text Markup Language:</h2>
+<p>HyperText Markup Language (or <dfn>HTML</dfn>) is a coding language used to write web pages. In particular, the “markup” of HTML means that coders annotate the web content so that computers (and people too) can read the content.</p>
+<h2 id="documentation-">Documentation:</h2>
+<p>Web developers provide commentary on their code using documentation. In HTML, these comments appear as text within <code>&amp;gt;!-- sample comment --&amp;lt;</code> tags, introduced by an exclamation point and hyphens. Documentation often labels which pieces of code serve what purpose as well as explain why the web developer chose the approach he/she did.</p>
+<h2 id="semantic-markup-">Semantic Markup:</h2>
+<p>Semantic markup provides additional information to a website besides the superficial appearance of text and images. This includes adding emphasis to text for screen readers to read, such as <code>strong</code> or <code>emphasis</code> (“emphasis”) to suggest changes in tone. It also includes small pop-ups to explain abbreviations, acronyms, or source citations when they are not spelled out directly in the textual content itself.</p>
+<h2 id="structural-markup-">Structural Markup:</h2>
+<p>Structural markup focuses on basic formatting of the text, to include headline sizes, bold or italics, and paragraphs. It also includes how the web page elements, such as text and images, appear.</p>
+<h2 id="tags">Tags</h2>
+<p>Every line of code begins and finishes with a “tag,” or pairs of left and right-angle brackets. The opening tag features a “character” labeling what the type of content that code will address. The opening tag often features an “attribute” as well to make this label more specific. The closing tag simply adds a slash mark to tell the computer the line is complete. </p>
+<h2 id="javascript-js-">JavaScript (JS)</h2>
+<p>JavaScript (sometimes “JS”) is the main scripting language used in web development. JavaScript is very similar to the programming language Java, but it is object-based, whereas Java is class-based.  Still, JavaScript is most useful when used with other languages, such as HyperText Mark-up Language, to control Java objects. Web developers, game developers, and desktop application software developers all use JavaScript.</p>
+<h2 id="seo-search-engine-optimization-">SEO: Search Engine Optimization:</h2>
+<p>Search engines such as Google, Bing, or AskJeeves match the keywords a user is searching for with the tags a website lists to provide the user answers to his/her questions. When a website uses its tags well, its pages will appear more frequently in the search results and therefore helps increase its traffic. Some organizations offer SEO services to help a website use the most popular keywords to increase appearances on search engines.</p>
+<h2 id="terpconnect">TerpConnect</h2>
+<p>TerpConnect is a web space reserved for current students at the University of Maryland at College Park. Its online server for students to host their files. It also provides free web hosting for students to publish personal web sites.</p>
+<h2 id="validation">Validation</h2>
+<p>A markup validation service ensures a website works properly and displays correctly on multiple web browsers. To locate and correct coding errors in the HTML and CSS files for new and revised websites, V3C Validator offers a free file check to list code mistakes. </p>
+<h2 id="web-host">Web Host</h2>
+<p>A web host stores a person’s or organization’s files on its own server and provides the maintenance and networking on behalf of the client. Web hosting companies may also offer domain name registration, e-mail storage, search engine optimization, web traffic analyses, and other additional services to promote the client’s website.</p>
+
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>

@@ -1,0 +1,17 @@
+@import 'layout.css';
+@import 'colors.css';
+@import 'typography.css';
+body{background-image:url("../img/bg/paint-splatter.png") !important;background-attachment:fixed;background-origin:border-box;background-size:cover}
+img.HomepagePictures{border-width:thin;border-style:solid}
+/*
+ *  CSS transitions for all links
+ */
+a{/* style the most commonly-used properties */transition-property:color,background-color,opacity,text-decoration,text-shadow,box-shadow,transform,scale;transition-duration:.25s;transition-timing-function:ease-out}
+#site-header a[rel=Home]{transition-property:transform,-webkit-transform,-ms-transform,-moz-transform,-o-transform;transition-duration:1s;transition-timing-function:ease-in-out;}
+#site-header a[rel=Home]:hover,#site-header a[rel=Home]:active,#site-header a[rel=Home]:focus{transform:scale(1.1) !important}
+#site-nav ul.nav.nav-pills.nav-stacked > li > a{border-radius:0}
+#site-nav ul.nav.nav-pills.nav-stacked > li:first-child > a{border-radius:4px 4px 0 0}
+#site-nav ul.nav.nav-pills.nav-stacked > li:last-child > a{border-radius:0 0 4px 4px}
+#site-nav ul.nav.nav-pills.nav-stacked ul{display:none;transition-property:display,opacity;transition-duration:.25s;transition-timing-function:ease-out}
+#site-nav ul.nav.nav-pills.nav-stacked .active ul{display:block}
+#main li.row,#main dl.row{vertical-align:top;padding-top:0}

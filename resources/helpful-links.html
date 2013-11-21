@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+        <h1 id="helpful-links">Helpful Links</h1>
+<p>Access free help links and tutorials!</p>
+<p>Arachne Web Development recommends these third-party resources to provide further instruction on coding a portfolio website, testing it for errors, and uploading it to the web.</p>
+<h2 id="html-tutorials">HTML Tutorials</h2>
+<p>[Don’t Fear the Internet] (<a href="http://www.dontfeartheinternet.com/">http://www.dontfeartheinternet.com/</a>) is a wonderful website hosted by web design enthusiasts Jessica Hische and Russ Maschmeyer. It has several resources for the HTML beginner. Simple videos neatly explain what HTML is and how to write HTML code using everyday analogies the common person will understand.
+<img src="/img/helpfullinks/dont_fear_thumb.png" alt="Don&#39;t Fear the Internet"></p>
+<p>[W3Schools] (<a href="http://www.w3schools.com/html/default.asp">http://www.w3schools.com/html/default.asp</a>) introduces HTML coding in the form of easy to follow chapters and coding exercises. It also provides handy references for character codes, web safe fonts, and embedding media into a HTML website. If you are new to HTML, W3Schools also offers a “Try It Editor” where the user can play with code snippets to see what it does.
+<img src="/img/helpfullinks/w3schools_thumb.png" alt="W3Schools"></p>
+<p>[W3 Resources on Bootstrap] (<a href="http://www.w3resource.com/twitter-bootstrap/nav-tabs-and-pills-tutorial.php">http://www.w3resource.com/twitter-bootstrap/nav-tabs-and-pills-tutorial.php</a>) is full of handy guides to the Twitter Bootstrap framework we used on the Arachne Web Development portfolio templates. There is a lot of example code to explain all the features of Bootstrap.
+<img src="/img/helpfullinks/w3bootstrap_thumb.png" alt="W3 Resources on Bootstrap"></p>
+<p>[W3C Validator] (<a href="http://validator.w3.org/">http://validator.w3.org/</a>) is a markup validation service ensures a website works properly and displays correctly on multiple web browsers. To locate and correct coding errors in the HTML and CSS files for new and revised websites, V3C Validator offers a free file check to list code mistakes.
+<img src="/img/helpfullinks/w3c_thumb.png" alt="W3C Validator"></p>
+<h2 id="web-development-resources">Web Development Resources</h2>
+<p><a href="http://zurb.com/playground/">Zurb Playground</a> offers code for special effects to animate your website.
+<img src="/img/helpfullinks/zurb_thumb.png" alt="Zurb Playground"></p>
+<p>[jQuery] (<a href="http://jquery.com">http://jquery.com</a>) is an online JavaScript library. The headers of HTML files often link to this website to reference scripts which allow the web page to have animations, interactive pagination, add weather widgets, and much more. You can choose between two versions of scripts, v1.10.2 or 2.0.3. If you are inexperienced with jQuery, you are still welcome to browse the library and add scripts to your HTML. Just be mindful not to edit the code, and use as is.
+<img src="/img/helpfullinks/jquery_thumb.png" alt="jQuery"></p>
+<p>[The JavaScript Source] (<a href="http://www.javascriptsource.com/tutorials/">http://www.javascriptsource.com/tutorials/</a>) is a great place to learn JavaScript or teach yourself advanced techniques. The website offers several tutorials which show you step by step how to create and add JavaScript code to any Web page.
+<img src="/img/helpfullinks/js_tutorials_thumb.png" alt="Tutorials at The JavaScript Resource"></p>
+<p>[CSS at The JavaScript Source] (<a href="http://www.javascriptsource.com/css/">http://www.javascriptsource.com/css/</a>) is a forum where you can post your question about the use of JavaScript with CSS. The two languages often &quot;talk&quot; to each other to build cool visual effects on web pages.
+<img src="/img/helpfullinks/js_css_thumb.png" alt="Using CSS with JavaScript at The JavaScript Resource"></p>
+<h2 id="web-fonts">Web Fonts</h2>
+<p>Most people prefer to customize their websites with their own favorite fonts, but not all fonts are “web-safe.” Fonts that are not web-safe may not even display, and the web browser will instead substitute an ugly typeface. Google Fonts provides a new web-safe fonts for your website and offers to host them too! </p>
+<p>[Google Fonts] (<a href="http://www.google.com/fonts">http://www.google.com/fonts</a>) provides a new web-safe fonts for your website and offers to host them too!<br><img src="/img/helpfullinks/google_fonts_thumb.png" alt="Google Fonts"></p>
+<p>[Font Squirrel] () provides an collection of free fonts as well as a WebFont Generator, which builds a kit for you to directly place in your HTML directory and files.
+<img src="/img/helpfullinks/font_squirrel_thumb.png" alt="Font Squirrel"></p>
+<h2 id="stock-images">Stock Images</h2>
+<p><img src="/img/helpfullinks/stock_thumb.png" alt="Stock.Xchng">
+<a href="http://www.sxc.hu">Stock.Xchng</a> offers royalty-free, zero cost stock images in addition to commercial stock images.</p>
+<p><img src="/img/helpfullinks/dreamstime_thumb.png" alt="Dreamstime">
+<a href="http://dreamstime.com">Dreamstime</a> similarly offers royalty-free, zero cost stock images in addition to commercial stock images.</p>
+<p><img src="/img/helpfullinks/dA_thumb.png" alt="deviantART">
+Members of the <a href="http://deviantart.com">DeviantART</a> community also post and share stock images that the public may use under its <a href="http://www.deviantart.com/resources/‎">Resources</a> category.</p>
+<p><img src="/img/helpfullinks/istock_thumb.png" alt="iStock Photos">
+<a href="http://istockphoto.com">iStock Photo</a> (by Getty Images) has a huge collection of royalty-free stock photos for public use, but downloading images from here requires a paid membership account.</p>
+
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>

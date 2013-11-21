@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+        <h1 id="template-gallery">Template Gallery</h1>
+<p>Download the templates if you haven’t already done so.</p>
+<p>Here at Arachne Web Development, you have the option of three layout and design schemes for your customization. Each template has a downloadable Zip folder of all the files to create that basic look. We have provided commentary within the HTML files to locate and explain the different parts of the code. You may populate these templates with your own content, including text, images, fonts, colors, and even additional web pages.</p>
+<h2 id="carousel">Carousel</h2>
+<p>The Carousel Layout will be heavy in visual content. It is the ideal layout for visual artists like drawers, painters, and photographers. </p>
+<p><strong>insert banner image of carousel layout screenshot(s)</strong></p>
+<h2 id="grid">Grid</h2>
+<p>The Grid Layout will be heavy in textual content. It is the ideal layout for artists that work primarily with text or sound, like writers and musicians. </p>
+<p><a href="/downloads/templates/grid.zip"><img
+    src="/img/screenshots/grid_screens/grid_banner.jpg" 
+    alt="grid layout template preview" 
+    /></a></p>
+
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>

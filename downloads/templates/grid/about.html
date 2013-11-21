@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- 
+    Leave the following conditional comments as-is.  
+    They're here for future maintenance, if you need to tweak for browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<!-- <html class="no-js"> -->
+<!--<![endif]-->
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../docs-assets/ico/favicon.png">
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/dojo/1.4/dojox/html/resources/ellipsis.css" />
+
+    <title>Grid Layout Template | Arachne Web Development</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./css/bootstrapARACHNE_about.css" rel="stylesheet">
+      
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+    
+  </head>
+
+  <body>
+    <!-- 
+        Tell people using old version of Internet Explorer 
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser. 
+        Please <a href="http://browsehappy.com">upgrade your browser</a> 
+        to improve your experience.
+    </p>
+    <![endif]-->
+    
+    <!--====================== NAVIGATION BAR ======================-->
+    <!-- This part changes the name that appears in the upper left corner of your nav bar. Replace "My Portfolio" with your name! -->
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li class="active"><a href="about.html">About</a></li><!-- The class is "active," because this is the page you're looking at right now. When you're working on other pages, be sure to check this part. If it's not the page you're on, delete class="active" and add it to the page you ARE on.-->
+        </ul>
+        <h3 class="nav"><img src="./img/profile_icon.png" class="profile" alt="profile image" width="50" height="50">My Portfolio</h3>
+      </div><!-- end header -->
+
+      
+    <!--====================== CONTENT ======================-->
+    <div class="containter">
+        <div class="col-sm-12">
+            <h1 style="text-align: center">About</h1>
+            <h3 style="text-align: center">Nunc accumsan placerat leo at consectetur!</h3>
+            <h5 style="text-align: center">Maecenas tempus nibh vitae ante fringilla luctus. Nam suscipit nibh in fringilla accumsan. Duis dui lectus, ullamcorper vel dictum et, accumsan quis sapien. Quisque quis pulvinar dui. Suspendisse sed mi sed tortor vulputate congue. Duis rutrum diam vel sollicitudin mattis. Morbi eu nibh molestie, tincidunt ante ac, convallis justo. Cras venenatis viverra ligula a tristique. Mauris scelerisque enim at justo tempus fringilla. 
+            </h5>
+            <br>
+        </div>
+    
+        <div class="row"><!-- portrait and social media info -->
+            <div class="col-sm-6">
+              <div style="text-align: right">
+                  <a href="./img/profile.png"><img src="./img/profile.png" class="portrait" alt="profile image" width="320" height="320"></a>
+              </div>
+            </div><!-- end portrait -->
+            <div class="col-sm-6">
+              <h5 style="text-align: left">Mauris quis magna:</h5>
+              <p>Nam suscipit nibh in fringilla accumsan. Duis dui lectus, ullamcorper vel dictum et, accumsan quis sapien. Quisque quis pulvinar dui. Suspendisse sed mi sed tortor vulputate congue.</p>
+              <h5 style="text-align: left">Contact:</h5>
+              
+              <!-- Email badge: be sure to Ctrl+F "your_email_address_here" and fill it in! -->
+              <a class="btn btn-sm btn-default" href="mailto:your_email_address_here" role="button" target="blank">E-Mail Me</a><br>
+              
+              <!-- Twitter badge: be sure to Ctrl+F "your_name_here" and fill it in! -->
+              <a href="https://twitter.com/your_name_here" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @your_name_here</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            
+              <!-- Facebook badge -->
+              <!-- Follow the instructions at https://developers.facebook.com/docs/plugins/follow-button/  to get the code for your Facebook badge and paste it here. Requires log-in.-->
+            </div><!-- end social media info -->
+          </div><!-- end -->
+        
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            
+            <div class="col-sm-8">
+              <div id="faux_paper">
+                <h2 style="text-align: center">Sample Resume</h2>
+                <br>
+                <h5>Name <br>Address <br>Contact info</h5>
+                <br>
+                <br>
+                <br>
+                <h3>Subtitle</h3>
+                <h5>Subhead</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non hendrerit massa. Curabitur accumsan massa lobortis est tempor, eget iaculis purus pretium. Nunc felis ligula, rhoncus ac imperdiet quis, egestas et quam.</p>
+                <p>Donec et sem sed velit blandit rutrum. Donec tempus eros non tellus aliquam, ut gravida urna elementum.</p>
+                <p><strong>Donec arcu turpis:</strong> Sed imperdiet mi at rhoncus sodales. Morbi sed urna et dolor ornare vestibulum a quis odio.</p>
+                <br>
+                <h5>Subhead</h5>
+                <p>Aenean sollicitudin vulputate mattis. Curabitur pulvinar elementum metus, et luctus lorem tempor sed. Suspendisse potenti. </p>
+                <p><strong>Donec arcu turpis:</strong>Vestibulum dignissim rutrum lacus at gravida. Nulla gravida varius tempus. </p>
+                <br>
+                <h3>Subtitle</h3>
+                <h5>Subhead</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut non hendrerit massa. Curabitur accumsan massa lobortis est tempor, eget iaculis purus pretium. Nunc felis ligula, rhoncus ac imperdiet quis, egestas et quam.</p>
+                <ul>
+                  <li>Duis purus dui</li>
+                  <li>Faucibus et luctus nec</li>
+                  <li>Aliquam vel tortor</li>
+                </ul>
+                <p><strong>Donec arcu turpis:</strong> Sed imperdiet mi at rhoncus sodales. Morbi sed urna et dolor ornare vestibulum a quis odio.</p>
+                <br>
+                <br>
+                <br>
+              </div><!-- end "faux_paper"-->
+            </div><!--end span8 -->
+        </div><!-- end row -->
+          
+        </div><!-- end class "row-fluid"-->
+      
+      
+    <br>
+    <br>
+    <br>
+      
+
+
+
+      <div class="footer">
+      <footer class="footer">
+          <div class="container">
+            <h5 class="pull-right"><a href="#">Back to top</a></h5>
+            <h5>&#60;Your name here.&#62;  Contact me at <a href="mailto:__fill_in_the_blank___">&#60;Your email address here&#62;</a>.  &nbsp;| &nbsp;
+            <a href="https://twitter.com/_your_name_goes_here" target="_blank" data-link-color="#0069D6" data-show-count="false">&#64;&#60;Your Twitter name here&#62;</a></h5>
+            <p>Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.
+            Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+            Site prepared by <a href="https://umd-arachne.github.io/">Arachne Web Development</a>.</p>
+          </div>
+    </footer>
+    
+    </div>
+
+    </div> <!-- end class "container" for all content -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-dropdown.js"></script>
+    <script src="js/bootstrap-collapse.js"></script>
+
+    
+  </body>
+</html>

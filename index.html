@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Arachne Web Development | Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+        <!--
+    full-width is only 9 of 12 cols (the nav bar occupies the remainder)
+    the first half of content uses the full-width layout 
+-->
+
+<!--
+    Homepage Content 
+-->
+<div class="jumbotron">
+    <h1
+        ><small>Welcome to</small> 
+        <span class="center-block text-center">Arachne Web Development!</span>
+    </h1>
+    
+    <img    id      ="Weave" 
+            class   ="img-responsive img-rounded" 
+            src     ="/img/WeaveYourIdentity-01.png"
+            alt     ="Weave Your Identity"
+    />
+
+    <p>We are pleased that you have taken the first step in showcasing who you are as an artist/designer. This site provides you with the resources and templates necessary in marketing your personal brand. Portfolio examples are listed below, but we invite you to browse through our Instructions pages so that you can begin to “Weave Your Identity”.</p>
+</div>
+        
+
+<!-- 
+    Portfolio Examples 
+-->
+<div class="row">
+    <div class="well well-sm 
+                col-sm-4 col-sm-offset-1
+                col-md-5 col-md-offset-0"
+    >
+        <h2 class="text-center">
+            Layout Example 1: 
+            <span class="center-block">Carousel</span>
+        </h2>
+        
+        <img    src     ="/img/screenshots/hp_screens/carouselscreen.png"
+                class   ="img-responsive img-thumbnail" 
+                alt     ="Carousel Template"
+        />
+        <p>The Carousel Layout will be heavy in visual content. It will be promoted as the ideal layout options for visual artists like drawers, painters , and photographers.</p>
+        <p class="center-block text-center">
+            <a href="http://terpconnect.umd.edu/~jramos16/Arachne_Carousel/carousel.html">Preview</a> | 
+            <a href="/downloads/templates/carousel.zip">Download</a>
+        </p>
+    </div>
+
+    
+    <div class="well well-sm 
+                col-sm-4  col-sm-offset-1
+                col-md-5  col-md-offset-2"
+    >
+        <h2 class="text-center">
+            Layout Example 2: 
+            <span class="center-block">Grid</span>
+        </h2>
+    
+        <img    src     ="/img/screenshots/grid_screens/grid_home.jpg" 
+                class   ="img-responsive HomepagePictures" 
+                alt     ="Grid Layout" 
+        />
+        <p>The Grid Layout will be heavy in textual content. It will be promoted as the ideal layout options for artists that work primarily with text or sound, like writers and musicians. However, anyone can use the template, really.</p>
+        <p class="center-block  text-center">
+            <a href="http://www.terpconnect.umd.edu/~lrlee320/Arachne_Web/Grid_Layout/">Preview</a> | 
+            <a href="/downloads/templates/grid.zip">Download</a>
+        </p>    
+    </div>
+</div><!-- /.row -->
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>
