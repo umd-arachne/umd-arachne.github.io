@@ -12,14 +12,26 @@ Here at Arachne Web Development, you have the option of three layout and design 
 ## Carousel
 The Carousel Layout will be heavy in visual content. It is the ideal layout for visual artists like drawers, painters, and photographers. 
 
-**insert banner image of carousel layout screenshot(s)**
+<img
+    src     ="<%- @site.prefixes.img %>/screenshots/carousel_screens/hp_carousel.png"
+    class   ="img-responsive" 
+    alt     ="carousel layout template preview" 
+    />
+<p class="center-block text-center">
+    <a href="http://terpconnect.umd.edu/~jramos16/Arachne_Carousel/carousel.html">Preview</a> | 
+    <a href="<%- @site.prefixes.root %>/downloads/templates/carousel.zip">Download</a>
+</p>
 
 
 ## Grid
 The Grid Layout will be heavy in textual content. It is the ideal layout for artists that work primarily with text or sound, like writers and musicians. 
 
-**insert banner image of grid layout screenshot(s). Currently 800x200px.**
-[<img
-    src="/img/screenshots/grid_screens/grid_banner.jpg" 
-    alt="grid layout template preview" 
-    />](Grid_Layout_Template.zip)
+<img
+    src     ="<%- @site.prefixes.img %>/screenshots/grid_screens/grid_banner.jpg" 
+    class   ="img-responsive"
+    alt     ="grid layout template preview" 
+    />
+<p class="center-block text-center">
+    <a href="http://www.terpconnect.umd.edu/~lrlee320/Arachne_Web/Grid_Layout/">Preview</a> | 
+    <a href="<%- @site.prefixes.root %>/downloads/templates/grid.zip">Download</a>
+</p>    
