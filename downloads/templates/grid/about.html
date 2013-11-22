@@ -24,7 +24,11 @@
     <title>Grid Layout Template | Arachne Web Development</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrapARACHNE_about.css" rel="stylesheet">
+    <link href="./css/bootstrapARACHNE.css" rel="stylesheet"><link rel="stylesheet" href="about.css">
+    <!-- The Bootstrap CSS annontated by Arachne Web Development is "bootstrap_annotated.css".
+    It's a good practice to make CSS files for each page, here "about.css". This will make it easier to track your changes and validate it later.
+    (Particularly because Bootstrap has some code that isn't offically approved by the W3C, thus creating a bunch of false validation errors.
+    Separate your code so you know what's your error and what's their's.)-->
       
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -57,7 +61,7 @@
           <li><a href="gallery.html">Gallery</a></li>
           <li class="active"><a href="about.html">About</a></li><!-- The class is "active," because this is the page you're looking at right now. When you're working on other pages, be sure to check this part. If it's not the page you're on, delete class="active" and add it to the page you ARE on.-->
         </ul>
-        <h3 class="nav"><img src="./img/profile_icon.png" class="profile" alt="profile image" width="50" height="50">My Portfolio</h3>
+        <h3 class="nav"><a href="/index.html"><img src="./img/profile_icon.png" class="profile" alt="profile image" width="50" height="50">My Portfolio</h3></a>
       </div><!-- end header -->
 
       
@@ -73,20 +77,20 @@
     
         <div class="row"><!-- portrait and social media info -->
             <div class="col-sm-6">
-              <div style="text-align: right">
+              <div style="text-align: center">
                   <a href="./img/profile.png"><img src="./img/profile.png" class="portrait" alt="profile image" width="320" height="320"></a>
               </div>
             </div><!-- end portrait -->
-            <div class="col-sm-6">
-              <h5 style="text-align: left">Mauris quis magna:</h5>
+            <div class="col-sm-6" style="text-align: left">
+              <h5>Mauris quis magna:</h5>
               <p>Nam suscipit nibh in fringilla accumsan. Duis dui lectus, ullamcorper vel dictum et, accumsan quis sapien. Quisque quis pulvinar dui. Suspendisse sed mi sed tortor vulputate congue.</p>
-              <h5 style="text-align: left">Contact:</h5>
+              <h5>Contact:</h5>
               
               <!-- Email badge: be sure to Ctrl+F "your_email_address_here" and fill it in! -->
               <a class="btn btn-sm btn-default" href="mailto:your_email_address_here" role="button" target="blank">E-Mail Me</a><br>
               
-              <!-- Twitter badge: be sure to Ctrl+F "your_name_here" and fill it in! -->
-              <a href="https://twitter.com/your_name_here" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @your_name_here</a>
+              <!-- Twitter badge: be sure to Ctrl+F "_replace_this_name_" and fill it in! -->
+              <a href="https://twitter.com/_replace_this_name_" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @your_name_here</a>
               <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
             
               <!-- Facebook badge -->
@@ -143,13 +147,13 @@
       
 
 
-
+      <!-- Be sure to Ctrl+F "_replace_this_name_" and fill it in! -->
       <div class="footer">
       <footer class="footer">
           <div class="container">
             <h5 class="pull-right"><a href="#">Back to top</a></h5>
             <h5>&#60;Your name here.&#62;  Contact me at <a href="mailto:__fill_in_the_blank___">&#60;Your email address here&#62;</a>.  &nbsp;| &nbsp;
-            <a href="https://twitter.com/_your_name_goes_here" target="_blank" data-link-color="#0069D6" data-show-count="false">&#64;&#60;Your Twitter name here&#62;</a></h5>
+            <a href="https://twitter.com/_replace_this_name_" target="_blank" data-link-color="#0069D6" data-show-count="false">&#64;&#60;Your Twitter name here&#62;</a></h5>
             <p>Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>.
             Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
             Site prepared by <a href="https://umd-arachne.github.io/">Arachne Web Development</a>.</p>
