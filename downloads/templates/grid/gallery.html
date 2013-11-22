@@ -9,7 +9,7 @@
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
 <!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
 <!--[if gt IE 8]><!-->
-<!--<html class="no-js">-->
+<!-- <html class="no-js"> -->
 <!--<![endif]-->
   
   <head>
@@ -24,12 +24,11 @@
     <title>Grid Layout Template | Arachne Web Development</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrapARACHNE.css" rel="stylesheet"><link rel="stylesheet" href="index.css">
+    <link href="./css/bootstrapARACHNE.css" rel="stylesheet"><link rel="stylesheet" href="gallery.css">
     <!-- The Bootstrap CSS annontated by Arachne Web Development is "bootstrap_annotated.css".
     It's a good practice to make CSS files for each page, here "index.css". This will make it easier to track your changes and validate it later.
     (Particularly because Bootstrap has some code that isn't offically approved by the W3C, thus creating a bunch of false validation errors.
-    Separate your code so you know what's your error and what's their's.)-->
-      
+    Separate your code so you know what's your error and what's their's.)-->  
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,8 +39,6 @@
 
   </head>
 
-  
-  
   <body>
     <!-- 
         Tell people using old version of Internet Explorer 
@@ -60,96 +57,147 @@
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index.html">Home</a></li><!-- The class is "active," because this is the page you're looking at right now. When you're working on other pages, be sure to check this part. If it's not the page you're on, delete class="active" and add it to the page you ARE on.-->
-          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="gallery.html">Gallery</a></li><!-- The class is "active," because this is the page you're looking at right now. When you're working on other pages, be sure to check this part. If it's not the page you're on, delete class="active" and add it to the page you ARE on.-->
           <li><a href="about.html">About</a></li>
         </ul>
-        <h3 class="nav"><a href="/index.html"><img src="./img/profile_icon.png" class="profile" alt="profile image" width="50" height="50">My Portfolio</h3></a>
+        <h3 class="nav"><img src="./img/profile_icon.png" class="profile" alt="profile image" width="50" height="50">My Portfolio</h3>
       </div><!-- end header -->
 
       
     <!--====================== GRID LAYOUT ======================-->
     <div class="row"><!-- grid of nested columns/spans-->
           <div class="col-sm-12">
-              <h1 style="text-align: center">Welcome to my online portfolio!</h1>
+              <h1 style="text-align: center">Gallery</h1>
+              <h3 style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </h3>
+              <h5 style="text-align: center">Vestibulum magna libero, fringilla non nisl ut, vulputate commodo nunc. Fusce pretium urna orci, vel feugiat elit tincidunt et. Suspendisse quis massa non massa porttitor sagittis. Integer gravida varius ornare. Maecenas non sollicitudin odio, commodo adipiscing magna. Nunc augue est, aliquam vitae posuere sit amet, molestie imperdiet erat. Morbi sit amet felis sit amet nibh feugiat accumsan. Aliquam ante dui, gravida ornare sapien ac, blandit elementum nunc. Etiam lobortis tincidunt consectetur. Vivamus nec lacus bibendum, dapibus enim nec, blandit justo. Ut semper in mi vel commodo.
+              </h5>
               <br>
                 <!-- style="background-color: #d4de80"  is green -->
                 <!-- style="background-color: #08b3bd"  is blue -->
                 <!-- style="background-color: #faf6c6"  is yellow -->
-              
-              <!--============= THIS IS ROW #1. =================-->            
-              <div class="row"><!-- row 1 -->
-                  <div class="col-sm-4">
-                    <p style="text-align: center">
-                      <img src="./img/pen_graphic.png" alt="pen tool image" width="400" height="400">
-                    </p>
-                  </div>
-                  
-                  <div class="col-sm-8">
-                        <h3>Introduce yourself! Start with a tagline.</h3>
-                        <h4>What are you an expert in? What's one of your strongest skills? A soft skill? And finally, add an adjective about your personality.
-                        After your tagline, you can go in more detail. Here's a good place for your personal statement! How would you describes your artistic career? List any outstanding accomplishments. These should show your greatest strengths. Are you working on any big projects currently? Anything you're interested in learning more about? Wrap up by inviting your viewer to browse your gallery or explore your website.
-                        </h4>
-                        <br>
-                  </div>
-              </div><!-- end row 1 -->
-          
-              <!--============= THIS IS ROW #2. =================-->
-              <div class="section group"><!-- row 2 -->
-              <!-- Here are the colored boxes of text from the first row. You'll want to keep the amount of text the same so that your columns stay the same height.-->
-                  <div class="col span_1_of_4" style="background-color: #d4de80"><!--green-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Etiam facilisis, erat eu luctus porta, neque sem semper mauris, sed pharetra dolor lacus sit amet nisi. Vestibulum amet. </p>
-                  </div>
-                  
-                  <div class="col span_1_of_4" style="background-color: #08b3bd"><!--blue-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae pretium nisi. Quisque nec rhoncus <a href="#">nunc</a>.</p>
-                  </div>
-                  
-                  <!-- UNICODE CHARACTER ICON -->
-                  <div class="col span_1_of_4" style="background-color: #faf6c6"><!--yellow-->
-                     <p class="huge_icons">&#9660;</p> 
-                  </div>
-                  
-                  <div class="col span_1_of_4" style="background-color: #d4de80"><!--green-->
-                        <h4 style="text-align: center">Subheading</h4>
-                        <p style="text-align: center">Vivamus id libero nisl. Phasellus vestibulum pellentesque tortor fringilla sagittis. Nam sit amet est pellentesque <a href="#">amet</a>. </p>
-                  </div>
-              </div><!-- end row 2 -->
+               
+               
+            <!-- The class "grow" applies a zooming hover effect to certain images within this division. -->
+                
+                
+              <!--============= THIS IS ROW #1. =================-->
 
-              <!--============= THIS IS ROW #3. =================-->
-              <div class="section group"><!-- row 3 -->
-                  <!-- UNICODE CHARACTER ICON -->
-                  <div class="col span_1_of_3" style="background-color: #faf6c6"><!--yellow-->
-                      <p class="huge_icons" style="color: #08b3bd"> &#9715;</p>
-                  </div>
-                  
-                  <div class="col span_1_of_3" style="background-color: #d4de80"><!--green-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Vestibulum eu enim scelerisque, scelerisque nisl ut, consequat turpis. Nam id feugiat orci. Etiam imperdiet massa neque. Donec eget purus eget lacus massa nunc. </p>
-                  </div>
-                  
-                  <div class="col span_1_of_3" style="background-color: #faf6c6"><!--yellow-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Praesent scelerisque arcu feugiat, aliquam nisi at, consectetur velit. Vivamus tempus viverra urna sit amet consectetur. Cras consectetur eget magna non nullam. </p>
-                  </div> 
-              </div><!-- end row 3 -->
+              <!-- You can increase or decrease the number of items per row by increasing or decreasing the column-span.
+              That's the number that appears in the div class="col-xs-3". "Col" stands for column, "xs" for Bootstrap extra-small responsive format
+              (you can see how that works by changing the width your web browser), and the number presents how many cells the item takes.
+              Keep in mind that the total of all your items' spans in a single row must come to 12.-->
               
-              <!--============= THIS IS ROW #4. =================-->
-              <div class="section group"><!-- row 4 -->
-                  <div class="col span_1_of_2" style="background-color: #d4de80"><!--green-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Sed pellentesque molestie leo, in pretium leo scelerisque ut. Proin eleifend vehicula bibendum. Aenean scelerisque porta erat. Pellentesque tempus gravida aliquam. Nullam rutrum sit posuere. </p>
-                      <p style="text-align: center"><a class="btn btn-lg btn-primary" href="about.html" role="button">Read more</a></p><!-- Right now, this button leads to your About page. You can change the link in the href tag to go elsewhere.-->
-                  </div>
-                  
-                  <div class="col span_1_of_2" style="background-color: #08b3bd"><!--blue-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Suspendisse nec neque tincidunt, convallis nulla quis, tincidunt velit. Quisque dignissim arcu quis metus lobortis, eget ornare quam venenatis. Nulla facilisi. Praesent ut diam dui. Sed nisi diam, scelerisque massa nunc. </p>
-                      <p style="text-align: center"><a class="btn btn-lg btn-success" href="Sample_DOC.txt" role="button" target="blank">Download .DOC</a> <a class="btn btn-lg btn-success" href="Sample_PDF.pdf" role="button" target="blank">Download .PDF</a></p>
-                  </div>
-              </div><!-- row 4 -->
+              <div class="row grow"><!-- begin ROW 1 -->
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/resize_graphic.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                  </figure>
+                </div>
+      
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/paint_bucket.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Nam nunc neque, ultrices id venenatis quis, tincidunt eget.</figcaption>
+                  </figure>
+                </div>
+                
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/dodge_burn.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Cras viverra, lorem at rutrum blandit, nunc massa tincidunt.</figcaption>
+                  </figure>
+                </div>
+                
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/mouse_pointer.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Proin metus dui, convallis et fermentum vel, malesuada eu.</figcaption>
+                  </figure>
+                </div>
+              </div><! -- end ROW 1 -->
+
+
+              
+              
+              <!--============= THIS IS ROW #2. =================-->
+              <div class="row grow"><!-- begin ROW 2 -->
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/mouse.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                  </figure>
+                </div>
+      
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/pen_graphic.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Nam nunc neque, ultrices id venenatis quis, tincidunt eget.</figcaption>
+                  </figure>
+                </div>
+                
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/move.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Proin metus dui, convallis et fermentum vel, malesuada eu.</figcaption>
+                  </figure>
+                </div>
+                
+                <div class="col-xs-3 grow">
+                  <figure>
+                    <a href="artwork.html"><img class="figure" src="./img/text.png" alt="image" width="250" height="250"></a>
+                      <br>
+                      <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Cras viverra, lorem at rutrum blandit, nunc massa tincidunt.</figcaption>
+                  </figure>
+                </div>
+              </div><! -- end ROW 2 -->
+
+
+              
+              
+              <!--============= THIS IS ROW #3. =================-->
+              <div class="row grow"><!-- begin ROW 3 -->
+              <div class="col-xs-3 grow">
+                <figure>
+                  <a href="artwork.html"><img class="figure" src="./img/profile.png" alt="image" width="250" height="250"></a>
+                    <br>
+                    <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Phasellus condimentum varius nunc quis consectetur.</figcaption>
+                </figure>
+              </div>
+    
+              <div class="col-xs-3 grow">
+                <figure>
+                 <a href="artwork.html"><img class="figure" src="./img/dodge_burn.png" alt="image" width="250" height="250"></a>
+                    <br>
+                    <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Cras viverra, lorem at rutrum blandit, nunc massa tincidunt.</figcaption>
+                </figure>
+              </div>
+              
+              <div class="col-xs-3 grow">
+                <figure>
+                  <a href="artwork.html"><img class="figure" src="./img/resize_graphic.png" alt="image" width="250" height="250"></a>
+                    <br>
+                    <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                </figure>
+              </div>
+              
+              <div class="col-xs-3 grow">
+                <figure>
+                  <a href="artwork.html"><img class="figure" src="./img/paint_bucket.png" alt="image" width="250" height="250"></a>
+                    <br>
+                    <figcaption class="figure_caption" style="text-align: center"><strong>Title</strong><br>Nam nunc neque, ultrices id venenatis quis, tincidunt eget.</figcaption>
+                </figure>
+              </div>
+            </div><! -- end ROW 3 -->
+
             
               
           </div><!--end span12-->
@@ -157,7 +205,7 @@
     <br>
     <br>
     <br>
-      
+    <br>
 
 
       <!-- Be sure to Ctrl+F "_replace_this_name_" and fill it in! -->
@@ -171,6 +219,7 @@
             Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
             Site prepared by <a href="https://umd-arachne.github.io/">Arachne Web Development</a>.</p>
           </div>
+          <br>
     </footer>
     
     </div>
