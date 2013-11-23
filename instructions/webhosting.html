@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Step-by-Step | Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li class="active"><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+       
+<h2 id="the-student-s-guide-to-web-hosting">The Student&#8217;s Guide to Web Hosting</h2>
+<p>You must upload your website to the Web so people not on your computer can also view your new online portfolio. The solution to that problem is using a web host. A web host stores a person&#8217;s or organization&#8217;s files on its own server and provides the maintenance and networking on behalf of the client.</p>
+<p><strong>As a student at the University of Maryland, College Park campus,</strong> you have access to a web space called TerpConnect. TerpConnect allows students to store up to one gigabyte on campus servers for free. You can use this free server to upload your own website too! All you need is your regular student log-in information &#40;the same as your MyUMD account&#41;. Gather your website files, and follow the steps below to upload your new online portfolio.</p>
+<p><strong>If you are not a UMD student,</strong> we recommend the free  web host we are using, called GitHub. On the other hand, you may consider professional web hosting to get your new portfolio more exposure. GoDaddy, for example, is a low-cost professional web host. You may follow along with the TerpConnect tutorial below to get a basic idea of what to do next.</p>
+<h4 id="using-terpconnect">Using TerpConnect</h4>
+<h5 id="preparing-your-files-for-upload">Preparing Your Files for Upload</h5>
+<ul>
+<li>Gather all your final portfolio HTML, CSS, and any JS files. Please refer to &#8220;Organizing Your Directory&#8221; above if you are uncertain how to best organize your files before uploading.</li>
+</ul>
+<h5 id="installing-fire-ftp-for-file-transfer">Installing Fire FTP for File Transfer</h5>
+<ul>
+<li><em>Optional: This step is strongly recommended for UMD Students:</em> Download file transfer software at Firefox Add-ons.</li>
+<li>Although you can upload files through TerpConnect, we recommend using the Mozilla Firefox add-on, Fire FTP. This enables you to upload entire folders at a time, rather than individual files. Once the add-on has been downloaded from Firefox Add-ons, you can access the program from the main menu in the Firefox web browser, in the big orange button of the toolbar. A new line item will appear <strong>Web Developer</strong>. Look to the bottom of that menu for a seahorse icon and open Fire FTP.</li>
+<li>If you are not a UMD student, you may not need to download any file transfer programs. Your chosen web host is likely to provide you with one of their own.</li>
+</ul>
+<h5 id="connecting-to-your-web-host">Connecting to Your Web Host</h5>
+<ul>
+<li><p>If you are a UMD student, go ahead and create a new account in Fire FTP or other file transfer program. A pop-up form, <strong>Account Manager</strong>, will appear and you will need to input the server information. Go through the tabs and input an account or server name; host name or Web address of your server; log-in username and password; connection security type; and Web port number. </p>
+</li>
+<li><p>If you are a student at the University of Maryland, you can use TerpConnect. Your information looks like this:        </p>
+<pre><code>      _Account Name:_ TerpConnect
+      _Host (Name):_ terpconnect.umd.edu
+      _Login:_ your student name and password
+      _(Connection) Security:_ SFTP
+      _Port_: 22</code></pre>
+</li>
+<li><p>If you are not using TerpConnect, double-check this with your server. Often, web hosts handle this part for you and you do not need to input this information before using their service. GitHub and GoDaddy are like this.</p>
+</li>
+<li><p>Now, connect to the file transfer program in Fire FTP or your web host&#8217;s File Manager. UMD students, click <strong>Connect</strong> in Fire FTP. You may receive a message about a registry key in the cache&#8212;proceed. You are now able to copy&#8211;paste entire folders directly onto the TerpConnect server. </p>
+</li>
+</ul>
+<h5 id="uploading-your-files-to-the-web-host">Uploading Your Files to the Web Host</h5>
+<ul>
+<li>Open your Internet browser, and go to the file transfer program in Fire FTP or your web host&#39;s File Manager. <strong>The following steps pertain to UMD Students using TerpConnect only.</strong></li>
+<li>UMD students may go to TerpConnect at <a href="http://terpconnect.umd.edu">http://terpconnect.umd.edu</a>. Click on <strong>File Manager</strong> in the navigation bar. Click on the giant button, &#8220;Access My Files.&#8221; Now, fill in the blanks of the pop-up screen with your regular student log-in.<li>  </li>
+<li>The TerpConnect File Manager shows you almost all your server folders. It automatically opens &#8220;Home,&#8221; but you actually need to back up a bit. Click on your student log-in name, and a new list of folders will come up. See <code>pub</code>? That stands for &#8220;public access.&#8221; Here is the destination folder for your files.</li>
+<li>Return to Fire FTP. Browse the menu of your local hard drive on the left, select your online portfolio folder, and use the green arrows in the center to move the files right, onto the TerpConnect server. This should be an instant and easy transfer, much quicker than using TerpConnect by itself.</li>
+<li>Return back to TerpConnect&#8217;s File Manager. Briefly look over all your file names and extensions and checking for consistency in capitalization. Many servers are not caps-sensitive, but TerpConnect is. TerpConnect also occasionally capitalizes files names or extensions, changing something like <code>photo.jpg</code> to <code>Photo.JPG</code>. If you see any changes, correct them now. </li>
+</ul>
+<h5 id="going-live">Going Live</h5>
+<ul>
+<li>Finish uploading all of your files to TerpConnect or other third-party File Manager.</li>
+<li>Your website is now live on the world wide web! Open a new window in a web browser and type in your portfolio address.<ul>
+<li>If using TerpConnect, type: <code>http://terpconnect.umd.edu/~yourUMDname/index.html</code>.</li>
+<li>If using GitHub, type: <code>https://your_repository_name.github.io</code>.</li>
+</ul>
+</li>
+</ul>
+<h5 id="troubleshooting">Troubleshooting</h5>
+<p>If your website looks unusually plain, check the file names again in your File Manager. You should also check that the folders on are organized and named exactly as you had them on your computer&#39;s hard drive. Once these things are corrected, your website should run properly now.</p>
+<h2 id="popular-code-snippets">Popular Code Snippets</h2>
+<p>To help get you started on coding your online portfolio, here are code snippets from some of the most common and popular HTML and CSS features.</p>
+
+
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>
