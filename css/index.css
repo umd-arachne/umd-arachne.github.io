@@ -15,3 +15,4 @@ a{/* style the most commonly-used properties */transition-property:color,backgro
 #site-nav ul.nav.nav-pills.nav-stacked ul{display:none;transition-property:display,opacity;transition-duration:.25s;transition-timing-function:ease-out}
 #site-nav ul.nav.nav-pills.nav-stacked .active ul{display:block}
 #main li.row,#main dl.row{vertical-align:top;padding-top:0}
+#movie-wrapper {margin: 0 auto;}
