@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Step-by-Step | Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li class="active"><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+       
+<h3 id="quick-start-to-komodo-edit-8">Quick Start to Komodo Edit 8</h3>
+<h4 id="part-1-inserting-your-work-into-your-portfolio">Part 1: Inserting Your Work into Your Portfolio</h4>
+<p>All you need to edit HTML and CSS code is a plain-text editor, like Notepad. However, we recommend using a source-code editor with additional features that make the code writing process easier. They often include color coding, tag completion hints, and preview options. Komodo Edit 8 is one source-code editor we recommend.</p>
+<h5 id="open-komodo-edit-8-">Open Komodo Edit 8.</h5>
+<ul>
+<li><a href="http://www.activestate.com/komodo-edit/downloads">Download Komodo Edit</a>. This completely free editor allows you to build your site on your own.</li>
+<li>Once installed, open Komodo Edit and your portfolio folder containing your links.</li>
+</ul>
+<h5 id="adding-text-images-and-links-to-your-html-file">Adding Text, Images, and Links to Your HTML File</h5>
+<ul>
+<li>In Komodo Edit, open the file <code>index.html</code>. This is your homepage, also known as the <a href="../resources/glossary.html">index page</a>. Your HTML files are your webpages containing text, images, etc. Each HTML file links with specific CSS files. Your CSS files format your webpages accordingly.</li>
+<li>Drop your pictures and texts as indicated in the index file. Remember to copy the name of your files verbatim. Otherwise, the image will not show up online. Do not mess with any HTML tags such as <a href="http://www.w3schools.com/tags/">those listed here</a>.</li>
+<li>Upon dropping your images and text into the file, you will want to preview the file. The preview will show you how your file will appear online without your actually publishing it. Click on the globe icon at the top of the Komodo Edit window. A dialog box will ask you how you want to preview the document. Select the browser and click <strong>OK</strong>.</li>
+</ul>
+<h5 id="checking-your-html-web-page">Checking Your HTML Web Page</h5>
+<ul>
+<li>Check your page. Are the pictures in the right order? Are there any typos? Have you inserted your name into the footer? If so, go back to Komodo Edit and fix your mistakes. You can visit the <a href="../instructions/going-further.html">Going Further page</a> and the <a href="../resources/helpful-links.html">Helpful Links</a> page for troubleshooting help. The fastest way to check errors is to right click your page and click <strong>Inspect Element</strong>. Your browser or your Firebug app &#40;depending on which you choose&#41; will indicate the error that requires fixing.</li>
+<li>After fixing your error, repeat the steps above for your subpages.</li>
+<li>Check your site. If you would like to maintain this layout, you are ready to host on TerpConnect. If you would like to customize the appearance of the site, follow the steps listed under &#8220;Customizing Your Portfolio.&#8221;</li>
+</ul>
+<h4 id="part-2-customizing-your-portfolio">Part 2: Customizing Your Portfolio</h4>
+<h5 id="gathering-any-additional-resources">Gathering Any Additional Resources</h5>
+<ul>
+<li>Before you begin customizing the layout in your portfolio site, browse through our <a href="../resources/helpful-links.html">CSS</a> resources in the <a href="../resources/helpful-links.html">Helpful Links page</a>. Planning is essential when you publish anything. How would you use your portfolio site to convey who you are as an artist&#47;designer? Consider color, patterns, and the type of content. <strong>Note:</strong> If you have a lot of visual content, consider refraining from bright colors in your background. You do not want your background to compete with your artwork&#47;designs.</li>
+</ul>
+<h5 id="creating-your-css-file">Creating Your CSS File</h5>
+<ul>
+<li>Now that you have chosen how you can customize your site, you will first need to start a new CSS file. In Komodo Edit, go to File ► New ► New File. Save the file as <code>CustomStyle.css</code> in the <code>css/</code> folder. <strong>IMPORTANT:</strong> You will use this CSS file AND the original CSS files for all of your site files.</li>
+<li>When creating a new appearance, keep your <code>CustomStyle.css</code> in one Komodo Edit window and the Arachne files in another Komodo Edit window. Open the original CSS files and your HTML files. Keep these files in one Komodo Edit window by moving your <code>CustomStyle.css</code> to a new window. Right-click the tab of <code>CustomStyle.css</code> and click <strong>Move to a New Window</strong>. This will allow you to easily refer to the original files to customize your layout.</li>
+</ul>
+<h5 id="structuring-your-html-and-css-content">Structuring Your HTML and CSS Content</h5>
+<h6 id="linking-custom-css-files">Linking Custom CSS Files</h6>
+<ul>
+<li>Go to each of your HTML files. Press <kbd>⌘F</kbd> (OS X) or <kbd>Ctrl+F</kbd> (if you are using a PC) to Find a specific word or phrase in Komodo Edit. Type <samp>link</samp> and press Enter. Between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags, you will find the <code>&lt;link</code> tag (ending with <code>/&gt;</code>) that links to the CSS file you downloaded with the template. <strong>Do not delete this link.</strong> Instead, copy and paste the copy of the link underneath Arachne&#8217;s CSS links. Your new CSS file <code>CustomStyle.css</code> will override Arachne’s CSS files.</li>
+<li>You are ready to add changes to your portfolio appearance. As you begin to customize your site, remember that specificity is the first and foremost law of CSS. Whatever specific rule is put into place will beat whatever was more general. For example, any text governed by a heading rule will no longer follow the rule that dictates what the body of the HTML document does. Whatever rule is most recent beats whatever was mentioned earlier. For example, your custom CSS file overrides the Arachne CSS files because it was listed last.</li>
+</ul>
+<h6 id="changing-html-tags-and-css-elements">Changing HTML Tags and CSS Elements</h6>
+<ul>
+<li>Pay attention to the comments in the HTML and Arachne CSS files. They will help you identify how you can change the appearance. If for example you would like to change link colors, you could go to the Arachne CSS file and press <kbd>⌘F</kbd> or <kbd>Ctrl+F</kbd> to find <samp>link</samp>. You will see <code>a:link { color: #_ _ _ _ _ _;}</code>. Change the color by cutting that code and pasting it into your new CSS file. Add the hex color by typing its six-digit code you identified online.</li>
+<li>When adding a new paragraph, place the <code>&lt;p&gt;</code> and <code>&lt;/p&gt;</code> tags at the beginning and the end of the paragraph respectively. Some tags like <code>&lt;link /&gt;</code> do not have a closing tag; these are known as <dfn>empty elements</dfn>. Refer to the <a href="http://www.w3schools.com/tags/ref_ascii.asp">HTML tags</a> found in the bottom left of the page for more info.</li>
+<li>When adding a new <a href="../resources/helpful-links.html">CSS</a> rule, remember the format <code>«HTML element» { property: specific}</code>. For example, if I wanted to change the link color as I hover over the link, I type <code>a:hover {color: #33ccff}</code>. Above the new change, type <code>/* Hovered link color */</code>. This is a comment in CSS that will help you understand your code as you go along. Comments will not show up on the page as long as they are flanked by <code>/*</code> and <code>*/</code>.</li>
+<li>Repeat the customizing steps above as necessary.</li>
+</ul>
+<h6 id="troubleshooting">Troubleshooting</h6>
+<ul>
+<li>Remember if you run into problems, you can refer to the <a href="../resources/helpful-links.html">Helpful Links page</a> to help you with troubleshooting.</li>
+</ul>
+<h5 id="proofreading">Proofreading</h5>
+<ul>
+<li>Proofread and edit your site content very thoroughly. Once completed, you may now proceed to web hosting on TerpConnect.</li>
+</ul>
+
+
+
+<h2 id="validating-your-code">Validating Your Code</h2>
+<p>Arachne Web Development recommends a third-party validation website at <a href="helpful-links.html">Helpful Links</a>. Look for W3C Validator. On the same Helpful Links page, you can also find further guides on coding a portfolio website, testing it for errors, and uploading it to the web.</p>
+
+
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>
