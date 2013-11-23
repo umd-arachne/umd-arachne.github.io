@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<!--
+    Leave the following weirdness (“conditional comments” for IE) as-is.
+    It's here for future maintenance, if we need to tweak browser compatibility.
+-->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8">        <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9">               <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+
+<head>
+    <!--
+        First charset, then the title;
+        these *must* load first!
+    -->
+    <meta charset   ="utf-8"                                />
+    <title>Step-by-Step | Arachne Web Development</title>
+
+    <!--
+        This particular meta breaks validation, but is useful
+        for browser compatibility
+    -->
+    <meta http-equiv="X-UA-Compatible"
+          content   ="IE=edge"                              />
+
+    <!--
+        Site Properties
+    -->
+    <meta name      ="viewport"
+          content   ="width=device-width, initial-scale=1"  />
+
+    <!--
+        General metadata
+    -->
+    <meta name      ="description"
+          content   =""     />
+    <meta name      ="keywords"
+          content   ="put, keywords, here"        />
+
+    <!--
+        Any additional metadata
+    -->
+    
+
+
+    <!--
+        Library CSS, then ours
+    -->
+    <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    
+
+
+    <!-- Library scripts, then ours -->
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+</head>
+<body>
+<div class="container clearfix">
+
+
+    <!--
+        Tell people using old version of Internet Explorer
+        that 2001 called and wants its browser back.
+    -->
+    <!--[if lt IE 7]>
+    <p class="browsehappy"
+        >You are using an <strong>outdated</strong> browser.
+        Please <a href="http://browsehappy.com">upgrade your browser</a>
+        to improve your experience.
+    </p>
+    <![endif]-->
+
+
+
+    <header id      ="site-header"
+            class   ="row"
+    >
+        <div class="col-sm-9">
+            <!--
+                Arachne Web Development Logo
+            -->
+            <h1 class="center-block text-center">
+                <a
+                    href="/"
+                    rel ="Home"
+                ><img   id    ="logo"
+                        class ="img-responsive"
+                        src   ="/img/logo.png"
+                        alt   ="Arachne Web Development" 
+                /></a>
+            </h1>
+        </div>
+
+
+        <nav    id      ="site-nav"
+                class   ="col-sm-3 clearfix sidebar-offcanvas"
+                role    ="navigation">
+
+            <ul class="nav nav-pills nav-stacked">
+                <li><a href="/about/">About</a></li>
+
+                <li class="active"><a href="/instructions/">Instructions</a>
+                    <ul>
+                        <li><a href="/instructions/quick-start.html">Quick Start</a></li>
+                        <li><a href="/instructions/step-by-step.html">Step-by-Step</a></li>
+                        <li><a href="/instructions/going-further.html">Going Further</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="/resources/"   >Resources</a>
+                    <ul>
+                        <li><a href="/resources/freebies.html">Freebies</a></li>
+                        <li><a href="/resources/gallery.html">Gallery</a></li>
+                        <li><a href="/resources/glossary.html">Glossary</a></li>
+                        <li><a href="/resources/helpful-links.html">Helpful Links</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </nav><!-- /#site-nav -->
+
+    </header><!-- /#site-header -->
+
+
+
+    <main id    ="main"
+          class ="row"
+    >
+        <div class="col-sm-9">
+       
+<h3 id="adding-new-fonts-with-font-face-">Adding New Fonts with <code>@font-face</code></h3>
+<p>The <code>@font-face</code> code is a relatively new invention which allows web developers to display any font they wish on their websites. Previously, they could only choose from a short list of standard &#8220;web-safe&#8221; fonts, which greatly limited design options. The new <code>@font-face</code> code allows web browsers to display even unsafe fonts by embedding that font file within that website&#39;s code. When a user accesses that website, their computer downloads the font file as it downloads the rest of the website. Thus, the user can now see the font correctly.</p>
+<p>However, we warn users that fonts are often considered &#8220;intellectual property.&#8221; Many fonts are subject to copyright or require payment for use. Even if you have the font installed on your computer, embedding it within your website&#39;s code may violate copyright. Please check that your font allows free use and requires no payment.  Users also have the option of using freeware fonts open to the public at no cost. Please refer to our <a href="../resources/helpful-links.html">Helpful Links</a> page for free font websites.</p>
+<p>The first step of adding <code>@font-face</code> is locating your main CSS file. If you are using one of our downloadable templates, this will be your <code>bootstrap.css</code> file. Click anywhere, and type:</p>
+<pre><code> @font-face {
+     font-family: &quot;YourFontName&quot;; Georgia, Times, serif; &lt;-------- remember to provide basic, web-safe alternates, including  visually similar font families as well as a generic serif or sans-serif mention
+     src: url(&quot;../img/YourFontName.ttf&quot;); &lt;------------------ be sure to upload this to your web server too!
+ }</code></pre>
+<p>This &#8220;stores&#8221; your font in the code. The first time, call your font whatever is easiest to remember. But in the <code>src</code> line, you must go to your <strong>Control Panel ► Fonts</strong> and type it exactly as you see it there if your font comes locally on your computer.  Alternatively, you can use an hyperlink reference to free fonts website like those mentioned in our <a href="../resources/helpful-links.html">Helpful Links</a>.</p>
+<p>To apply your font, use it like this in your CSS code for the <code>h1</code>, <code>h2</code>, <code>h3</code>, or <code>body</code>:</p>
+<pre><code> h1,
+ h2 {
+     margin: 10px 0;
+     font-family: &quot;YourFontName&quot;, serif;
+     font-weight: bold;
+     line-height: 1; /* may need tweaking depending on font */
+     color: #2E2633; /* I changed color here */
+     text-rendering: optimizelegibility;
+ }
+
+ /* changes ALL body copy */
+ body {           
+     font-family: &quot;Verdana&quot;, Arial, sans-serif;
+     font-size: 14px;
+     line-height: 20px;
+ }</code></pre>
+<p>To change the fonts of specific places in your body copy, you will first need to add attributes. The simplest way to do is adding a <code>class</code>, like in this example:</p>
+<pre><code>  &lt;h3 class=&quot;infrastructure_header&quot;&gt; Introduction to Infrastructure&lt;/h3&gt;
+  &lt;p class=&quot;infrastructure_body&quot;&gt; Our national framework is literally crumbling beneath our feet.&lt;/p&gt;</code></pre>
+<p>You can name the class whatever you like, just no spaces. Remember that classes appears multiple times on the same time, like paragraphs, and <code>id</code>s appear once. To call a class in the CSS code, type  <code>.name{ … }</code> To call an <code>id</code> in CSS code, type <code>#name{ … }</code></p>
+<p>Other examples:</p>
+<pre><code>  .infrastructure_header {
+      font-family: &quot;FontLogic&quot;, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 10px; 
+      /* Notice that the line-height is 10 and the font-size is 16. 
+       * If the text spans multiple lines--which can load differently 
+       * on every computer--they will overlap!
+       */
+  }
+
+  .infrastructure_body {
+      font-family: &quot;Calibri&quot;, Arial, sans-serif;
+      font-size: 18px;
+      line-height: 25px;
+      text-align: justify;
+  }</code></pre>
+
+        </div>
+    </main><!-- /#main -->
+
+
+
+    <footer id      ="site-footer"
+            class   ="center-block"
+    >
+        <p>
+        Site built on <a href="http://twitter.github.com/bootstrap/" target="_blank">Bootstrap</a>. 
+        Code licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0" target="_blank">Apache License v2.0</a>. 
+        Documentation licensed under <a href="http://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0</a>.
+        </p>
+        
+        <p>
+            Site prepared and licensed by <a href="http://umd-arachne.github.io">Arachne Web Development</a> 
+            under the <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US" target="_blank">Creative Commons BY-NC-SA 3.0</a>.
+        </p>
+        
+        <p>Last Updated .</p>
+    </footer><!-- /#site-footer -->
+
+
+</div><!-- /.container (outer-most div) -->
+</body>
+</html>
