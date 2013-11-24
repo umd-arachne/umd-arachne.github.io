@@ -375,14 +375,14 @@
      /* Transparency edits for IE8 and earlier. On a scale of 0 to 100; lower numbers are less visible. */
  }</code></pre>
 <p>The CSS select <code>img</code> means &#8220;this part of the CSS is for styling all images in your HTML.&#8221; This section is therefore your default settings. How is here the code breaks down:</p>
-<ul>
-<li><code>margin</code> refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. </li>
-<li><code>width</code> and <code>height</code> you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. <code>max-width</code> prevents blurry images by limiting the resizing of the image. </li>
-<li><code>vertical-align</code> places your image in the vertical center of a section. </li>
-<li><code>border</code> is where, of course, you can add borders. The first part &#40;<code>0px</code>&#41; specifics <code>border-width</code>. The higher the pixel count, the thicker it is. The next part specifies the style of your border. <code>solid</code> is typical, but you can also add <code>dotted</code> or <code>dashed</code> borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. </li>
-<li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
-</ul>
-<p>You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your <code>img</code> tags, like <code>class=&quot;red_border&quot;</code>, if your new settings will apply to multiple images on the same web page. In CSS, you would add <code>img .red_border {</code>. If you want to customize the appearance of exactly one image, you should use an <code>id</code>. In HTML, add an <code>id</code> inside your <code>img</code> tags (like <code>id=&quot;profile_image</code>). Then, in your CSS, add <code>#profile_image { ... }</code>.</p>
+	<ul>
+		<li><code>margin</code> refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. </li>
+		<li><code>width</code> and <code>height</code> you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. <code>max-width</code> prevents blurry images by limiting the resizing of the image. </li>
+		<li><code>vertical-align</code> places your image in the vertical center of a section. </li>
+		<li><code>border</code> is where, of course, you can add borders. The first part &#40;<code>0px</code>&#41; specifics <code>border-width</code>. The higher the pixel count, the thicker it is. The next part specifies the style of your border. <code>solid</code> is typical, but you can also add <code>dotted</code> or <code>dashed</code> borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. </li>
+		<li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
+	</ul>
+<p>You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your <code>img</code> tags, like <code>class=&quot;red_border&quot;</code>, if your new settings will apply to multiple images on the same web page. In CSS, you would add <code>img .red_border {</code>. If you want to customize the appearance of exactly one image, you should use an <code>id</code>. In HTML, add an <code>id</code> inside your <code>img</code> tags &#40;like <code>id=&quot;profile_image</code>&#41;. Then, in your CSS, add <code>#profile_image { ... }</code>.</p>
 
 
 <h3>Adding Music Files</h3>
@@ -399,17 +399,19 @@
 	</audio>
 </code>
 
-<p>A small music player will appear on your webpage. Adding the attribute &#8220;controls&#8221; to your audio tags lets users play, pause, seek, and adjust the volume.  You can also add the attribute &#8220;autoplay&#8221;, if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is &#8220;loop&#8221; which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
+<p>A small music player will appear on your webpage. Adding the attribute &#8220;controls&#8221; to your audio tags lets users play, pause, seek, and adjust the volume. You can also add the attribute &#8220;autoplay&#8221;, if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is &#8220;loop&#8221; which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
 
 <p>Users cannot download the music, however, unless you link the audio control inside <code><a href="#"></code> tags. Please do not allow users to download any copyrighted content besides your very own work.</p>
 
 
 <h3 id="embedding-videos">Embedding Videos</h3>
 <p>Your online portfolio is not restricted to just text and images. You can add videos! You can do this by linking to a video you have already uploaded to YouTube. Copy the code below and fill in the blanks with the title and web link to your video:</p>
-<pre><code>&lt;!-- this tag allows the HTML code to be seen in code --&gt;
-&lt;iframe width=&quot;420&quot; height=&quot;345&quot; 
-    src=&quot;http://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;
-&lt;/iframe&gt;</code></pre>
+
+	<pre><code>&lt;!-- this tag allows the HTML code to be seen in code --&gt;
+	&lt;iframe width=&quot;420&quot; height=&quot;345&quot; 
+	    src=&quot;http://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;
+	&lt;/iframe&gt;</code></pre>
+
 <p>The <code>iframe</code> creates window to the YouTube video on your website. You want to use the same dimensions here to maintain the proper aspect ratio of the video, or else the video could be cropped or distorted.</p>
 <p>You can also embed a YouTube video into your code. Rather than creating a window into a third-party web page, embedding stores the video means the video is stored within your very web page. Here is what that looks like:</p>
 <pre><code> &lt;embed
