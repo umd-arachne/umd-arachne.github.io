@@ -391,13 +391,15 @@
 <p>Once your song is ready to use in both the MP3 and Ogg formats, create a new folder, &#8220;music,&#8221; in your directory. Place your music files inside.</p>
 <p>Open the HTML file where you want to display your music and add the following code:</p>
 
-<code>
-	<audio controls><!-- HTML tag for audio files-->
-  		<source src="song.mp3" type="audio/mpeg">
-  		<source src="song.ogg" type="audio/ogg">
-  		<embed height="100" width="200" src="song.mp3"><!-- this creates a small music player-->
-	</audio>
-</code>
+<code><pre>
+	<!-- HTML tag for audio files-->
+	&lt;audio controls&gt;
+  		&lt;source src="song.mp3" type="audio/mpeg"&gt; 
+  		&lt;source src="song.ogg" type="audio/ogg"&gt;
+  		<!-- this creates a small music player-->
+  		&lt;embed height="100" width="200" src="song.mp3"&gt;
+	&lt;/audio&gt;
+</pre></code>
 
 <p>A small music player will appear on your webpage. Adding the attribute &#8220;controls&#8221; to your audio tags lets users play, pause, seek, and adjust the volume. You can also add the attribute &#8220;autoplay&#8221;, if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is &#8220;loop&#8221; which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
 
