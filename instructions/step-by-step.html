@@ -307,7 +307,7 @@
 <h5 id="uploading-your-files-to-the-web-host">Uploading Your Files to the Web Host</h5>
 <ul>
 <li>Open your Internet browser, and go to the file transfer program in Fire FTP or your web host&#39;s File Manager. <strong>The following steps pertain to UMD Students using TerpConnect only.</strong></li>
-<li>UMD students may go to TerpConnect at <a href="http://terpconnect.umd.edu">http://terpconnect.umd.edu</a>. Click on <strong>File Manager</strong> in the navigation bar. Click on the giant button, &#8220;Access My Files.&#8221; Now, fill in the blanks of the pop-up screen with your regular student log-in.<li>  </li>
+<li>UMD students may go to TerpConnect at <a href="http://terpconnect.umd.edu">http://terpconnect.umd.edu</a>. Click on <strong>File Manager</strong> in the navigation bar. Click on the giant button, &#8220;Access My Files.&#8221; Now, fill in the blanks of the pop-up screen with your regular student log-in.</li>
 <li>The TerpConnect File Manager shows you almost all your server folders. It automatically opens &#8220;Home,&#8221; but you actually need to back up a bit. Click on your student log-in name, and a new list of folders will come up. See <code>pub</code>? That stands for &#8220;public access.&#8221; Here is the destination folder for your files.</li>
 <li>Return to Fire FTP. Browse the menu of your local hard drive on the left, select your online portfolio folder, and use the green arrows in the center to move the files right, onto the TerpConnect server. This should be an instant and easy transfer, much quicker than using TerpConnect by itself.</li>
 <li>Return back to TerpConnect&#8217;s File Manager. Briefly look over all your file names and extensions and checking for consistency in capitalization. Many servers are not caps-sensitive, but TerpConnect is. TerpConnect also occasionally capitalizes files names or extensions, changing something like <code>photo.jpg</code> to <code>Photo.JPG</code>. If you see any changes, correct them now. </li>
@@ -323,8 +323,13 @@
 </ul>
 <h5 id="troubleshooting">Troubleshooting</h5>
 <p>If your website looks unusually plain, check the file names again in your File Manager. You should also check that the folders on are organized and named exactly as you had them on your computer&#39;s hard drive. Once these things are corrected, your website should run properly now.</p>
+
+
+
+
 <h2 id="popular-code-snippets">Popular Code Snippets</h2>
 <p>To help get you started on coding your online portfolio, here are code snippets from some of the most common and popular HTML and CSS features.</p>
+
 <h3 id="adding-a-patterned-background">Adding a Patterned Background</h3>
 <p>To add a patterned background to your website, you first need make sure that the image you want is stored within your website&#8217;s image folder. Next, open your main CSS file. You will need to go the <code>body</code> part of your CSS. If you are using the annotated CSS from the Arachne templates, you can <kbd>Ctrl+F</kbd> for <strong>Body Text&#47;Copywriting</strong> to get there quickly. You will see something like:</p>
 <p><pre><code>body {
@@ -338,6 +343,8 @@
 }</code></pre></p>
 <p>The lines <code>background-color</code> and <code>background-image</code> refer to your background. If you want a solid color for your background, use <code>background-color</code>. The hexadecimal code you see is one way to specify white. You can also use an <abbr title="Red Green Blue">RGB</abbr> value. If you want a very generic color, such as white, you can also just type <code>white</code>. </p>
 <p>The next line is show you can add an image to your background by citing its location in your directory. Here, a seamless wood image is used. If the image is small, like the patterns you find in <a href="../resources/freebies.html">Freebies</a>. You may also want to tell the CSS code to repeat the image.</p>
+
+
 <h3 id="customizing-the-appearance-of-your-images">Customizing the Appearance of Your Images</h3>
 <p>HTML puts your image on the web, but CSS manages how it presents itself! Here is a brief commentary on the CSS attributes:</p>
 <pre><code> img {
@@ -364,6 +371,27 @@
 <li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
 </ul>
 <p>You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your <code>img</code> tags, like <code>class=&quot;red_border&quot;</code>, if your new settings will apply to multiple images on the same web page. In CSS, you would add <code>img .red_border {</code>. If you want to customize the appearance of exactly one image, you should use an <code>id</code>. In HTML, add an <code>id</code> inside your <code>img</code> tags (like <code>id=&quot;profile_image</code>). Then, in your CSS, add <code>#profile_image { ... }</code>.</p>
+
+
+<h3>Adding Music Files</h3>
+<p>You can also add music files to showcase in your portfolio. This code will show you how to both link and embed two different music files to ensure cross-browser compatibility. It is best to use both file formats as shown, since each web browser has its own preference and your portfolio should address them all. </p>
+<p>The two music file formats are MP3 &#40;.mpeg&#41; and Ogg &#40;.ogg&#41;, a sort of universal music format. You may need to convert your music into each of these formats. Please note that many songs purchased from iTunes come in the MP4 &#40;.m4a&#41; format and may need conversion as well.</p>
+<p>Once your song is ready to use in both the MP3 and Ogg formats, create a new folder, &#8220;music,&#8221; in your directory. Place your music files inside.</p>
+<p>Open the HTML file where you want to display your music and add the following code:</p>
+
+<pre>
+	<audio controls><!-- HTML tag for audio files-->
+  		<source src="song.mp3" type="audio/mpeg">
+  		<source src="song.ogg" type="audio/ogg">
+  		<embed height="100" width="200" src="song.mp3"><!-- this creates a small music player-->
+	</audio>
+</pre>
+
+<p>A small music player will appear on your webpage. Adding the attribute &#8220;controls&#8221; to your audio tags lets users play, pause, seek, and adjust the volume.  You can also add the attribute &#8220;autoplay&#8221;, if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is &#8220;loop&#8221; which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
+
+<p>Users cannot download the music, however, unless you link the audio control inside <pre><a href="#"></pre> tags. Please do not allow users to download any copyrighted content besides your very own work.</p>
+
+
 <h3 id="embedding-videos">Embedding Videos</h3>
 <p>Your online portfolio is not restricted to just text and images. You can add videos! You can do this by linking to a video you have already uploaded to YouTube. Copy the code below and fill in the blanks with the title and web link to your video:</p>
 <pre><code>&lt;!-- this tag allows the HTML code to be seen in code --&gt;
@@ -378,6 +406,7 @@
       type=&quot;application/x-shockwave-flash&quot;&gt;
  &lt;/embed&gt;</code></pre>
 <p>Notice that here, you must specify a media player in order for it play on your website. YouTube uses Flash&#39;s Shockwave player, so cite that.</p>
+
 <h3 id="adding-new-fonts-with-font-face-">Adding New Fonts with <code>@font-face</code></h3>
 <p>The <code>@font-face</code> code is a relatively new invention which allows web developers to display any font they wish on their websites. Previously, they could only choose from a short list of standard &#8220;web-safe&#8221; fonts, which greatly limited design options. The new <code>@font-face</code> code allows web browsers to display even unsafe fonts by embedding that font file within that website&#39;s code. When a user accesses that website, their computer downloads the font file as it downloads the rest of the website. Thus, the user can now see the font correctly.</p>
 <p>However, we warn users that fonts are often considered &#8220;intellectual property.&#8221; Many fonts are subject to copyright or require payment for use. Even if you have the font installed on your computer, embedding it within your website&#39;s code may violate copyright. Please check that your font allows free use and requires no payment.  Users also have the option of using freeware fonts open to the public at no cost. Please refer to our <a href="../resources/helpful-links.html">Helpful Links</a> page for free font websites.</p>
