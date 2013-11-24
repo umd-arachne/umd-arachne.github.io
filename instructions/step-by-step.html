@@ -50,12 +50,15 @@
         Library CSS, then ours
     -->
     <!-- Bootstrap 3 includes Normalize.css! Awesome :D -->
-    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" /><link  rel="stylesheet" href="/css/index.css" />
+    <link  rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css" />
+    <link  rel="stylesheet" href="/css/index.css" />
     
 
 
     <!-- Library scripts, then ours -->
-    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script><script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script><script defer="defer"  src="/js/index.js"></script>
+    <script defer="defer"  src="/lib/jquery/jquery.min.js"></script>
+    <script defer="defer"  src="/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script defer="defer"  src="/js/index.js"></script>
     
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -142,8 +145,7 @@
 
 <ol>
     <li>Create a directory</li>
-    <li>
-        <em>Optional:</em> Download a portfolio template</li>
+    <li><em>Optional:</em> Download a portfolio template</li>
     <li>Edit the HTML code</li>
     <li>Customize the CSS code</li>
     <li>Validate your HTML and CSS files</li>
@@ -166,14 +168,14 @@
 <p>An HTML code example looks like this:</p>
 
 <code>
-<pre>&lt;p&gt;This HTML code creates a paragraph of text.&lt;/p&gt;</pre>
+    <pre>&lt;p&gt;This HTML code creates a paragraph of text.&lt;/p&gt;</pre>
 </code>
 
 <p>The character <code>p</code> (which stands for “paragraph”) appears within the opening and closing tags.</p>
 <p>Another example of HTML code with an attribute is this:</p>
 
 <code>
-<pre>&lt;a href="http://umd-arachne.github.io"&gt;Arachne Web Development&lt;/a&gt;</pre>
+    <pre>&lt;a href="http://umd-arachne.github.io"&gt;Arachne Web Development&lt;/a&gt;</pre>
 </code>
 
 <p>The character <code>a</code> means a hyperlink. The attribute <code>href</code> abbreviates “hyperlink reference,” and tells the computer what kind of hyperlink it is searching for and where the computer can find it. Here, the hyperlink goes to another website. You can also add links to files on your computer as well with <code>href</code>.</p>
@@ -317,11 +319,11 @@
 <p>Arachne Web Development recommends a third-party validation website at <a href="../resources/helpful-links.html">Helpful Links</a>. Look for W3C Validator. On the same Helpful Links page, you can also find further guides on coding a portfolio website, testing it for errors, and uploading it to the web.</p>
 
 
-
 <h2 id="the-student-s-guide-to-web-hosting">The Student’s Guide to Web Hosting</h2>
 <p>You must upload your website to the Web so people not on your computer can also view your new online portfolio. The solution to that problem is using a web host. A web host stores a person’s or organization’s files on its own server and provides the maintenance and networking on behalf of the client.</p>
 <p><strong>As a student at the University of Maryland, College Park campus,</strong> you have access to a web space called TerpConnect. TerpConnect allows students to store up to one gigabyte on campus servers for free. You can use this free server to upload your own website too! All you need is your regular student log-in information (the same as your MyUMD account). Gather your website files, and follow the steps below to upload your new online portfolio.</p>
 <p><strong>If you are not a UMD student,</strong> we recommend the free  web host we are using, called GitHub. On the other hand, you may consider professional web hosting to get your new portfolio more exposure. GoDaddy, for example, is a low-cost professional web host. You may follow along with the TerpConnect tutorial below to get a basic idea of what to do next.</p>
+
 
 <h4 id="using-terpconnect">Using TerpConnect</h4>
 <h5 id="preparing-your-files-for-upload">Preparing Your Files for Upload</h5>
@@ -339,41 +341,33 @@
 
 <h5 id="connecting-to-your-web-host">Connecting to Your Web Host</h5>
 <ul>
-    <li>If you are a UMD student, go ahead and create a new account in Fire FTP or other file transfer program. A pop-up form, <strong>Account Manager</strong>, will appear and you will need to input the server information. Go through the tabs and input an account or server name; host name or Web address of your server; log-in username and password; connection security type; and Web port number.
-    </li>
+    <li>If you are a UMD student, go ahead and create a new account in Fire FTP or other file transfer program. A pop-up form, <strong>Account Manager</strong>, will appear and you will need to input the server information. Go through the tabs and input an account or server name; host name or Web address of your server; log-in username and password; connection security type; and Web port number.</li>
     <li>
-        <p>If you are a student at the University of Maryland, you can use TerpConnect. Your information looks like this: </p>
-            <dl>
-                <dt>Account Name:</dt>
-                <dd>TerpConnect</dd>
-                
-                <dt>Host (Name):</dt>
-                <dd>terpconnect.umd.edu</dd>
-                
-                <dt>Login:</dt>
-                <dd>your student name and password</dd>
-                
-                <dt>(Connection) Security:</dt>
-                <dd>SFTP</dd>
-                
-                <dt>Port:</dt>
-                <dd>22</dd>
-            </dl>
-
-
+        If you are a student at the University of Maryland, you can use TerpConnect. Your information looks like this:
+        <dl>
+            <dt>Account Name:</dt>
+            <dd>TerpConnect</dd>
+            
+            <dt>Host (Name):</dt>
+            <dd>terpconnect.umd.edu</dd>
+            
+            <dt>Login:</dt>
+            <dd>your student name and password</dd>
+            
+            <dt>(Connection) Security:</dt>
+            <dd>SFTP</dd>
+            
+            <dt>Port:</dt>
+            <dd>22</dd>
+        </dl>
     </li>
-    <li>
-        <p>If you are not using TerpConnect, double-check this with your server. Often, web hosts handle this part for you and you do not need to input this information before using their service. GitHub and GoDaddy are like this.</p>
-    </li>
-    <li>
-        <p>Now, connect to the file transfer program in Fire FTP or your web host’s File Manager. UMD students, click <strong>Connect</strong> in Fire FTP. You may receive a message about a registry key in the cache—proceed. You are now able to copy—paste entire folders directly onto the TerpConnect server. </p>
-    </li>
+    <li>If you are not using TerpConnect, double-check this with your server. Often, web hosts handle this part for you and you do not need to input this information before using their service. GitHub and GoDaddy are like this.</li>
+    <li>Now, connect to the file transfer program in Fire FTP or your web host’s File Manager. UMD students, click <strong>Connect</strong> in Fire FTP. You may receive a message about a registry key in the cache—proceed. You are now able to copy—paste entire folders directly onto the TerpConnect server.</li>
 </ul>
 
 <h5 id="uploading-your-files-to-the-web-host">Uploading Your Files to the Web Host</h5>
 <ul>
-    <li>Open your Internet browser, and go to the file transfer program in Fire FTP or your web host’s File Manager. <strong>The following steps pertain to UMD Students using TerpConnect only.</strong>
-    </li>
+    <li>Open your Internet browser, and go to the file transfer program in Fire FTP or your web host’s File Manager. <strong>The following steps pertain to UMD Students using TerpConnect only.</strong></li>
     <li>UMD students may go to TerpConnect at <a href="http://terpconnect.umd.edu">http://terpconnect.umd.edu</a>. Click on <strong>File Manager</strong> in the navigation bar. Click on the giant button, “Access My Files.” Now, fill in the blanks of the pop-up screen with your regular student log-in.</li>
     <li>The TerpConnect File Manager shows you almost all your server folders. It automatically opens “Home,” but you actually need to back up a bit. Click on your student log-in name, and a new list of folders will come up. See <code>pub</code>? That stands for “public access.” Here is the destination folder for your files.</li>
     <li>Return to Fire FTP. Browse the menu of your local hard drive on the left, select your online portfolio folder, and use the green arrows in the center to move the files right, onto the TerpConnect server. This should be an instant and easy transfer, much quicker than using TerpConnect by itself.</li>
@@ -383,7 +377,8 @@
 <h5 id="going-live">Going Live</h5>
 <ul>
     <li>Finish uploading all of your files to TerpConnect or other third-party File Manager.</li>
-    <li>Your website is now live on the world wide web! Open a new window in a web browser and type in your portfolio address.<ul>
+    <li>Your website is now live on the world wide web! Open a new window in a web browser and type in your portfolio address.
+        <ul>
             <li>If using TerpConnect, type: <code>http://terpconnect.umd.edu/~yourUMDname/index.html</code>.</li>
             <li>If using GitHub, type: <code>https://your_repository_name.github.io</code>.</li>
         </ul>
@@ -438,15 +433,15 @@ img {
 </code>
  
 <p>The CSS select <code>img</code> means “this part of the CSS is for styling all images in your HTML.” This section is therefore your default settings. How is here the code breaks down:</p>
-	
-    <ul>
-		<li><code>margin</code> refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. </li>
-		<li><code>width</code> and <code>height</code> you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. <code>max-width</code> prevents blurry images by limiting the resizing of the image. </li>
-		<li><code>vertical-align</code> places your image in the vertical center of a section. </li>
-		<li><code>border</code> is where, of course, you can add borders. The first part (<code>0px</code>) specifics <code>border-width</code>. The higher the pixel count, the thicker it is. The next part specifies the style of your border. <code>solid</code> is typical, but you can also add <code>dotted</code> or <code>dashed</code> borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. </li>
-		<li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
-	</ul>
-    
+
+<ul>
+	<li><code>margin</code> refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. </li>
+	<li><code>width</code> and <code>height</code> you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. <code>max-width</code> prevents blurry images by limiting the resizing of the image. </li>
+	<li><code>vertical-align</code> places your image in the vertical center of a section. </li>
+	<li><code>border</code> is where, of course, you can add borders. The first part (<code>0px</code>) specifics <code>border-width</code>. The higher the pixel count, the thicker it is. The next part specifies the style of your border. <code>solid</code> is typical, but you can also add <code>dotted</code> or <code>dashed</code> borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. </li>
+	<li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
+</ul>
+
 <p>You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your <code>img</code> tags, like <code>class="red_border"</code>, if your new settings will apply to multiple images on the same web page. In CSS, you would add <code>img .red_border {</code>. If you want to customize the appearance of exactly one image, you should use an <code>id</code>. In HTML, add an <code>id</code> inside your <code>img</code> tags (like <code>id="profile_image</code>). Then, in your CSS, add <code>#profile_image { ... }</code>.</p>
 
 
@@ -457,36 +452,41 @@ img {
 <p>Open the HTML file where you want to display your music and add the following code:</p>
 
 <code><pre>
-	<!-- HTML tag for audio files-->
-	&lt;audio controls&gt;
-  		&lt;source src="song.mp3" type="audio/mpeg"&gt; 
-  		&lt;source src="song.ogg" type="audio/ogg"&gt;
-  		<!-- this creates a small music player-->
-  		&lt;embed height="100" width="200" src="song.mp3"&gt;
-	&lt;/audio&gt;
+<!-- HTML tag for audio files-->
+&lt;audio controls&gt;
+	&lt;source src="song.mp3" type="audio/mpeg"&gt; 
+	&lt;source src="song.ogg" type="audio/ogg"&gt;
+	<!-- this creates a small music player-->
+	&lt;embed height="100" width="200" src="song.mp3"&gt;
+&lt;/audio&gt;
 </pre></code>
 
 <p>A small music player will appear on your webpage. Adding the attribute “controls” to your audio tags lets users play, pause, seek, and adjust the volume. You can also add the attribute “autoplay”, if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is “loop” which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
-
 <p>Users cannot download the music, however, unless you link the audio control inside <code><a href="#"></code> tags. Please do not allow users to download any copyrighted content besides your very own work.</p>
 
 
 <h3 id="embedding-videos">Embedding Videos</h3>
 <p>Your online portfolio is not restricted to just text and images. You can add videos! You can do this by linking to a video you have already uploaded to YouTube. Copy the code below and fill in the blanks with the title and web link to your video:</p>
 
-	<code><pre>&lt;!-- this tag allows the HTML code to be seen in code --&gt;
-	&lt;iframe width="420" height="345" 
-	    src="http://www.youtube.com/embed/XGSy3_Czz8k"&gt;
-	&lt;/iframe&gt;</pre></code>
+<code><pre
+>&lt;!-- this tag allows the HTML code to be seen in code --&gt;
+&lt;iframe width="420" height="345" 
+    src="http://www.youtube.com/embed/XGSy3_Czz8k"&gt;
+&lt;/iframe&gt;</pre>
+</code>
 
 <p>The <code>iframe</code> creates window to the YouTube video on your website. You want to use the same dimensions here to maintain the proper aspect ratio of the video, or else the video could be cropped or distorted.</p>
 <p>You can also embed a YouTube video into your code. Rather than creating a window into a third-party web page, embedding stores the video means the video is stored within your very web page. Here is what that looks like:</p>
 
-<code><pre> &lt;embed
-      width="420" height="345"
-      src="http://www.youtube.com/v/XGSy3_Czz8k"
-      type="application/x-shockwave-flash"&gt;
- &lt;/embed&gt;</pre></code>
+<code><pre
+>&lt;embed
+    width="420" 
+    height="345"
+    src="http://www.youtube.com/v/XGSy3_Czz8k"
+    type="application/x-shockwave-flash"
+&gt;&lt;/embed&gt;</pre>
+</code>
+
 <p>Notice that here, you must specify a media player in order for it play on your website. YouTube uses Flash’s Shockwave player, so cite that.</p>
 
 <h3 id="adding-new-fonts-with-font-face-">Adding New Fonts with <code>@font-face</code></h3>
@@ -496,18 +496,18 @@ img {
 
 <p>The first step of adding <code>@font-face</code> is locating your main CSS file. If you are using one of our downloadable templates, this will be your <code>bootstrap.css</code> file. Click anywhere, and type:</p>
 
-<code>
-<pre>@font-face {
+<code><pre
+>@font-face {
      font-family: "YourFontName"; Georgia, Times, serif; &lt;-------- remember to provide basic, web-safe alternates, including  visually similar font families as well as a generic serif or sans-serif mention
      src: url("../img/YourFontName.ttf"); &lt;------------------ be sure to upload this to your web server too!
- }</pre>
+}</pre>
 </code>
 
 <p>This “stores” your font in the code. The first time, call your font whatever is easiest to remember. But in the <code>src</code> line, you must go to your <strong>Control Panel ► Fonts</strong> and type it exactly as you see it there if your font comes locally on your computer.  Alternatively, you can use an hyperlink reference to free fonts website like those mentioned in our <a href="../resources/helpful-links.html">Helpful Links</a>.</p>
 <p>To apply your font, use it like this in your CSS code for the <code>h1</code>, <code>h2</code>, <code>h3</code>, or <code>body</code>:</p>
 
-<code><pre>
- h1,
+<code><pre
+>h1,
  h2 {
      margin: 10px 0;
      font-family: "YourFontName", serif;
@@ -522,32 +522,37 @@ img {
      font-family: "Verdana", Arial, sans-serif;
      font-size: 14px;
      line-height: 20px;
- }</pre></code>
+ }</pre>
+</code>
  
 <p>To change the fonts of specific places in your body copy, you will first need to add attributes. The simplest way to do is adding a <code>class</code>, like in this example:</p>
 
-<code><pre>  &lt;h3 class="infrastructure_header"&gt; Introduction to Infrastructure&lt;/h3&gt;
-  &lt;p class="infrastructure_body"&gt; Our national framework is literally crumbling beneath our feet.&lt;/p&gt;</pre></code>
+<code><pre
+>&lt;h3 class="infrastructure_header"&gt;Introduction to Infrastructure&lt;/h3&gt;
+&lt;p class="infrastructure_body"&gt;Our national framework is literally crumbling beneath our feet.&lt;/p&gt;</pre>
+</code>
   
 <p>You can name the class whatever you like, just no spaces. Remember that classes appears multiple times on the same time, like paragraphs, and <code>id</code>s appear once. To call a class in the CSS code, type  <code>.name{ … }</code> To call an <code>id</code> in CSS code, type <code>#name{ … }</code></p>
 
 <p>Other examples:</p>
-<code><pre>  .infrastructure_header {
-      font-family: "FontLogic", Arial, sans-serif;
-      font-size: 16px;
-      line-height: 10px; 
-      /* Notice that the line-height is 10 and the font-size is 16. 
-       * If the text spans multiple lines--which can load differently 
-       * on every computer--they will overlap!
-       */
-  }
+<code><pre
+>.infrastructure_header {
+    font-family: "FontLogic", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 10px; 
+    /* Notice that the line-height is 10 and the font-size is 16. 
+     * If the text spans multiple lines--which can load differently 
+     * on every computer--they will overlap!
+     */
+}
 
-  .infrastructure_body {
-      font-family: "Calibri", Arial, sans-serif;
-      font-size: 18px;
-      line-height: 25px;
-      text-align: justify;
-  }</pre></code>
+.infrastructure_body {
+    font-family: "Calibri", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}</pre>
+</code>
 
         </div>
     </main><!-- /#main -->
