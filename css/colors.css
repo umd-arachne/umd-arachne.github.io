@@ -1,27 +1,78 @@
 img.HomepagePictures{border-color:#000}
-#site-header,#site-footer,#main{background-color:transparent}
+
+#site-header,
+#site-footer,
+#main
+{
+    background-color:transparent
+}
+
 /*! Courtesy of the Ultimate CSS3 Gradient Generator
-     *  Link to this gradient:
-     *      http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100;Custom 
-     */
-    #main {
-        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
-        background-image: -moz-linear-gradient(top,     rgba(255,255,255,0)     0%,rgba(255,255,255,0.333) 100%); /* FF3.6+ */
-        background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0%,  rgba(255,255,255,0  )),color-stop(100%,rgba(255,255,255,0.333))); /* Chrome,Safari4+ */
-        background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* Chrome10+,Safari5.1+ */
-        background-image: -o-linear-gradient(top,       rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* Opera 11.10+ */
-        background-image: -ms-linear-gradient(top,      rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* IE10+ */
-        background-image: linear-gradient(to bottom,    rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* W3C */
-        background-position: fixed;
-    }
+ *  Link to this gradient:
+ *      http://www.colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&0+0,1+100;Custom 
+ */
+#main {
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMC41Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+    background-image: -moz-linear-gradient(top,     rgba(255,255,255,0)     0%,rgba(255,255,255,0.333) 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom,color-stop(0%,  rgba(255,255,255,0  )),color-stop(100%,rgba(255,255,255,0.333))); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top,  rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top,       rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top,      rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom,    rgba(255,255,255,0)       0%,rgba(255,255,255,0.333) 100%); /* W3C */
+    background-position: fixed;
+}
+
 /*
  *  LINKS
  *---------*/
-#main a{color:#309;}
-#main a:hover,#main a:active,#main a:focus{color:#448cca;border-radius:.5ex}
-#main header a:hover,#main header a:focus,#main header a:active{background-color:#309;color:#fff}
-#main h1{color:#309}
-#main h2,#main h3,#main h4,#main h5,#main h6{color:#202020}
-#site-nav a{background-color:#202020;color:#fff;transition-property:color,background-color;transition-duration:.25s;transition-timing-function:ease-out;}
-#site-nav a:active,#site-nav a:hover,#site-nav a:focus{background-color:#fff;color:#4c0099}
-#site-nav .active a,#site-nav .active ul a{background-color:#fff;color:#4c0099}
+#main a {color:#309;}
+
+#main a:hover,
+#main a:active,
+#main a:focus
+{
+    color:#448cca;
+    border-radius:.5ex
+}
+
+#main header a:hover,
+#main header a:focus,
+#main header a:active 
+{
+    background-color:#309;
+    color:#fff
+}
+
+#main h1 {color:#309}
+
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6 {color:#202020}
+
+#site-nav a
+{
+    background-color:#202020;
+    color:#fff;
+    transition-property:color,background-color;
+    transition-duration:.25s;
+    transition-timing-function:ease-out
+}
+
+
+#site-nav a:active,
+#site-nav a:hover,
+#site-nav a:focus
+{
+    background-color:#fff;
+    color:#4c0099
+}
+
+#site-nav .active
+#site-nav .active a,
+#site-nav .active ul a
+{
+    background-color:#fff;
+    color:#4c0099
+}
