@@ -1,29 +1,45 @@
 /* Body format */
-body{position:relative}
+body {position:relative}
 
 /* Pictures */
-img.HomepagePictures{padding-bottom:35px}
-.centeredImage{padding:10px;display:block;margin-left:auto;margin-right:auto}
+img.HomepagePictures {padding-bottom:35px}
+.centeredImage       {padding:10px; display:block; margin-left:auto; margin-right:auto}
 
 /* Logo */
-#logo{width:500px;height:166px}
+#logo{
+    width:500px; 
+    height:166px
+}
 
 /* Site header */
-#site-header h1,#site-header img,#site-footer{margin-left:auto;margin-right:auto}
+#site-header h1,
+#site-header img,
+#site-footer {
+    margin-left:auto; 
+    margin-right:auto
+}
 
 /* Right Nav Menu */
-#site-nav{
-position:fixed;
-top:200px;
-right:15px;
+#site-nav {
+    position:fixed;
+    top:200px;
+    right:15px;
 }
 
 /* Footer */
-#site-footer{padding-top:3em;padding-bottom:3em}
+#site-footer {
+    padding-top:3em;
+    padding-bottom:3em
+}
 
 /* Jumbotron */
-#main h1, #main .jumbotron h1, #main h2, #main .jumbotron h2, #main h3,  #main .jumbotron h3 {margin-top:1em}
-#main .well h1, #main .well h2, #main .well h3 {margin-top:0}
+#main h1, #main .jumbotron h1, 
+#main h2, #main .jumbotron h2, 
+#main h3, #main .jumbotron h3 {margin-top:1em}
+
+#main .well h1, 
+#main .well h2, 
+#main .well h3 {margin-top:0}
 
 /* Weave your identity graphic */
-#Weave{padding-bottom:25px}
+#Weave {padding-bottom:25px}
