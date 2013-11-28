@@ -24,7 +24,7 @@ right:15px;
 /* Jumbotron */
 #main h1,#main h2,#main h3{margin-top:1.5em}
 #main .well h1, #main .well h2, #main .well h3 {margin-top:0}
-#main .jumbotron h1, #main .jumbotron h2, #main .jumbotron h3 {padding: 1em;}
+#main .jumbotron h1, #main .jumbotron h2, #main .jumbotron h3 {padding: 0;}
 
 /* Weave your identity graphic */
 #Weave{padding-bottom:25px}
