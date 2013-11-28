@@ -22,7 +22,7 @@ right:15px;
 #site-footer{padding-top:3em;padding-bottom:3em}
 
 /* Jumbotron */
-#main h1,#main h2,#main h3, #main .jumbotron h1, #main .jumbotron h2, #main .jumbotron h3 {margin-top:1.5em}
+#main h1, #main .jumbotron h1, #main h2, #main .jumbotron h2, #main h3,  #main .jumbotron h3 {margin-top:1.5em}
 #main .well h1, #main .well h2, #main .well h3 {margin-top:0}
 
 /* Weave your identity graphic */
