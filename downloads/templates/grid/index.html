@@ -58,30 +58,47 @@
     <!--====================== NAVIGATION BAR ======================-->
     <!-- This part changes the name that appears in the upper left corner of your nav bar. Replace "My Portfolio" with your name! -->
     <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="index.html">Home</a></li><!-- The class is "active," because this is the page you're looking at right now. When you're working on other pages, be sure to check this part. If it's not the page you're on, delete class="active" and add it to the page you ARE on.-->
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <h3 class="nav"><a href="./index.html"><img src="./img/profile_icon.png" class="profile" alt="profile image" width="50" height="50">My Portfolio</h3></a>
-      </div><!-- end header -->
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="index.html">Home</a></li>
+                <!--
+                    The class is "active," because this is the page you're looking at right now. 
+                    When you're working on other pages, be sure to check this part. 
+                    If it's not the page you're on, delete class="active" and add it to the page you ARE on.
+                -->
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <h3 class="nav"><a href="index.html"
+                ><img   src="./img/profile_icon.png" 
+                        class="profile" 
+                        alt="profile image" 
+                        width="50" 
+                        height="50" 
+                />My Portfolio</a>
+            </h3>
+        </div><!-- end header -->
+
 
       
     <!--====================== GRID LAYOUT ======================-->
     <div class="row"><!-- grid of nested columns/spans-->
           <div class="col-sm-12">
-              <h1 style="text-align: center">Welcome to my online portfolio!</h1>
+              <h1 class="text-center">Welcome to my online portfolio!</h1>
+              
               <br />
-                <!-- style="background-color: #d4de80"  is green -->
-                <!-- style="background-color: #08b3bd"  is blue -->
-                <!-- style="background-color: #faf6c6"  is yellow -->
+              <!-- style="background-color: #d4de80"  is green -->
+              <!-- style="background-color: #08b3bd"  is blue -->
+              <!-- style="background-color: #faf6c6"  is yellow -->
               
               <!--============= THIS IS ROW #1. =================-->            
               <div class="row"><!-- row 1 -->
                   <div class="col-sm-4">
-                    <p style="text-align: center">
-                      <img src="./img/pen_graphic.png" alt="pen tool image" width="400" height="400">
+                    <p class="text-center">
+                      <img  src="./img/pen_graphic.png" 
+                            alt="pen tool image" 
+                            width="400" 
+                            height="400" />
                     </p>
                   </div>
                   
@@ -98,13 +115,13 @@
               <div class="section group"><!-- row 2 -->
               <!-- Here are the colored boxes of text from the first row. You'll want to keep the amount of text the same so that your columns stay the same height.-->
                   <div class="col span_1_of_4" style="background-color: #d4de80"><!--green-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Etiam facilisis, erat eu luctus porta, neque sem semper mauris, sed pharetra dolor lacus sit amet nisi. Vestibulum amet. </p>
+                      <h4 class="text-center">Subheading</h4>
+                      <p class="text-center">Etiam facilisis, erat eu luctus porta, neque sem semper mauris, sed pharetra dolor lacus sit amet nisi. Vestibulum amet. </p>
                   </div>
                   
                   <div class="col span_1_of_4" style="background-color: #08b3bd"><!--blue-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae pretium nisi. Quisque nec rhoncus <a href="#">nunc</a>.</p>
+                      <h4 class="text-center">Subheading</h4>
+                      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam vitae pretium nisi. Quisque nec rhoncus <a href="#">nunc</a>.</p>
                   </div>
                   
                   <!-- UNICODE CHARACTER ICON -->
@@ -113,8 +130,8 @@
                   </div>
                   
                   <div class="col span_1_of_4" style="background-color: #d4de80"><!--green-->
-                        <h4 style="text-align: center">Subheading</h4>
-                        <p style="text-align: center">Vivamus id libero nisl. Phasellus vestibulum pellentesque tortor fringilla sagittis. Nam sit amet est pellentesque <a href="#">amet</a>. </p>
+                        <h4 class="text-center">Subheading</h4>
+                        <p class="text-center">Vivamus id libero nisl. Phasellus vestibulum pellentesque tortor fringilla sagittis. Nam sit amet est pellentesque <a href="#">amet</a>. </p>
                   </div>
               </div><!-- end row 2 -->
 
@@ -126,28 +143,28 @@
                   </div>
                   
                   <div class="col span_1_of_3" style="background-color: #d4de80"><!--green-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Vestibulum eu enim scelerisque, scelerisque nisl ut, consequat turpis. Nam id feugiat orci. Etiam imperdiet massa neque. Donec eget purus eget lacus massa nunc. </p>
+                      <h4 class="text-center">Subheading</h4>
+                      <p class="text-center">Vestibulum eu enim scelerisque, scelerisque nisl ut, consequat turpis. Nam id feugiat orci. Etiam imperdiet massa neque. Donec eget purus eget lacus massa nunc. </p>
                   </div>
                   
                   <div class="col span_1_of_3" style="background-color: #faf6c6"><!--yellow-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Praesent scelerisque arcu feugiat, aliquam nisi at, consectetur velit. Vivamus tempus viverra urna sit amet consectetur. Cras consectetur eget magna non nullam. </p>
+                      <h4 class="text-center">Subheading</h4>
+                      <p class="text-center">Praesent scelerisque arcu feugiat, aliquam nisi at, consectetur velit. Vivamus tempus viverra urna sit amet consectetur. Cras consectetur eget magna non nullam. </p>
                   </div> 
               </div><!-- end row 3 -->
               
               <!--============= THIS IS ROW #4. =================-->
               <div class="section group"><!-- row 4 -->
                   <div class="col span_1_of_2" style="background-color: #d4de80"><!--green-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Sed pellentesque molestie leo, in pretium leo scelerisque ut. Proin eleifend vehicula bibendum. Aenean scelerisque porta erat. Pellentesque tempus gravida aliquam. Nullam rutrum sit posuere. </p>
-                      <p style="text-align: center"><a class="btn btn-lg btn-primary" href="about.html" role="button">Read more</a></p><!-- Right now, this button leads to your About page. You can change the link in the href tag to go elsewhere.-->
+                      <h4 class="text-center">Subheading</h4>
+                      <p class="text-center">Sed pellentesque molestie leo, in pretium leo scelerisque ut. Proin eleifend vehicula bibendum. Aenean scelerisque porta erat. Pellentesque tempus gravida aliquam. Nullam rutrum sit posuere. </p>
+                      <p class="text-center"><a class="btn btn-lg btn-primary" href="about.html" role="button">Read more</a></p><!-- Right now, this button leads to your About page. You can change the link in the href tag to go elsewhere.-->
                   </div>
                   
                   <div class="col span_1_of_2" style="background-color: #08b3bd"><!--blue-->
-                      <h4 style="text-align: center">Subheading</h4>
-                      <p style="text-align: center">Suspendisse nec neque tincidunt, convallis nulla quis, tincidunt velit. Quisque dignissim arcu quis metus lobortis, eget ornare quam venenatis. Nulla facilisi. Praesent ut diam dui. Sed nisi diam, scelerisque massa nunc. </p>
-                      <p style="text-align: center"><a class="btn btn-lg btn-success" href="Sample_DOC.txt" role="button" target="blank">Download .DOC</a> <a class="btn btn-lg btn-success" href="Sample_PDF.pdf" role="button" target="blank">Download .PDF</a></p>
+                      <h4 class="text-center">Subheading</h4>
+                      <p class="text-center">Suspendisse nec neque tincidunt, convallis nulla quis, tincidunt velit. Quisque dignissim arcu quis metus lobortis, eget ornare quam venenatis. Nulla facilisi. Praesent ut diam dui. Sed nisi diam, scelerisque massa nunc. </p>
+                      <p class="text-center"><a class="btn btn-lg btn-success" href="Sample_DOC.txt" role="button" target="blank">Download .DOC</a> <a class="btn btn-lg btn-success" href="Sample_PDF.pdf" role="button" target="blank">Download .PDF</a></p>
                   </div>
               </div><!-- row 4 -->
             
