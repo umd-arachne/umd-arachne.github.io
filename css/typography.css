@@ -6,24 +6,41 @@
  *  SITE HEADER
  *------------------------------------------
  */
-#site-header h1,#site-header img{text-align:center}
+#site-header h1,
+#site-header img{text-align:center}
 /*
  *------------------------------------------
  *  MAIN NAVIGATION
  *------------------------------------------
  */
 #site-nav ul{font-family:"HelveticaNeue-CondensedBold","HelveticaNeueBoldCondensed","HelveticaNeue-Bold-Condensed","Helvetica Neue Bold Condensed","HelveticaNeueBold","HelveticaNeue-Bold","Helvetica Neue Bold","HelveticaNeue","Helvetica Neue",'TeXGyreHerosCnBold',"Helvetica","Tahoma","Geneva","Arial Narrow","Arial",sans-serif;font-weight:600;font-stretch:condensed;font-size:large;}
-#site-nav ul a:hover,#site-nav ul a:active,#site-nav ul a:focus{text-decoration:none}
+#site-nav ul a:hover,
+#site-nav ul a:active,
+#site-nav ul a:focus{text-decoration:none}
 /*
  *------------------------------------------
  *  MAIN CONTENT
  *------------------------------------------
  */
 #main a{text-decoration:none;}
-#main a:hover,#main a:focus,#main a:active{text-decoration:underline}
-#main header a:hover,#main header a:focus,#main header a:active{text-decoration:none}
-#main h1,#main h2,#main h3,#main h4,#main h5,#main h6{font-family:"HelveticaNeue-CondensedBold","HelveticaNeueBoldCondensed","HelveticaNeue-Bold-Condensed","Helvetica Neue Bold Condensed","HelveticaNeueBold","HelveticaNeue-Bold","Helvetica Neue Bold","HelveticaNeue","Helvetica Neue",'TeXGyreHerosCnBold',"Helvetica","Tahoma","Geneva","Arial Narrow","Arial",sans-serif;font-weight:600;font-stretch:condensed}
+
+#main a:hover,
+#main a:focus,
+#main a:active{text-decoration:underline}
+
+#main header a:hover,
+#main header a:focus,
+#main header a:active{text-decoration:none}
+
+#main h1,
+#main h2,
+#main h3,
+#main h4,
+#main h5,
+#main h6{font-family:"HelveticaNeue-CondensedBold","HelveticaNeueBoldCondensed","HelveticaNeue-Bold-Condensed","Helvetica Neue Bold Condensed","HelveticaNeueBold","HelveticaNeue-Bold","Helvetica Neue Bold","HelveticaNeue","Helvetica Neue",'TeXGyreHerosCnBold',"Helvetica","Tahoma","Geneva","Arial Narrow","Arial",sans-serif;font-weight:600;font-stretch:condensed}
+
 #main p{max-width:100ex}
+
 #main .jumbotron h1{font-size:48px}
 /*
  *------------------------------------------
