@@ -19,12 +19,10 @@ img.HomepagePictures {padding-bottom:35px}
     margin-right:auto
 }
 
-/* Right Nav Menu */
 #site-nav {
-    position:fixed;
-    top:200px;
-    right:15px;
+    position: static;
 }
+
 
 /* Footer */
 #site-footer {
@@ -43,3 +41,13 @@ img.HomepagePictures {padding-bottom:35px}
 
 /* Weave your identity graphic */
 #Weave {padding-bottom:25px}
+
+
+@media (screen and min-width:768px) {
+    /* Right Nav Menu */
+    #site-nav {
+        position:   fixed;
+        top:        200px;
+        right:      15px;
+    }
+}
