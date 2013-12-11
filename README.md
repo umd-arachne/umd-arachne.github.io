@@ -27,4 +27,4 @@ Explore this site for possibilities! The home page gives you a sneak peek into o
 
 Join the Conversation
 --------------------
-Twitter: #ArachneWebDev
+Twitter: #ArachneWeb
