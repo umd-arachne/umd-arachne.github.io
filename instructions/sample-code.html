@@ -144,17 +144,17 @@
             <h2 id="adding-a-patterned-background">Adding a Patterned Background</h2>
             <p>To add a patterned background to your website, you first need make sure that the image you want is stored within your website’s image folder. Next, open your main CSS file. You will need to go the <code>body</code> part of your CSS. If you are using the annotated CSS from the Arachne templates, you can <kbd>Ctrl+F</kbd> for <strong>Body Text/Copywriting</strong> to get there quickly. You will see something like:</p>
 
-            <code>
-<pre>body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.2em;
-  color: #161515;
-  /*background-color: #ffffff;*/
-  background-image: url("../img/retina_wood.png");
-  background-repeat: repeat;
-}</pre>
-            </code>
+	            <code>
+			body {
+			  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			  font-size: 14px;
+			  line-height: 1.2em;
+			  color: #161515;
+			  /*background-color: #ffffff;*/
+			  background-image: url("../img/retina_wood.png");
+			  background-repeat: repeat;
+			}
+	            </code>
 
             <p>The lines <code>background-color</code> and <code>background-image</code> refer to your background. If you want a solid color for your background, use <code>background-color</code>. The hexadecimal code you see is one way to specify white. You can also use an <abbr title="Red Green Blue">RGB</abbr> value. If you want a very generic color, such as white, you can also just type <code>white</code>. </p>
             <p>The next line is show you can add an image to your background by citing its location in your directory. Here, a seamless wood image is used. If the image is small, like the patterns you find in <a href="../resources/freebies.html">Freebies</a>. You may also want to tell the CSS code to repeat the image.</p>
@@ -162,23 +162,23 @@
 
             <h2 id="customizing-the-appearance-of-your-images">Customizing the Appearance of Your Images</h2>
             <p>HTML puts your image on the web, but CSS manages how it presents itself! Here is a brief commentary on the CSS attributes:</p>
-            <code>
-<pre>img {
-     margin: 0px;
-     width: 100%;
-     height: auto;
-     max-width: 100%;
-     vertical-align: middle;
-     border: 0px solid #d4cdbb;
-     -ms-interpolation-mode: bicubic;
-
-     opacity: 0.4; 
-     /* Changes transparency of your images. On a scale of 0.0 to 1.0; lower numbers are less visible. */
-
-     filter:alpha(opacity=40); 
-     /* Transparency edits for IE8 and earlier. On a scale of 0 to 100; lower numbers are less visible. */
-}</pre>
-            </code>
+	            <code>
+			img {
+			     margin: 0px;
+			     width: 100%;
+			     height: auto;
+			     max-width: 100%;
+			     vertical-align: middle;
+			     border: 0px solid #d4cdbb;
+			     -ms-interpolation-mode: bicubic;
+			
+			     opacity: 0.4; 
+			     /* Changes transparency of your images. On a scale of 0.0 to 1.0; lower numbers are less visible. */
+			
+			     filter:alpha(opacity=40); 
+			     /* Transparency edits for IE8 and earlier. On a scale of 0 to 100; lower numbers are less visible. */
+			}
+	            </code>
  
             <p>The CSS select <code>img</code> means “this part of the CSS is for styling all images in your HTML.” This section is therefore your default settings. How is here the code breaks down:</p>
 
