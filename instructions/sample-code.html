@@ -139,170 +139,183 @@
         <div class="col-sm-9">
         
             <h1>Popular Code Snippets</h1>
-            <p>To help get you started on coding your online portfolio, here are code snippets from some of the most common and popular HTML and CSS features.</p>
+            	<p>To help get you started on coding your online portfolio, here are code snippets from some of the most common and popular HTML and CSS features.</p>
 
-            <h2 id="adding-a-patterned-background">Adding a Patterned Background</h2>
-            <p>To add a patterned background to your website, you first need make sure that the image you want is stored within your website’s image folder. Next, open your main CSS file. You will need to go the <code>body</code> part of your CSS. If you are using the annotated CSS from the Arachne templates, you can <kbd>Ctrl+F</kbd> for <strong>Body Text/Copywriting</strong> to get there quickly. You will see something like:</p>
+	            <h2 id="adding-a-patterned-background">Adding a Patterned Background</h2>
+		            <p>To add a patterned background to your website, you first need make sure that the image you want is stored within your website&#8217;s image folder. Next, open your main CSS file. You will need to go the <code>body</code> part of your CSS. If you are using the annotated CSS from the Arachne templates, you can <kbd>Ctrl+F</kbd> for <strong>Body Text/Copywriting</strong> to get there quickly. You will see something like:</p>
+				<pre>
+			            <code>
+					body {
+					  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+					  font-size: 14px;
+					  line-height: 1.2em;
+					  color: #161515;
+					  /*background-color: #ffffff;*/
+					  background-image: url("../img/retina_wood.png");
+					  background-repeat: repeat;
+					}
+			            </code>
+			         </pre>
+		
+		            <p>The lines <code>background-color</code> and <code>background-image</code> refer to your background. If you want a solid color for your background, use <code>background-color</code>. The hexadecimal code you see is one way to specify white. You can also use an <abbr title="Red Green Blue">RGB</abbr> value. If you want a very generic color, such as white, you can also just type <code>white</code>. </p>
+		            <p>The next line is show you can add an image to your background by citing its location in your directory. Here, a seamless wood image is used. If the image is small, like the patterns you find in <a href="../resources/freebies.html">Freebies</a>. You may also want to tell the CSS code to repeat the image.</p>
 
-	            <code>
-			body {
-			  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-			  font-size: 14px;
-			  line-height: 1.2em;
-			  color: #161515;
-			  /*background-color: #ffffff;*/
-			  background-image: url("../img/retina_wood.png");
-			  background-repeat: repeat;
-			}
-	            </code>
 
-            <p>The lines <code>background-color</code> and <code>background-image</code> refer to your background. If you want a solid color for your background, use <code>background-color</code>. The hexadecimal code you see is one way to specify white. You can also use an <abbr title="Red Green Blue">RGB</abbr> value. If you want a very generic color, such as white, you can also just type <code>white</code>. </p>
-            <p>The next line is show you can add an image to your background by citing its location in your directory. Here, a seamless wood image is used. If the image is small, like the patterns you find in <a href="../resources/freebies.html">Freebies</a>. You may also want to tell the CSS code to repeat the image.</p>
-
-
-            <h2 id="customizing-the-appearance-of-your-images">Customizing the Appearance of Your Images</h2>
-            <p>HTML puts your image on the web, but CSS manages how it presents itself! Here is a brief commentary on the CSS attributes:</p>
-	            <code>
-			img {
-			     margin: 0px;
-			     width: 100%;
-			     height: auto;
-			     max-width: 100%;
-			     vertical-align: middle;
-			     border: 0px solid #d4cdbb;
-			     -ms-interpolation-mode: bicubic;
-			
-			     opacity: 0.4; 
-			     /* Changes transparency of your images. On a scale of 0.0 to 1.0; lower numbers are less visible. */
-			
-			     filter:alpha(opacity=40); 
-			     /* Transparency edits for IE8 and earlier. On a scale of 0 to 100; lower numbers are less visible. */
-			}
-	            </code>
+            	<h2 id="customizing-the-appearance-of-your-images">Customizing the Appearance of Your Images</h2>
+            		<p>HTML puts your image on the web, but CSS manages how it presents itself! Here is a brief commentary on the CSS attributes:</p>
+				<pre>
+					<code>
+						img {
+						     margin: 0px;
+						     width: 100%;
+						     height: auto;
+						     max-width: 100%;
+						     vertical-align: middle;
+						     border: 0px solid #d4cdbb;
+						     -ms-interpolation-mode: bicubic;
+						
+						     opacity: 0.4; 
+						     /* Changes transparency of your images. On a scale of 0.0 to 1.0; lower numbers are less visible. */
+						
+						     filter:alpha(opacity=40); 
+						     /* Transparency edits for IE8 and earlier. On a scale of 0 to 100; lower numbers are less visible. */
+						}
+		            		</code>
+		            	</pre> 
  
-            <p>The CSS select <code>img</code> means “this part of the CSS is for styling all images in your HTML.” This section is therefore your default settings. How is here the code breaks down:</p>
+            		<p>The CSS select <code>img</code> means &#8220;this part of the CSS is for styling all images in your HTML.&#8221; This section is therefore your default settings. How is here the code breaks down:</p>
 
-            <ul>
-                <li><code>margin</code> refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. </li>
-                <li><code>width</code> and <code>height</code> you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. <code>max-width</code> prevents blurry images by limiting the resizing of the image. </li>
-                <li><code>vertical-align</code> places your image in the vertical center of a section. </li>
-                <li><code>border</code> is where, of course, you can add borders. The first part (<code>0px</code>) specifics <code>border-width</code>. The higher the pixel count, the thicker it is. The next part specifies the style of your border. <code>solid</code> is typical, but you can also add <code>dotted</code> or <code>dashed</code> borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. </li>
-                <li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
-            </ul>
+		            <ul>
+		                <li><code>margin</code> refers to the spacing around the outside of your image. You probably want a margin of a couple of pixels so that your text does not touch the edges of your image. </li>
+		                <li><code>width</code> and <code>height</code> you want to leave the same as here. It is best to specify only one dimension of the two, here width at 100% of the original image size. <code>max-width</code> prevents blurry images by limiting the resizing of the image. </li>
+		                <li><code>vertical-align</code> places your image in the vertical center of a section. </li>
+		                <li><code>border</code> is where, of course, you can add borders. The first part (<code>0px</code>) specifics <code>border-width</code>. The higher the pixel count, the thicker it is. The next part specifies the style of your border. <code>solid</code> is typical, but you can also add <code>dotted</code> or <code>dashed</code> borders, too. The last part is hexadecimal code for a color. You can also name a call using RGB values. </li>
+		                <li>Finally, the last lines are an example of image effects. A lower opacity, for example, makes images more see-through.</li>
+		            </ul>
 
-            <p>You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your <code>img</code> tags, like <code>class="red_border"</code>, if your new settings will apply to multiple images on the same web page. In CSS, you would add <code>img .red_border {</code>. If you want to customize the appearance of exactly one image, you should use an <code>id</code>. In HTML, add an <code>id</code> inside your <code>img</code> tags (like <code>id="profile_image</code>). Then, in your CSS, add <code>#profile_image { ... }</code>.</p>
-
-
-            <h2>Adding Music Files</h2>
-            <p>You can also add music files to showcase in your portfolio. This code will show you how to both link and embed two different music files to ensure cross-browser compatibility. It is best to use both file formats as shown, since each web browser has its own preference and your portfolio should address them all. </p>
-            <p>The two music file formats are MP3 (.mpeg) and Ogg (.ogg), a sort of universal music format. You may need to convert your music into each of these formats. Please note that many songs purchased from iTunes come in the MP4 (.m4a) format and may need conversion as well.</p>
-            <p>Once your song is ready to use in both the MP3 and Ogg formats, create a new folder, “music,” in your directory. Place your music files inside.</p>
-            <p>Open the HTML file where you want to display your music and add the following code:</p>
-
-            <code>
-<pre>
-&lt;!-- HTML tag for audio files--&gt;
-&lt;audio controls&gt;
-	&lt;source src="song.mp3" type="audio/mpeg" /&gt; 
-	&lt;source src="song.ogg" type="audio/ogg" /&gt;
-	&lt;!-- this creates a small music player--&gt;
-	&lt;embed height="100" width="200" src="song.mp3" /&gt;
-&lt;/audio&gt;
-</pre>
-            </code>
-
-            <p>A small music player will appear on your webpage. Adding the attribute “controls” to your audio tags lets users play, pause, seek, and adjust the volume. You can also add the attribute “autoplay”, if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is “loop” which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
-            <p>Users cannot download the music, however, unless you link the audio control inside <code>&lt;a href="#"&gt;</code> tags. Please do not allow users to download any copyrighted content besides your very own work.</p>
+            		<p>You can customize the appearance particular images by naming them in the HTML and calling them by name in CSS. In HTML, simply add a class inside your <code>img</code> tags, like <code>class="red_border"</code>, if your new settings will apply to multiple images on the same web page. In CSS, you would add <code>img .red_border {</code>. If you want to customize the appearance of exactly one image, you should use an <code>id</code>. In HTML, add an <code>id</code> inside your <code>img</code> tags (like <code>id="profile_image</code>). Then, in your CSS, add <code>#profile_image { ... }</code>.</p>
 
 
-            <h2 id="embedding-videos">Embedding Videos</h2>
-            <p>Your online portfolio is not restricted to just text and images. You can add videos! You can do this by linking to a video you have already uploaded to YouTube. Copy the code below and fill in the blanks with the title and web link to your video:</p>
+            	<h2>Adding Music Files</h2>
+	            <p>You can also add music files to showcase in your portfolio. This code will show you how to both link and embed two different music files to ensure cross-browser compatibility. It is best to use both file formats as shown, since each web browser has its own preference and your portfolio should address them all. </p>
+	            <p>The two music file formats are MP3 &#40;.mpeg&#41; and Ogg &#40;.ogg&#41;, a sort of universal music format. You may need to convert your music into each of these formats. Please note that many songs purchased from iTunes come in the MP4 &#40;.m4a&#41; format and may need conversion as well.</p>
+	            <p>Once your song is ready to use in both the MP3 and Ogg formats, create a new folder, &#8220;music,&#8221; in your directory. Place your music files inside.</p>
+	            <p>Open the HTML file where you want to display your music and add the following code:</p>
+			<pre>
+				<code>
+					&lt;!-- HTML tag for audio files--&gt;
+					&lt;audio controls&gt;
+						&lt;source src="song.mp3" type="audio/mpeg" /&gt; 
+						&lt;source src="song.ogg" type="audio/ogg" /&gt;
+						&lt;!-- this creates a small music player--&gt;
+						&lt;embed height="100" width="200" src="song.mp3" /&gt;
+					&lt;/audio&gt;
+				</code>	
+			</pre>
+			            
 
-            <code>
-<pre>&lt;!-- this tag allows the HTML code to be seen in code --&gt;
-&lt;"http://www.youtube.com width="420" height="345" 
-    src="http://www.youtube.com/embed/XGSy3_Czz8k"&gt;
-&lt;/"http://www.youtube.com&gt;
-</pre>
-            </code>
+		     <p>A small music player will appear on your webpage. Adding the attribute &#8220;controls&#8221; to your audio tags lets users play, pause, seek, and adjust the volume. You can also add the attribute &#8220;autoplay,&#8221; if you want the audio to begin playing automatically, as soon as the user enters the page. Another attribute is &#8220;loop&#8221; which allows the music to automatically restart playing when it is finished. The user must still click play to begin though. If you want to customize the appearance of the music player, you will need to find the appropriate JavaScript.</p>
+		     
+		     <p>Users cannot download the music, however, unless you link the audio control inside <code>&lt;a href="#"&gt;</code> tags. Please do not allow users to download any copyrighted content besides your very own work.</p>
 
-            <p>The <code>"http://www.youtube.com</code> creates window to the YouTube video on your website. You want to use the same dimensions here to maintain the proper aspect ratio of the video, or else the video could be cropped or distorted.</p>
-            <p>You can also embed a YouTube video into your code. Rather than creating a window into a third-party web page, embedding stores the video means the video is stored within your very web page. Here is what that looks like:</p>
 
-            <code>
-<pre>&lt;embed
-    width="420" 
-    height="345"
-    src="http://www.youtube.com/v/XGSy3_Czz8k"
-    type="application/x-shockwave-flash"&gt;
-    &lt;/embed&gt;
-</pre>
-            </code>
+            	<h2 id="embedding-videos">Embedding Videos</h2>
+            		<p>Your online portfolio is not restricted to just text and images. You can add videos! You can do this by linking to a video you have already uploaded to YouTube. Copy the code below and fill in the blanks with the title and web link to your video:</p>
+				<pre>
+			            <code>
+					&lt;!-- this tag allows the HTML code to be seen in code --&gt;
+					&lt;"http://www.youtube.com width="420" height="345" 
+					    src="http://www.youtube.com/embed/XGSy3_Czz8k"&gt;
+					&lt;/"http://www.youtube.com&gt;
+			            </code>
+			        </pre>
 
-            <p>Notice that here, you must specify a media player in order for it play on your website. YouTube uses Flash’s Shockwave player, so cite that.</p>
+	               <p>The <code>"http://www.youtube.com</code> creates window to the YouTube video on your website. You want to use the same dimensions here to maintain the proper aspect ratio of the video, or else the video could be cropped or distorted.</p>
+	               <p>You can also embed a YouTube video into your code. Rather than creating a window into a third-party web page, embedding stores the video means the video is stored within your very web page. Here is what that looks like:</p>
+			    <pre>
+			            <code>
+					&lt;embed
+					width="420" 
+					height="345"
+					src="http://www.youtube.com/v/XGSy3_Czz8k"
+					type="application/x-shockwave-flash"&gt;
+					&lt;/embed&gt;
+			            </code>
+		            </pre>
 
-            <h2 id="adding-new-fonts-with-font-face-">Adding New Fonts with <code>@font-face</code></h2>
-            <p>The <code>@font-face</code> code is a relatively new invention which allows web developers to display any font they wish on their websites. Previously, they could only choose from a short list of standard “web-safe” fonts, which greatly limited design options. The new <code>@font-face</code> code allows web browsers to display even unsafe fonts by embedding that font file within that website’s code. When a user accesses that website, their computer downloads the font file as it downloads the rest of the website. Thus, the user can now see the font correctly.</p>
-            <p>However, we warn users that fonts are often considered “intellectual property.” Many fonts are subject to copyright or require payment for use. Even if you have the font installed on your computer, embedding it within your website’s code may violate copyright. Please check that your font allows free use and requires no payment.  Users also have the option of using freeware fonts open to the public at no cost. Please refer to our <a href="../resources/helpful-links.html">Helpful Links</a> page for free font websites.</p>
-            <p>The first step of adding <code>@font-face</code> is locating your main CSS file. If you are using one of our downloadable templates, this will be your <code>bootstrap.css</code> file. Click anywhere, and type:</p>
-            <code>
-<pre>@font-face {
-     font-family: “YourFontName”; Georgia, Times, serif; &lt;-------- remember to provide basic, web-safe alternates, including  visually similar font families as well as a generic serif or sans-serif mention
-     src: url("../img/YourFontName.ttf"); &lt;------------------ be sure to upload this to your web server too!
-}</pre>
-            </code>
+            		<p>Notice that here, you must specify a media player in order for it play on your website. YouTube uses Flash&#8217;s Shockwave player, so cite that.</p>
 
-            <p>This “stores” your font in the code. The first time, call your font whatever is easiest to remember. But in the <code>src</code> line, you must go to your <strong>Control Panel ► Fonts</strong> and type it exactly as you see it there if your font comes locally on your computer.  Alternatively, you can use an hyperlink reference to free fonts website like those mentioned in our <a href="../resources/helpful-links.html">Helpful Links</a>.</p>
-            <p>To apply your font, use it like this in your CSS code for the <code>h1</code>, <code>h2</code>, <code>h3</code>, or <code>body</code>:</p>
-            <code><pre
->h1,
- h2 {
-     margin: 10px 0;
-     font-family: "YourFontName", serif;
-     font-weight: bold;
-     line-height: 1; /* may need tweaking depending on font */
-     color: #2E2633; /* I changed color here */
-     text-rendering: optimizelegibility;
- }
+            	<h2 id="adding-new-fonts-with-font-face-">Adding New Fonts with <code>@font-face</code></h2>
+	            <p>The <code>@font-face</code> code is a relatively new invention which allows web developers to display any font they wish on their websites. Previously, they could only choose from a short list of standard &#8220;web-safe&#8221; fonts, which greatly limited design options. The new <code>@font-face</code> code allows web browsers to display even unsafe fonts by embedding that font file within that website&#8217;s code. When a user accesses that website, their computer downloads the font file as it downloads the rest of the website. Thus, the user can now see the font correctly.</p>
+	            <p>However, we warn users that fonts are often considered intellectual property. Many fonts are subject to copyright or require payment for use. Even if you have the font installed on your computer, embedding it within your website&#8217;s code may violate copyright. Please check that your font allows free use and requires no payment. Users also have the option of using freeware fonts open to the public at no cost. Please refer to our <a href="../resources/helpful-links.html">Helpful Links</a> page for free font websites.</p>
+	            <p>The first step of adding <code>@font-face</code> is locating your main CSS file. If you are using one of our downloadable templates, this will be your <code>bootstrap.css</code> file. Click anywhere, and type:</p>
+		            <pre>
+			    	<code>
+					@font-face {
+						font-family: “YourFontName”; Georgia, Times, serif; 
+						&lt;-------- remember to provide basic, web-safe alternates, including  
+						visually similar font families as well as a generic serif or sans-serif mention
+						src: url("../img/YourFontName.ttf"); 
+						&lt;------------------ be sure to upload this to your web server too!
+						}
+				</code>
+		            </pre>
 
- /* changes ALL body copy */
- body {           
-     font-family: "Verdana", Arial, sans-serif;
-     font-size: 14px;
-     line-height: 20px;
- }</pre>
-            </code>
- 
+            	<p>This stores your font in the code. The first time, call your font whatever is easiest to remember. But in the <code>src</code> line, you must go to your <strong>Control Panel ► Fonts</strong> and type it exactly as you see it there if your font comes locally on your computer.  Alternatively, you can use an hyperlink reference to free fonts website like those mentioned in our <a href="../resources/helpful-links.html">Helpful Links</a>.</p>
+            	<p>To apply your font, use it like this in your CSS code for the <code>h1</code>, <code>h2</code>, <code>h3</code>, or <code>body</code>:</p>
+			<pre>
+				<code>
+					h1,
+					h2 {
+					     margin: 10px 0;
+					     font-family: "YourFontName", serif;
+					     font-weight: bold;
+					     line-height: 1; /* may need tweaking depending on font */
+					     color: #2E2633; /* I changed color here */
+					     text-rendering: optimizelegibility;
+					     }
+					
+					 /* changes ALL body copy */
+					 body {           
+					     font-family: "Verdana", Arial, sans-serif;
+					     font-size: 14px;
+					     line-height: 20px;
+					 }
+				</code>
+			</pre>
+			 
             <p>To change the fonts of specific places in your body copy, you will first need to add attributes. The simplest way to do is adding a <code>class</code>, like in this example:</p>
-            <code
-><pre>&lt;h3 class="infrastructure_header"&gt;Introduction to Infrastructure&lt;/h3&gt;
-&lt;p class="infrastructure_body"&gt;Our national framework is literally crumbling beneath our feet.&lt;/p&gt;
-</pre>
-            </code>
+	            <pre>
+		            <code>
+		            &lt;h3 class="infrastructure_header"&gt;Introduction to Infrastructure&lt;/h3&gt;
+			&lt;p class="infrastructure_body"&gt;Our national framework is literally crumbling beneath our feet.&lt;/p&gt;
+		            </code>
+	            </pre>
   
             <p>You can name the class whatever you like, just no spaces. Remember that classes appears multiple times on the same time, like paragraphs, and <code>id</code>s appear once. To call a class in the CSS code, type  <code>.name{ … }</code> To call an <code>id</code> in CSS code, type <code>#name{ … }</code></p>
             <p>Other examples:</p>
-            <code
-><pre>.infrastructure_header {
-    font-family: "FontLogic", Arial, sans-serif;
-    font-size: 16px;
-    line-height: 10px; 
-    /* Notice that the line-height is 10 and the font-size is 16. 
-     * If the text spans multiple lines--which can load differently 
-     * on every computer--they will overlap!
-     */
-}
+            <pre>
+	            <code>
+			.infrastructure_header {
+			    font-family: "FontLogic", Arial, sans-serif;
+			    font-size: 16px;
+			    line-height: 10px; 
+			    /* Notice that the line-height is 10 and the font-size is 16. 
+			     * If the text spans multiple lines--which can load differently 
+			     * on every computer--they will overlap!
+			     */
+			}
+			
+			.infrastructure_body {
+			    font-family: "Calibri", Arial, sans-serif;
+			    font-size: 18px;
+			    line-height: 25px;
+			    text-align: justify;
+			}
+	            </code>
+            </pre>
 
-.infrastructure_body {
-    font-family: "Calibri", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: justify;
-}
-</pre>
-            </code>
-
-        </div>
+        </div><!--./col-sm-9-->
     </main><!-- /#main -->
 
 
